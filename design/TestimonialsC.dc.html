@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rispit — Testimonials (variant C)</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#14161A}a:hover{color:#A3242F}
+</style>
+</helmet>
+<section style="width: 1440px; height: 860px; box-sizing: border-box; padding: 96px 24px 24px; display: flex; flex-direction: column; gap: 48px; background: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14161A">
+
+  <!-- Header -->
+  <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; padding: 0 24px">
+    <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; max-width: 760px">
+      <span style="display: flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px; border-radius: 999px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06); color: #A3242F; font-size: 13px; font-weight: 700">
+        <span style="display: block; width: 8px; height: 8px; border-radius: 8px; background: #C2323F"></span>
+        <span>Testimonials</span>
+      </span>
+      <h2 style="margin: 0; font-size: 52px; line-height: 1.08; font-weight: 800; letter-spacing: -0.035em">Hear it from <span style="color: #C2323F">the founders.</span></h2>
+    </div>
+    <p style="margin: 0; max-width: 380px; font-size: 17px; line-height: 1.6; color: #545A66; font-weight: 500">Short video stories from the people behind the products we've built. Tap a card to watch.</p>
+  </div>
+
+  <!-- Portrait video cards -->
+  <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
+    <sc-for list="{{items}}" as="t" hint-placeholder-count="4">
+      <a href="{{t.href}}" aria-label="Watch {{t.product}} story" style="position: relative; height: 560px; display: block; border-radius: 28px; overflow: hidden; background: #2A2D33; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06), 0 20px 40px -20px rgba(20,22,26,0.45); text-decoration: none">
+
+        <!-- Photo placeholder -->
+        <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding-bottom: 140px">
+          <svg width="110" height="110" viewBox="0 0 24 24" fill="#454952" aria-hidden="true"><circle cx="12" cy="8" r="4.2"></circle><path d="M3.5 21c.8-4.4 4.2-7 8.5-7s7.7 2.6 8.5 7Z"></path></svg>
+          <span style="font-size: 12px; font-weight: 700; color: #8A8F9A">Client photo / video</span>
+        </div>
+
+        <!-- Product chip -->
+        <div style="position: absolute; top: 14px; left: 14px; right: 14px; display: flex; align-items: center; justify-content: space-between">
+          <span style="display: flex; align-items: center; gap: 8px; padding: 6px 12px 6px 6px; border-radius: 999px; background: rgba(255,255,255,0.94)">
+            <span style="width: 28px; height: 28px; border-radius: 9px; background: #C2323F; display: flex; align-items: center; justify-content: center">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{t.icon}}"></path></svg>
+            </span>
+            <span style="font-size: 13px; font-weight: 800; color: #14161A">{{t.product}}</span>
+          </span>
+          <span style="padding: 6px 10px; border-radius: 999px; background: rgba(20,22,26,0.55); font-size: 11px; font-weight: 700; color: #FFFFFF">{{t.length}}</span>
+        </div>
+
+        <!-- Play button -->
+        <span style="position: absolute; top: 186px; left: 50%; margin-left: -32px; width: 64px; height: 64px; border-radius: 64px; background: rgba(255,255,255,0.95); box-shadow: 0 10px 24px -8px rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#C2323F" aria-hidden="true"><path d="M8 5.5v13l11-6.5Z"></path></svg>
+        </span>
+
+        <!-- Bottom overlay -->
+        <div style="position: absolute; left: 0; right: 0; bottom: 0; box-sizing: border-box; padding: 64px 22px 22px; display: flex; flex-direction: column; gap: 14px; background: linear-gradient(180deg, rgba(20,22,26,0) 0%, rgba(20,22,26,0.88) 38%, #14161A 100%)">
+          <p style="margin: 0; font-size: 16px; line-height: 1.5; font-weight: 600; color: #FFFFFF">“{{t.quote}}”</p>
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.18)">
+            <div style="display: flex; flex-direction: column; gap: 2px">
+              <span style="font-size: 15px; font-weight: 800; color: #FFFFFF">[Client Name]</span>
+              <span style="font-size: 12px; font-weight: 600; color: #C9CCD3">{{t.role}}</span>
+            </div>
+            <span style="padding: 5px 10px; border-radius: 999px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); font-size: 11px; font-weight: 700; color: #FFFFFF">{{t.type}}</span>
+          </div>
+        </div>
+      </a>
+    </sc-for>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":860}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      items: [
+        {
+          product: 'Kestrel Health', type: 'Mobile app', length: '1:24', href: '#case-kestrel',
+          icon: 'M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z M11 18h2',
+          role: '[Founder, Kestrel Health]',
+          quote: 'From a rough idea to patients booking real appointments in three weeks.'
+        },
+        {
+          product: 'Lumora Analytics', type: 'Web app', length: '0:58', href: '#case-lumora',
+          icon: 'M4 20V10 M10 20V4 M16 20v-7 M22 20H2',
+          role: '[CEO, Lumora]',
+          quote: 'Daily updates, no surprises, and a dashboard that looked polished from day one.'
+        },
+        {
+          product: 'Orbitly Assist', type: 'AI assistant', length: '1:10', href: '#case-orbitly',
+          icon: 'M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z',
+          role: '[Product Lead, Orbitly]',
+          quote: 'They built an assistant our support team actually trusts.'
+        },
+        {
+          product: 'Fernway', type: 'Web app', length: '1:02', href: '#case-fernway',
+          icon: 'M3 4h18v4H3Z M3 10h12v4H3Z M3 16h6v4H3Z',
+          role: '[Co-founder, Fernway]',
+          quote: 'We launched on time and kept building on the same code after.'
+        }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rispit mobile navbar</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.rsp-snow{position:absolute;top:-6px;width:3px;height:3px;border-radius:3px;background:rgba(255,255,255,.8);animation:rsp-fall 5s linear infinite}
+@keyframes rsp-fall{0%{transform:translateY(0);opacity:0}15%{opacity:1}100%{transform:translateY(54px);opacity:0}}
+.rsp-in{animation:rsp-in .2s ease-out}
+@keyframes rsp-in{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+</style>
+</helmet>
+<div style="position: relative; width: 390px; height: {{rootH}}; background: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14161A">
+
+  <!-- Christmas bar -->
+  <sc-if value="{{showPromo}}" hint-placeholder-val="{{ true }}">
+    <div role="region" aria-label="Christmas offer" style="position: relative; height: 44px; box-sizing: border-box; padding: 0 44px 0 16px; display: flex; align-items: center; gap: 10px; background: #A3242F; color: #FFFFFF; overflow: hidden">
+      <span class="rsp-snow" style="left: 8%"></span><span class="rsp-snow" style="left: 27%; animation-delay: 1.8s"></span><span class="rsp-snow" style="left: 52%; animation-delay: 3.1s"></span><span class="rsp-snow" style="left: 71%; animation-delay: .9s"></span><span class="rsp-snow" style="left: 90%; animation-delay: 2.5s"></span>
+      <span style="width: 26px; height: 26px; flex-shrink: 0; border-radius: 8px; background: #1F6B45; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h18v4H3Z M5 12h14v9H5Z M12 8v13 M12 8c-1.5-3-5-4-5-1.5S10 8 12 8Z M12 8c1.5-3 5-4 5-1.5S14 8 12 8Z"></path></svg></span>
+      <span style="flex-grow: 1; font-size: 13px; font-weight: 600; line-height: 1.25">Christmas: <strong style="font-weight: 800">20% off</strong> your build</span>
+      <a href="/MobContact.dc.html" style="flex-shrink: 0; height: 28px; display: flex; align-items: center; padding: 0 10px; border-radius: 8px; background: #FFFFFF; color: #A3242F; font-size: 12px; font-weight: 800; text-decoration: none">Book a call</a>
+      <button type="button" onClick="{{hidePromo}}" aria-label="Close offer" style="position: absolute; right: 8px; top: 8px; width: 28px; height: 28px; border: none; border-radius: 8px; background: rgba(255,255,255,0.14); display: flex; align-items: center; justify-content: center; cursor: pointer"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+    </div>
+  </sc-if>
+
+  <!-- Header -->
+  <div style="height: 84px; box-sizing: border-box; padding: 12px 12px 8px">
+    <header style="height: 64px; box-sizing: border-box; padding: 0 8px 0 14px; display: flex; align-items: center; justify-content: space-between; border-radius: 20px; background: rgba(255,255,255,0.92); border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.05), 0 12px 28px -16px rgba(20,22,26,0.2)">
+      <a href="/MobHome.dc.html" aria-label="Rispit home" style="display: flex; align-items: center; gap: 9px; text-decoration: none">
+        <img src="/_blob/82822259e9e80e60af7f19aab558f522" alt="" style="width: 36px; height: 36px; display: block">
+        <span style="display: flex; flex-direction: column; gap: 3px"><span style="font-size: 21px; font-weight: 800; line-height: 1; letter-spacing: -0.02em; color: #C2323F">Rispit</span><span style="font-size: 8px; font-weight: 700; line-height: 1; letter-spacing: 0.24em; text-transform: uppercase; color: #545A66">We do things</span></span>
+      </a>
+      <span style="display: flex; align-items: center; gap: 6px">
+        <a href="/MobContact.dc.html" aria-label="Book a call with Siva" style="height: 46px; display: flex; align-items: center; gap: 6px; padding: 0 12px 0 4px; border-radius: 14px; background: #C2323F; color: #FFFFFF; font-size: 13px; font-weight: 800; text-decoration: none"><img src="/_blob/66baedd13e96fd14d8f78d471b6115cf" alt="" style="width: 38px; height: 38px; display: block; border-radius: 11px; object-fit: cover; border: 2px solid rgba(255,255,255,0.9); box-sizing: border-box"><span>Call Siva</span></a>
+        <button type="button" onClick="{{toggleMenu}}" aria-label="{{menuLabel}}" aria-expanded="{{menuExpanded}}" style="width: 46px; height: 46px; border-radius: 14px; border: 1px solid #ECEEF1; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14161A" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="{{menuIcon}}"></path></svg>
+        </button>
+      </span>
+    </header>
+  </div>
+
+  <!-- Menu -->
+  <sc-if value="{{open}}" hint-placeholder-val="{{ false }}">
+    <nav class="rsp-in" aria-label="Main" style="position: absolute; z-index: 60; left: 12px; right: 12px; top: {{menuTop}}; box-sizing: border-box; padding: 10px; display: flex; flex-direction: column; gap: 4px; border-radius: 22px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06), 0 30px 60px -24px rgba(20,22,26,0.4)">
+      <a href="/MobHome.dc.html" style="display: flex; align-items: center; height: 52px; padding: 0 14px; border-radius: 14px; background: {{homeBg}}; font-size: 16px; font-weight: 700; color: #14161A; text-decoration: none">Home</a>
+
+      <button type="button" onClick="{{toggleSvc}}" aria-expanded="{{svcExpanded}}" style="display: flex; align-items: center; justify-content: space-between; height: 52px; padding: 0 14px; border: none; border-radius: 14px; background: {{svcBg}}; font-family: inherit; font-size: 16px; font-weight: 700; color: #14161A; cursor: pointer">
+        <span>Services</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transform: {{svcChev}}"><path d="M6 9l6 6 6-6"></path></svg>
+      </button>
+      <sc-if value="{{svcOpen}}" hint-placeholder-val="{{ true }}">
+        <div style="display: flex; flex-direction: column; gap: 2px; padding: 2px 4px 6px">
+          <sc-for list="{{services}}" as="s" hint-placeholder-count="8">
+            <a href="{{s.href}}" style="display: flex; align-items: center; gap: 12px; padding: 8px 10px; border-radius: 12px; text-decoration: none; color: #14161A">
+              <span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 11px; background: #FBECEE; display: flex; align-items: center; justify-content: center"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{s.icon}}"></path></svg></span>
+              <span style="font-size: 14px; font-weight: 700">{{s.name}}</span>
+            </a>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <button type="button" onClick="{{toggleProd}}" aria-expanded="{{prodExpanded}}" style="display: flex; align-items: center; justify-content: space-between; height: 52px; padding: 0 14px; border: none; border-radius: 14px; background: {{prodBg}}; font-family: inherit; font-size: 16px; font-weight: 700; color: #14161A; cursor: pointer">
+        <span>Products</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transform: {{prodChev}}"><path d="M6 9l6 6 6-6"></path></svg>
+      </button>
+      <sc-if value="{{prodOpen}}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-direction: column; gap: 2px; padding: 2px 4px 6px">
+          <sc-for list="{{products}}" as="p" hint-placeholder-count="3">
+            <a href="{{p.href}}" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; padding: 8px 10px; border-radius: 12px; text-decoration: none; color: #14161A">
+              <span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 11px; background: {{p.bg}}; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; color: #FFFFFF">{{p.mono}}</span>
+              <span style="flex-grow: 1; font-size: 14px; font-weight: 700">{{p.name}}</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-label="Opens in a new tab"><path d="M15 3h6v6 M10 14L21 3 M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+            </a>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <a href="/MobPortfolio.dc.html" style="display: flex; align-items: center; height: 52px; padding: 0 14px; border-radius: 14px; font-size: 16px; font-weight: 700; color: #14161A; text-decoration: none">Portfolio</a>
+      <a href="/MobBlog.dc.html" style="display: flex; align-items: center; height: 52px; padding: 0 14px; border-radius: 14px; font-size: 16px; font-weight: 700; color: #14161A; text-decoration: none">Blogs</a>
+      <a href="/MobContact.dc.html" style="margin-top: 6px; display: flex; align-items: center; gap: 10px; height: 56px; padding: 0 16px 0 6px; border-radius: 16px; background: #C2323F; color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none">
+        <img src="/_blob/66baedd13e96fd14d8f78d471b6115cf" alt="" style="width: 44px; height: 44px; display: block; border-radius: 13px; object-fit: cover; border: 2px solid rgba(255,255,255,0.9); box-sizing: border-box">
+        <span style="flex-grow: 1">Book a call with Siva</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+      </a>
+    </nav>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"active":{"editor":"text","default":""},"promo":{"editor":"boolean","default":true},"open":{"editor":"boolean","default":false},"$preview":{"width":390,"height":128}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    const o = props.open === true || props.open === 'true';
+    this.state = { open: o, svc: o, prod: false, promoHidden: false };
+  }
+  renderVals() {
+    const showPromo = (this.props.promo ?? true) && !this.state.promoHidden;
+    const { open, svc, prod } = this.state;
+    const services = [
+      ['21-Day MVP Sprint', '/MobServiceMVP.dc.html', 'M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1Z M12 15l-3-3a22 22 0 0 1 2-3.9A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2Z'],
+      ['Mobile App Development', '/MobServiceMobile.dc.html', 'M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z M11 18h2'],
+      ['Web App Development', '/MobServiceWeb.dc.html', 'M2 4h20v16H2Z M2 9h20'],
+      ['Ecommerce Development', '/MobServiceEcommerce.dc.html', 'M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6'],
+      ['UI/UX Design', '/MobServiceUIUX.dc.html', 'M12 20h9 M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z'],
+      ['AI Integration', '/MobServiceAI.dc.html', 'M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z'],
+      ['Content Creation', '/MobServiceContent.dc.html', 'M15 10l5-3v10l-5-3Z M3 6h12v12H3Z'],
+      ['IT Consultation', '/MobServiceIT.dc.html', 'M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18Z M15.5 8.5l-2 5-5 2 2-5Z']
+    ].map(([name, href, icon]) => ({ name, href, icon }));
+    const products = [
+      { name: 'Rispit Flow', mono: 'RF', bg: '#C2323F', href: 'https://[rispitflow.com]' },
+      { name: '[Product 2]', mono: 'P2', bg: '#14161A', href: 'https://[product-2.com]' },
+      { name: '[Product 3]', mono: 'P3', bg: '#A0A5AF', href: 'https://[product-3.com]' }
+    ];
+    return {
+      showPromo, open, services, products,
+      rootH: showPromo ? '128px' : '84px',
+      menuTop: showPromo ? '124px' : '80px',
+      menuIcon: open ? 'M6 6l12 12M18 6L6 18' : 'M4 7h16M4 12h16M4 17h16',
+      menuLabel: open ? 'Close menu' : 'Open menu',
+      menuExpanded: String(open),
+      homeBg: (this.props.active || '') === 'Home' ? '#F7F8FA' : 'transparent',
+      svcOpen: svc, prodOpen: prod,
+      svcExpanded: String(svc), prodExpanded: String(prod),
+      svcBg: svc ? '#F7F8FA' : 'transparent', prodBg: prod ? '#F7F8FA' : 'transparent',
+      svcChev: svc ? 'rotate(180deg)' : 'none', prodChev: prod ? 'rotate(180deg)' : 'none',
+      toggleMenu: () => this.setState({ open: !open }),
+      toggleSvc: () => this.setState({ svc: !svc }),
+      toggleProd: () => this.setState({ prod: !prod }),
+      hidePromo: () => this.setState({ promoHidden: true })
+    };
+  }
+}
+</script>
+</body>
+</html>

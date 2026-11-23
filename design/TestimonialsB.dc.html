@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rispit — Testimonials (variant B)</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#14161A}a:hover{color:#A3242F}
+</style>
+</helmet>
+<section style="width: 1440px; height: 860px; box-sizing: border-box; padding: 96px 24px 24px; display: flex; flex-direction: column; gap: 48px; background: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14161A">
+
+  <!-- Header -->
+  <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; padding: 0 24px">
+    <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; max-width: 760px">
+      <span style="display: flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px; border-radius: 999px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06); color: #A3242F; font-size: 13px; font-weight: 700">
+        <span style="display: block; width: 8px; height: 8px; border-radius: 8px; background: #C2323F"></span>
+        <span>Testimonials</span>
+      </span>
+      <h2 style="margin: 0; font-size: 52px; line-height: 1.08; font-weight: 800; letter-spacing: -0.035em">Founders who launched <span style="color: #C2323F">with Rispit.</span></h2>
+    </div>
+    <p style="margin: 0; max-width: 380px; font-size: 17px; line-height: 1.6; color: #545A66; font-weight: 500">Pick a product to hear from the founder behind it.</p>
+  </div>
+
+  <!-- Spotlight card -->
+  <div style="flex-grow: 1; box-sizing: border-box; padding: 14px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 40px; border-radius: 32px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2)">
+
+    <!-- Photo -->
+    <div style="grid-column: span 5; position: relative; border-radius: 24px; background: #E9EBEF; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px">
+      <svg width="120" height="120" viewBox="0 0 24 24" fill="#C9CCD3" aria-hidden="true"><circle cx="12" cy="8" r="4.2"></circle><path d="M3.5 21c.8-4.4 4.2-7 8.5-7s7.7 2.6 8.5 7Z"></path></svg>
+      <span style="font-size: 14px; font-weight: 700; color: #6B717D">Client photo</span>
+      <div style="position: absolute; left: 18px; top: 18px; display: flex; align-items: center; gap: 8px; padding: 8px 14px 8px 8px; border-radius: 999px; background: rgba(255,255,255,0.94); box-shadow: 0 8px 20px -10px rgba(20,22,26,0.35)">
+        <span style="width: 28px; height: 28px; border-radius: 28px; background: #C2323F; display: flex; align-items: center; justify-content: center">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"></path></svg>
+        </span>
+        <span style="font-size: 13px; font-weight: 700">Launched in 21 days</span>
+      </div>
+    </div>
+
+    <!-- Story -->
+    <div style="grid-column: span 7; box-sizing: border-box; padding: 26px 26px 26px 0; display: flex; flex-direction: column; justify-content: space-between; gap: 24px">
+
+      <!-- Product tabs -->
+      <div role="tablist" aria-label="Choose a product" style="display: flex; gap: 8px; padding: 6px; align-self: flex-start; border-radius: 18px; background: #EEF0F3; box-shadow: inset 0 1px 2px rgba(20,22,26,0.08)">
+        <sc-for list="{{tabs}}" as="tab" hint-placeholder-count="3">
+          <button type="button" role="tab" aria-selected="{{tab.selected}}" onClick="{{tab.pick}}" style="height: 48px; display: flex; align-items: center; gap: 10px; padding: 0 16px 0 8px; border: none; border-radius: 13px; background: {{tab.bg}}; box-shadow: {{tab.shadow}}; font-family: inherit; font-size: 14px; font-weight: 700; color: {{tab.fg}}; cursor: pointer">
+            <span style="width: 32px; height: 32px; border-radius: 10px; background: {{tab.iconBg}}; display: flex; align-items: center; justify-content: center">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="{{tab.iconInk}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{tab.icon}}"></path></svg>
+            </span>
+            <span>{{tab.product}}</span>
+          </button>
+        </sc-for>
+      </div>
+
+      <!-- Quote -->
+      <div style="display: flex; flex-direction: column; gap: 20px">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="#C2323F" aria-hidden="true"><path d="M4 18v-5.5C4 8.4 6.2 6 10 5.5V8c-2 .4-3 1.7-3 4h3v6Zm10 0v-5.5c0-4.1 2.2-6.5 6-7V8c-2 .4-3 1.7-3 4h3v6Z"></path></svg>
+        <blockquote style="margin: 0; font-size: 30px; line-height: 1.38; font-weight: 700; letter-spacing: -0.02em">{{current.quote}}</blockquote>
+        <div style="display: flex; flex-direction: column; gap: 2px">
+          <span style="font-size: 18px; font-weight: 800">[Client Name]</span>
+          <span style="font-size: 14px; font-weight: 600; color: #545A66">{{current.role}}</span>
+        </div>
+      </div>
+
+      <!-- Product strip -->
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 14px 14px 18px; border-radius: 18px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06), 0 10px 24px -16px rgba(20,22,26,0.2)">
+        <div style="display: flex; align-items: center; gap: 14px">
+          <span style="width: 44px; height: 44px; border-radius: 13px; background: #FBECEE; display: flex; align-items: center; justify-content: center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{current.icon}}"></path></svg>
+          </span>
+          <div style="display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #545A66">Product we built</span>
+            <span style="font-size: 16px; font-weight: 800">{{current.product}} <span style="font-weight: 600; color: #545A66">· {{current.type}}</span></span>
+          </div>
+        </div>
+        <a href="{{current.href}}" style="display: flex; align-items: center; gap: 8px; height: 46px; padding: 0 18px; border-radius: 14px; background: #C2323F; color: #FFFFFF; font-size: 15px; font-weight: 700; text-decoration: none; box-shadow: inset 0 1px 0 rgba(255,255,255,0.28), 0 8px 18px -8px rgba(194,50,63,0.65)">
+          <span>View case study</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":860}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { active: 0 };
+  }
+  renderVals() {
+    const data = [
+      {
+        product: 'Kestrel Health', type: 'Mobile app', href: '#case-kestrel',
+        icon: 'M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z M11 18h2',
+        role: '[Founder, Kestrel Health]',
+        quote: 'We went from a rough idea to patients booking real appointments in three weeks. Rispit kept us focused on what mattered for the first version.'
+      },
+      {
+        product: 'Lumora Analytics', type: 'Web app', href: '#case-lumora',
+        icon: 'M4 20V10 M10 20V4 M16 20v-7 M22 20H2',
+        role: '[CEO, Lumora]',
+        quote: 'Clear updates every day and no surprises. We always knew what was being built and when, and the dashboard looked polished from day one.'
+      },
+      {
+        product: 'Orbitly Assist', type: 'AI assistant', href: '#case-orbitly',
+        icon: 'M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z',
+        role: '[Product Lead, Orbitly]',
+        quote: 'They understood our customers quickly and built an assistant our support team actually trusts. Easy to keep building on after launch.'
+      }
+    ];
+    const a = this.state.active;
+    const tabs = data.map((d, i) => {
+      const on = i === a;
+      return {
+        product: d.product, icon: d.icon,
+        selected: String(on),
+        bg: on ? '#FFFFFF' : 'transparent',
+        fg: on ? '#14161A' : '#545A66',
+        shadow: on ? '0 1px 2px rgba(20,22,26,0.08), 0 6px 14px -8px rgba(20,22,26,0.25)' : 'none',
+        iconBg: on ? '#C2323F' : '#FFFFFF',
+        iconInk: on ? '#FFFFFF' : '#545A66',
+        pick: () => this.setState({ active: i })
+      };
+    });
+    return { tabs, current: data[a] };
+  }
+}
+</script>
+</body>
+</html>

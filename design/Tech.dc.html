@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rispit — Technologies we use</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.rsp-tfade{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 140px,#000 calc(100% - 140px),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 140px,#000 calc(100% - 140px),transparent 100%)}
+.rsp-tl{animation:rsp-tleft 34s linear infinite}
+.rsp-tr{animation:rsp-tright 38s linear infinite}
+.rsp-tfade:hover .rsp-tl,.rsp-tfade:hover .rsp-tr{animation-play-state:paused}
+@keyframes rsp-tleft{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes rsp-tright{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.rsp-chip{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.rsp-chip:hover{transform:translateY(-4px) scale(1.04);border-color:#E7B9BF;box-shadow:0 14px 26px -14px rgba(194,50,63,.45)}
+.rsp-logo{animation:rsp-bob 3.2s ease-in-out infinite}
+@keyframes rsp-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.rsp-dot{animation:rsp-pulse 1.8s ease-in-out infinite}
+@keyframes rsp-pulse{0%,100%{box-shadow:0 0 0 0 rgba(194,50,63,.45)}70%{box-shadow:0 0 0 8px rgba(194,50,63,0)}}
+</style>
+</helmet>
+<section style="width: 1440px; height: 420px; box-sizing: border-box; padding: 72px 24px 24px; background: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14161A">
+  <div style="height: 100%; box-sizing: border-box; padding: 40px 0; display: flex; flex-direction: column; gap: 32px; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2); overflow: hidden">
+
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 0 48px">
+      <div style="display: flex; align-items: center; gap: 14px">
+        <span class="rsp-dot" style="width: 10px; height: 10px; border-radius: 10px; background: #C2323F"></span>
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #A3242F">Technologies we use</span>
+      </div>
+      <span style="font-size: 22px; font-weight: 800; letter-spacing: -0.02em">A modern stack, <span style="color: #C2323F">built to grow.</span></span>
+    </div>
+
+    <div class="rsp-tfade" style="display: flex; flex-direction: column; gap: 14px">
+      <div style="overflow: hidden; padding: 6px 0">
+        <div class="rsp-tl" style="display: flex; gap: 14px; width: max-content">
+          <sc-for list="{{rowA}}" as="tool" hint-placeholder-count="14">
+            <span class="rsp-chip" style="height: 64px; display: flex; align-items: center; gap: 12px; padding: 0 22px 0 10px; border-radius: 18px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.05), 0 8px 18px -14px rgba(20,22,26,0.25); flex-shrink: 0">
+              <span class="rsp-logo" style="width: 44px; height: 44px; border-radius: 12px; background: #F7F8FA; border: 1px solid #ECEEF1; display: flex; align-items: center; justify-content: center; animation-delay: {{tool.delay}}"><img src="{{tool.logo}}" alt="" style="width: 26px; height: 26px; display: block; object-fit: contain">
+              </span>
+              <span style="font-size: 17px; font-weight: 800; letter-spacing: -0.01em; white-space: nowrap">{{tool.name}}</span>
+            </span>
+          </sc-for>
+        </div>
+      </div>
+      <div style="overflow: hidden; padding: 6px 0">
+        <div class="rsp-tr" style="display: flex; gap: 14px; width: max-content">
+          <sc-for list="{{rowB}}" as="tool" hint-placeholder-count="14">
+            <span class="rsp-chip" style="height: 64px; display: flex; align-items: center; gap: 12px; padding: 0 22px 0 10px; border-radius: 18px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.05), 0 8px 18px -14px rgba(20,22,26,0.25); flex-shrink: 0">
+              <span class="rsp-logo" style="width: 44px; height: 44px; border-radius: 12px; background: #F7F8FA; border: 1px solid #ECEEF1; display: flex; align-items: center; justify-content: center; animation-delay: {{tool.delay}}"><img src="{{tool.logo}}" alt="" style="width: 26px; height: 26px; display: block; object-fit: contain">
+              </span>
+              <span style="font-size: 17px; font-weight: 800; letter-spacing: -0.01em; white-space: nowrap">{{tool.name}}</span>
+            </span>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":420}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const mk = (names) => {
+      const logos = { 'Figma': 'figma', 'React': 'react', 'Next.js': 'nextjs', 'TypeScript': 'typescript', 'Tailwind CSS': 'tailwindcss', 'React Native': 'react', 'Flutter': 'flutter', 'Node.js': 'nodejs', 'Python': 'python', 'PostgreSQL': 'postgresql', 'Supabase': 'supabase', 'OpenAI': 'openai', 'Vercel': 'vercel', 'AWS': 'aws' };
+      const items = names.map((name, i) => ({ name, logo: '/logos/' + logos[name] + '.svg', delay: (i * 0.35).toFixed(2) + 's' }));
+      return items.concat(items);
+    };
+    return {
+      rowA: mk(['Figma', 'React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'React Native', 'Flutter']),
+      rowB: mk(['Node.js', 'Python', 'PostgreSQL', 'Supabase', 'OpenAI', 'Vercel', 'AWS'])
+    };
+  }
+}
+</script>
+</body>
+</html>

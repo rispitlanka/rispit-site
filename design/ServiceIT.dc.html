@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rispit — IT Consultation</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#545A66}a:hover{color:#14161A}
+@keyframes rsp-fa{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes rsp-fb{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+.rsp-fa{animation:rsp-fa 5s ease-in-out infinite}
+.rsp-fb{animation:rsp-fb 6s ease-in-out infinite}
+.rsp-step{transition:transform .25s ease,box-shadow .25s ease}
+.rsp-step:hover{transform:translateY(-4px)}
+</style>
+</helmet>
+<div style="width: 1440px; display: flex; flex-direction: column; background: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14161A">
+
+  <div style="position: sticky; top: 0; z-index: 50">
+    <dc-import name="Main" active="Services" hint-size="1440px,144px"></dc-import>
+  </div>
+
+  <!-- ============ 1. SERVICE HERO ============ -->
+  <section style="height: 640px; box-sizing: border-box; padding: 16px 24px 24px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px">
+    <div style="grid-column: span 6; height: 600px; box-sizing: border-box; padding: 44px 48px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2)">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 22px">
+        <nav aria-label="Breadcrumb" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: #545A66">
+          <a href="/Home.dc.html" style="text-decoration: none">Home</a>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#A0A5AF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+          <a href="/Home.dc.html" style="text-decoration: none">Services</a>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#A0A5AF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+          <span style="color: #14161A">IT Consultation</span>
+        </nav>
+        <span style="display: flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px; border-radius: 999px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(20,22,26,0.06); color: #A3242F; font-size: 13px; font-weight: 700">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18Z M15.5 8.5l-2 5-5 2 2-5Z"></path></svg>
+          <span>IT Consultation</span>
+        </span>
+        <h1 style="margin: 0; font-size: 54px; line-height: 1.05; font-weight: 800; letter-spacing: -0.04em">Clear technical advice, <span style="color: #C2323F">before you spend.</span></h1>
+        <p style="margin: 0; max-width: 540px; font-size: 18px; line-height: 1.6; color: #545A66; font-weight: 500">Not sure what to build, which technology to choose or how to scale? We review your idea or product and give you a practical, honest technical plan.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 22px">
+        <div style="display: flex; align-items: center; gap: 12px">
+          <a href="#contact" style="display: flex; align-items: center; gap: 10px; height: 56px; padding: 0 22px 0 7px; border-radius: 16px; background: #C2323F; color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none; box-shadow: inset 0 1px 0 rgba(255,255,255,0.28), 0 10px 22px -10px rgba(194,50,63,0.7)">
+            <img src="/_blob/66baedd13e96fd14d8f78d471b6115cf" alt="" style="width: 42px; height: 42px; display: block; border-radius: 12px; object-fit: cover; border: 2px solid rgba(255,255,255,0.9); box-sizing: border-box">
+            <span>Book a call with Siva</span>
+          </a>
+          <a href="#work" style="display: flex; align-items: center; height: 56px; padding: 0 22px; border-radius: 16px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06), 0 8px 18px -10px rgba(20,22,26,0.18); color: #14161A; font-size: 16px; font-weight: 700; text-decoration: none">See our work</a>
+        </div>
+        <div style="display: flex; gap: 20px; font-size: 14px; font-weight: 700"><span style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"></path></svg>Independent advice</span><span style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"></path></svg>Clear written plan</span><span style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"></path></svg>No jargon</span></div>
+      </div>
+    </div>
+
+    <div aria-hidden="true" style="grid-column: span 6; height: 600px; position: relative; border-radius: 28px; background: #FBECEE; border: 1px solid #F4DADD; box-shadow: inset 0 1px 0 #FFFFFF, 0 16px 36px -18px rgba(194,50,63,0.3); overflow: hidden; font-family: 'Plus Jakarta Sans', system-ui, sans-serif">
+      <div class="rsp-fa" style="position: absolute; left: 36px; top: 50px; width: 470px; height: 410px; box-sizing: border-box; background: #FFFFFF; border-radius: 18px; border: 1px solid #F1F2F4; box-shadow: 0 30px 60px -28px rgba(20,22,26,0.45)">
+        <div style="position: absolute; left: 20px; top: 18px; right: 20px; display: flex; align-items: center; justify-content: space-between"><span style="font-size: 14px; font-weight: 800">System architecture</span><span style="padding: 5px 10px; border-radius: 999px; background: #FBECEE; font-size: 11px; font-weight: 800; color: #A3242F">Reviewed</span></div>
+        <svg width="470" height="410" viewBox="0 0 470 410" style="position: absolute; left: 0; top: 0" fill="none" stroke="#E7B9BF" stroke-width="2" stroke-dasharray="5 5"><path d="M125 125 V170 H235 V200"></path><path d="M345 125 V170 H235"></path><path d="M235 250 V290 H125 V320"></path><path d="M235 290 H345 V320"></path></svg>
+        <div style="position: absolute; left: 60px; top: 75px; width: 130px; height: 50px; box-sizing: border-box; padding: 0 12px; display: flex; align-items: center; gap: 8px; border-radius: 12px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 8px 18px -10px rgba(20,22,26,0.3)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h20v16H2Z M2 9h20"></path></svg><span style="font-size: 12px; font-weight: 800; color: #14161A">Web app</span></div>
+        <div style="position: absolute; left: 280px; top: 75px; width: 130px; height: 50px; box-sizing: border-box; padding: 0 12px; display: flex; align-items: center; gap: 8px; border-radius: 12px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 8px 18px -10px rgba(20,22,26,0.3)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"></path></svg><span style="font-size: 12px; font-weight: 800; color: #14161A">Mobile app</span></div>
+        <div style="position: absolute; left: 170px; top: 200px; width: 130px; height: 50px; box-sizing: border-box; padding: 0 12px; display: flex; align-items: center; gap: 8px; border-radius: 12px; background: #C2323F; border: 1px solid #C2323F; box-shadow: 0 8px 18px -10px rgba(20,22,26,0.3)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6 M8 6l-6 6 6 6"></path></svg><span style="font-size: 12px; font-weight: 800; color: #FFFFFF">API</span></div>
+        <div style="position: absolute; left: 60px; top: 320px; width: 130px; height: 50px; box-sizing: border-box; padding: 0 12px; display: flex; align-items: center; gap: 8px; border-radius: 12px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 8px 18px -10px rgba(20,22,26,0.3)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3Z M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"></path></svg><span style="font-size: 12px; font-weight: 800; color: #14161A">Database</span></div>
+        <div style="position: absolute; left: 280px; top: 320px; width: 130px; height: 50px; box-sizing: border-box; padding: 0 12px; display: flex; align-items: center; gap: 8px; border-radius: 12px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 8px 18px -10px rgba(20,22,26,0.3)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0-1.4-8.8A6 6 0 1 0 6 18h11.5Z"></path></svg><span style="font-size: 12px; font-weight: 800; color: #14161A">Cloud</span></div>
+      </div>
+      <div class="rsp-fb" style="position: absolute; right: 32px; top: 80px; width: 220px; box-sizing: border-box; padding: 16px; display: flex; flex-direction: column; gap: 10px; background: #FFFFFF; border-radius: 16px; border: 1px solid #F1F2F4; box-shadow: 0 20px 40px -20px rgba(20,22,26,0.4)">
+        <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #545A66">Tech review</span>
+        <span style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700"><span style="width: 20px; height: 20px; border-radius: 6px; background: #C2323F; display: flex; align-items: center; justify-content: center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"></path></svg></span><span style="color: #14161A">Tech stack</span></span><span style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700"><span style="width: 20px; height: 20px; border-radius: 6px; background: #C2323F; display: flex; align-items: center; justify-content: center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"></path></svg></span><span style="color: #14161A">Security</span></span><span style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700"><span style="width: 20px; height: 20px; border-radius: 6px; background: #C2323F; display: flex; align-items: center; justify-content: center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"></path></svg></span><span style="color: #14161A">Scalability</span></span><span style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700"><span style="width: 20px; height: 20px; border-radius: 6px; background: #F1F2F4; display: flex; align-items: center; justify-content: center"></span><span style="color: #7A808C">Costs</span></span>
+      </div>
+      <div class="rsp-fa" style="position: absolute; right: 36px; bottom: 50px; width: 250px; box-sizing: border-box; padding: 16px; display: flex; flex-direction: column; gap: 10px; background: #FFFFFF; border-radius: 16px; border: 1px solid #F1F2F4; box-shadow: 0 20px 40px -20px rgba(20,22,26,0.4)">
+        <span style="display: flex; justify-content: space-between; font-size: 12px; font-weight: 800"><span>Roadmap</span><span style="color: #545A66">3 phases</span></span>
+        <span style="display: flex; gap: 4px"><span style="flex: 2; height: 10px; border-radius: 10px; background: #C2323F"></span><span style="flex: 3; height: 10px; border-radius: 10px; background: #E7B9BF"></span><span style="flex: 2; height: 10px; border-radius: 10px; background: #F1F2F4"></span></span>
+        <span style="display: flex; justify-content: space-between; font-size: 11px; font-weight: 700; color: #545A66"><span>Now</span><span>Next</span><span>Later</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. WHAT'S INCLUDED ============ -->
+  <section style="height: 760px; box-sizing: border-box; padding: 96px 24px 24px; display: flex; flex-direction: column; gap: 48px">
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; padding: 0 24px">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; max-width: 760px">
+        <span style="display: flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px; border-radius: 999px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06); color: #A3242F; font-size: 13px; font-weight: 700">
+          <span style="display: block; width: 8px; height: 8px; border-radius: 8px; background: #C2323F"></span>
+          <span>What's Included</span>
+        </span>
+        <h2 style="margin: 0; font-size: 48px; line-height: 1.08; font-weight: 800; letter-spacing: -0.035em">Answers to your <span style="color: #C2323F">biggest technical questions.</span></h2>
+      </div>
+      <p style="margin: 0; max-width: 400px; font-size: 17px; line-height: 1.6; color: #545A66; font-weight: 500">Practical advice from people who build products every day, so you can make decisions with confidence.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
+      <sc-for list="{{features}}" as="f" hint-placeholder-count="6">
+        <div style="height: 222px; box-sizing: border-box; padding: 28px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 24px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)">
+          <span style="width: 52px; height: 52px; border-radius: 16px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(20,22,26,0.08), 0 6px 14px -8px rgba(20,22,26,0.2); display: flex; align-items: center; justify-content: center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{f.icon}}"></path></svg>
+          </span>
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <h3 style="margin: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.02em">{{f.title}}</h3>
+            <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #545A66; font-weight: 500">{{f.text}}</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ============ 3. PROCESS ============ -->
+  <section style="height: 640px; box-sizing: border-box; padding: 72px 24px 24px">
+    <div style="height: 100%; box-sizing: border-box; padding: 48px; display: flex; flex-direction: column; gap: 40px; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2)">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px">
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px">
+          <span style="display: flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px; border-radius: 999px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(20,22,26,0.06); color: #A3242F; font-size: 13px; font-weight: 700">
+            <span style="display: block; width: 8px; height: 8px; border-radius: 8px; background: #C2323F"></span>
+            <span>How It Works</span>
+          </span>
+          <h2 style="margin: 0; font-size: 44px; line-height: 1.08; font-weight: 800; letter-spacing: -0.035em">Clear advice in <span style="color: #C2323F">four simple steps.</span></h2>
+        </div>
+        <p style="margin: 0; max-width: 360px; font-size: 16px; line-height: 1.6; color: #545A66; font-weight: 500">A focused engagement that ends with a written plan you can act on straight away.</p>
+      </div>
+      <div style="position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
+        <span aria-hidden="true" style="position: absolute; left: 40px; right: 40px; top: 27px; height: 2px; background: repeating-linear-gradient(90deg, #E7B9BF 0 8px, transparent 8px 14px)"></span>
+        <sc-for list="{{steps}}" as="s" hint-placeholder-count="4">
+          <div class="rsp-step" style="position: relative; display: flex; flex-direction: column; gap: 18px">
+            <span style="width: 56px; height: 56px; border-radius: 18px; background: {{s.badgeBg}}; color: {{s.badgeFg}}; box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 10px 20px -10px rgba(194,50,63,0.55); display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 800">{{s.n}}</span>
+            <div style="flex-grow: 1; box-sizing: border-box; padding: 22px; display: flex; flex-direction: column; gap: 8px; border-radius: 20px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.05), 0 10px 22px -14px rgba(20,22,26,0.2)">
+              <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #A3242F">{{s.days}}</span>
+              <span style="font-size: 19px; font-weight: 800; letter-spacing: -0.02em">{{s.title}}</span>
+              <span style="font-size: 14px; line-height: 1.55; color: #545A66; font-weight: 500">{{s.text}}</span>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. FEATURED PROJECT ============ -->
+  <section id="work" style="height: 640px; box-sizing: border-box; padding: 72px 24px 24px">
+    <article style="height: 100%; box-sizing: border-box; padding: 14px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 40px; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2)">
+      <div style="grid-column: span 6; position: relative; border-radius: 22px; background: #EEF1F5; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#A0A5AF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="9" cy="9" r="2"></circle><path d="M21 15l-5-5L5 21"></path></svg>
+        <span style="font-size: 13px; font-weight: 700; color: #6B717D">Project image</span>
+      </div>
+      <div style="grid-column: span 6; box-sizing: border-box; padding: 30px 34px 30px 0; display: flex; flex-direction: column; justify-content: space-between; gap: 24px">
+        <div style="display: flex; flex-direction: column; gap: 18px">
+          <div style="display: flex; gap: 8px">
+            <span style="padding: 6px 12px; border-radius: 999px; background: #14161A; color: #FFFFFF; font-size: 12px; font-weight: 700">Featured project</span>
+            <span style="padding: 6px 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #ECEEF1; color: #545A66; font-size: 12px; font-weight: 700">Finance · SaaS</span>
+          </div>
+          <h2 style="margin: 0; font-size: 40px; line-height: 1.1; font-weight: 800; letter-spacing: -0.03em">Quantix</h2>
+          <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #545A66; font-weight: 500">A technical review and roadmap that helped an invoicing startup choose its stack and plan its first build.</p>
+          <div style="display: flex; flex-direction: column; gap: 10px; padding-top: 6px">
+            <span style="display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"></path></svg>Stack and architecture recommended</span>
+            <span style="display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"></path></svg>Costs and timeline estimated upfront</span>
+            <span style="display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"></path></svg>Roadmap for the first two releases</span>
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px">
+          <a href="CaseStudy.dc.html" style="display: flex; align-items: center; gap: 8px; height: 52px; padding: 0 22px; border-radius: 16px; background: #C2323F; color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none; box-shadow: inset 0 1px 0 rgba(255,255,255,0.28), 0 10px 22px -10px rgba(194,50,63,0.7)">
+            <span>View case study</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+          </a>
+          <a href="Portfolio.dc.html" style="display: flex; align-items: center; height: 52px; padding: 0 20px; border-radius: 16px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06); color: #14161A; font-size: 16px; font-weight: 700; text-decoration: none">More of our work</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ 5. STACK ============ -->
+  <section style="height: 220px; box-sizing: border-box; padding: 48px 24px 24px">
+    <div style="height: 100%; box-sizing: border-box; padding: 0 40px; display: flex; align-items: center; gap: 40px; border-radius: 24px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04)">
+      <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 6px">
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #A3242F">Built with</span>
+        <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.02em">Platforms we advise on</span>
+      </div>
+      <div style="flex-grow: 1; display: flex; flex-wrap: wrap; gap: 10px">
+        <sc-for list="{{stack}}" as="tool" hint-placeholder-count="7">
+          <span style="height: 52px; display: flex; align-items: center; gap: 10px; padding: 0 18px 0 8px; border-radius: 16px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.05); font-size: 15px; font-weight: 800">
+            <span style="width: 36px; height: 36px; border-radius: 10px; background: #F7F8FA; border: 1px solid #ECEEF1; box-sizing: border-box; display: flex; align-items: center; justify-content: center"><sc-if value="{{tool.logo}}" hint-placeholder-val="{{ true }}"><img src="{{tool.logo}}" alt="" style="width: 22px; height: 22px; display: block; object-fit: contain"></sc-if><sc-if value="{{tool.mono}}" hint-placeholder-val="{{ false }}"><span style="font-size: 13px; font-weight: 800; color: #545A66">{{tool.mono}}</span></sc-if></span>
+            <span>{{tool.name}}</span>
+          </span>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. FAQ ============ -->
+  <section style="height: 700px; box-sizing: border-box; padding: 96px 24px 24px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 32px">
+    <div style="grid-column: span 4; padding-left: 24px; display: flex; flex-direction: column; align-items: flex-start; gap: 18px">
+      <span style="display: flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px; border-radius: 999px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06); color: #A3242F; font-size: 13px; font-weight: 700">
+        <span style="display: block; width: 8px; height: 8px; border-radius: 8px; background: #C2323F"></span>
+        <span>FAQ</span>
+      </span>
+      <h2 style="margin: 0; font-size: 44px; line-height: 1.08; font-weight: 800; letter-spacing: -0.035em">Questions about <span style="color: #C2323F">IT consultation.</span></h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #545A66; font-weight: 500">Still unsure? Ask me anything on a free 20-minute call.</p>
+      <a href="#contact" style="display: flex; align-items: center; gap: 8px; height: 50px; padding: 0 20px; border-radius: 16px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06), 0 8px 18px -10px rgba(20,22,26,0.2); font-size: 15px; font-weight: 700; color: #14161A; text-decoration: none">
+        <span>Book a call</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+      </a>
+    </div>
+    <div style="grid-column: span 8; display: flex; flex-direction: column; gap: 10px">
+      <sc-for list="{{faqs}}" as="q" hint-placeholder-count="5">
+        <div style="border-radius: 20px; background: {{q.bg}}; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), {{q.shadow}}">
+          <button type="button" onClick="{{q.toggle}}" aria-expanded="{{q.expanded}}" style="width: 100%; min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 24px; border: none; background: transparent; font-family: inherit; font-size: 17px; font-weight: 800; color: #14161A; text-align: left; cursor: pointer">
+            <span>{{q.q}}</span>
+            <span style="width: 34px; height: 34px; flex-shrink: 0; border-radius: 10px; background: {{q.iconBg}}; display: flex; align-items: center; justify-content: center">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="{{q.iconInk}}" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="{{q.iconPath}}"></path></svg>
+            </span>
+          </button>
+          <sc-if value="{{q.open}}" hint-placeholder-val="{{ false }}">
+            <p style="margin: 0; padding: 0 24px 22px; max-width: 680px; font-size: 15px; line-height: 1.6; color: #545A66; font-weight: 500">{{q.a}}</p>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ============ 7. BOOKING + FOOTER ============ -->
+  <dc-import name="Consultation" hint-size="1440px,680px"></dc-import>
+  <dc-import name="Footer" hint-size="1440px,520px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4944}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { open: 0 };
+  }
+  renderVals() {
+    // Official tool logos, served from /public/logos (see README). No logo -> letter tile.
+    const logos = {"React": "react", "React Native": "react", "Next.js": "nextjs", "TypeScript": "typescript", "Node.js": "nodejs", "Figma": "figma", "Tailwind CSS": "tailwindcss", "Flutter": "flutter", "Python": "python", "PostgreSQL": "postgresql", "Supabase": "supabase", "OpenAI": "openai", "Vercel": "vercel", "AWS": "aws", "Claude": "claude", "LangChain": "langchain", "Canva": "canva", "Premiere Pro": "premierepro", "After Effects": "aftereffects", "Notion": "notion", "Webflow": "webflow", "Shopify": "shopify", "WooCommerce": "woocommerce", "Stripe": "stripe", "PayPal": "paypal", "Google Analytics": "googleanalytics", "Google Cloud": "googlecloud", "GitHub": "github", "Docker": "docker", "Expo": "expo", "Firebase": "firebase", "Framer": "framer", "Maze": "maze", "Loom": "loom"};
+    const withLogos = (names) => names.map((name) => ({ name, logo: logos[name] ? '/logos/' + logos[name] + '.svg' : '', mono: logos[name] ? '' : name.charAt(0) }));
+    const features = [{"title": "Technical strategy & roadmap", "text": "A clear plan for what to build, in what order, and why.", "icon": "M9 3l6 3 6-3v15l-6 3-6-3-6 3V6Z M9 3v15 M15 6v15"}, {"title": "Tech stack selection", "text": "The right technologies for your product, budget and team.", "icon": "M12 2l10 5-10 5L2 7Z M2 17l10 5 10-5 M2 12l10 5 10-5"}, {"title": "Architecture review", "text": "A check of how your product is built, and how to make it scale.", "icon": "M3 3h7v7H3Z M14 3h7v7h-7Z M3 14h7v7H3Z M14 14h7v7h-7Z"}, {"title": "Code & security audit", "text": "An honest review of code quality, security risks and technical debt.", "icon": "M9 11l3 3L22 4 M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"}, {"title": "Cost & timeline estimates", "text": "Realistic budgets and timelines before you commit to building.", "icon": "M12 6c4.4 0 8-1.3 8-3s-3.6-3-8-3-8 1.3-8 3 3.6 3 8 3Z M4 3v6c0 1.7 3.6 3 8 3s8-1.3 8-3V3 M4 9v6c0 1.7 3.6 3 8 3s8-1.3 8-3V9"}, {"title": "Team & vendor guidance", "text": "Help with hiring developers or choosing the right agency or freelancer.", "icon": "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2 M9 11a4 4 0 1 0 0-8a4 4 0 0 0 0 8Z M22 21v-2a4 4 0 0 0-3-3.9 M16 3.1a4 4 0 0 1 0 7.8"}];
+    const steps = [{"n": "1", "days": "Day 1", "title": "Discovery call", "text": "We talk through your goals, challenges and the questions you need answered."}, {"n": "2", "days": "Day 2–5", "title": "Review", "text": "We look at your idea, product, code or setup in detail."}, {"n": "3", "days": "Day 6–8", "title": "Recommendations", "text": "We prepare clear, prioritised advice in plain language."}, {"n": "4", "days": "Day 9–10", "title": "Plan & next steps", "text": "We walk you through the plan and answer your questions."}].map((s, i) => ({ ...s, badgeBg: i === 3 ? '#C2323F' : '#FFFFFF', badgeFg: i === 3 ? '#FFFFFF' : '#C2323F' }));
+    const faqs = [{"q": "Who is IT consultation for?", "a": "Founders who aren't sure where to start, and companies that want an independent view of their product, code or technical plans."}, {"q": "What do I get at the end?", "a": "A clear written plan with our recommendations, estimated costs and timelines, and the next steps in priority order."}, {"q": "Can you review our existing code?", "a": "Yes. We can audit your code and setup and point out risks, quick wins and longer-term improvements."}, {"q": "Will you only recommend your own services?", "a": "No. Our advice is independent. If another option suits you better, we'll tell you."}, {"q": "Is it a one-time session or ongoing?", "a": "Both are possible. Most clients start with a one-time review, and some keep us on as ongoing technical advisors."}].map((f, i) => {
+      const open = i === this.state.open;
+      return {
+        ...f, open,
+        expanded: String(open),
+        bg: open ? '#FFFFFF' : '#F7F8FA',
+        shadow: open ? '0 14px 30px -18px rgba(20,22,26,0.25)' : '0 0 0 transparent',
+        iconBg: open ? '#C2323F' : '#FFFFFF',
+        iconInk: open ? '#FFFFFF' : '#C2323F',
+        iconPath: open ? 'M5 12h14' : 'M12 5v14 M5 12h14',
+        toggle: () => this.setState({ open: open ? -1 : i })
+      };
+    });
+    return { features, steps, faqs, stack: withLogos(["AWS", "Google Cloud", "Vercel", "GitHub", "PostgreSQL", "Docker"]) };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rispit mobile — Cookie banner</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#C2323F}a:hover{color:#A3242F}
+.rsp-in{animation:rsp-in .35s ease-out}
+@keyframes rsp-in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; padding: 12px; display: flex; flex-direction: column; justify-content: flex-end; background: #ECEEF1; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14161A">
+
+  <sc-if value="{{visible}}" hint-placeholder-val="{{ true }}">
+    <div class="rsp-in" role="dialog" aria-label="Cookie preferences" style="box-sizing: border-box; padding: 20px; display: flex; flex-direction: column; gap: 18px; border-radius: 24px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06), 0 30px 60px -24px rgba(20,22,26,0.4)">
+      <div style="display: flex; align-items: flex-start; gap: 14px">
+        <span style="width: 48px; height: 48px; flex-shrink: 0; border-radius: 15px; background: #FBECEE; display: flex; align-items: center; justify-content: center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5Z"></path><path d="M8.5 8.5h.01 M16 15.5h.01 M12 12h.01 M11 17h.01 M7 14h.01"></path></svg>
+        </span>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <span style="font-size: 18px; font-weight: 800; letter-spacing: -0.01em">We use cookies</span>
+          <span style="font-size: 14px; line-height: 1.55; font-weight: 500; color: #545A66">We use essential cookies to make our site work, and optional ones to understand how it's used and improve it. Read our <a href="/Privacy.dc.html" style="font-weight: 700">Privacy Policy</a>.</span>
+        </div>
+      </div>
+
+      <sc-if value="{{custom}}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <sc-for list="{{cats}}" as="c" hint-placeholder-count="3">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 16px; border-radius: 16px; background: #F7F8FA; border: 1px solid #ECEEF1">
+              <span style="display: flex; flex-direction: column; gap: 2px">
+                <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 800">{{c.name}}<sc-if value="{{c.locked}}" hint-placeholder-val="{{ false }}"><span style="padding: 2px 8px; border-radius: 999px; background: #ECEEF1; font-size: 11px; font-weight: 700; color: #545A66">Always on</span></sc-if></span>
+                <span style="font-size: 12px; line-height: 1.45; font-weight: 500; color: #545A66">{{c.text}}</span>
+              </span>
+              <button type="button" role="switch" aria-checked="{{c.checked}}" aria-label="{{c.name}}" onClick="{{c.toggle}}" style="width: 48px; height: 28px; flex-shrink: 0; padding: 3px; box-sizing: border-box; border: none; border-radius: 28px; background: {{c.track}}; display: flex; justify-content: {{c.align}}; cursor: {{c.cursor}}; opacity: {{c.opacity}}">
+                <span style="width: 22px; height: 22px; border-radius: 22px; background: #FFFFFF; box-shadow: 0 1px 3px rgba(20,22,26,0.3)"></span>
+              </button>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 8px">
+        <sc-if value="{{notCustom}}" hint-placeholder-val="{{ true }}">
+          <button type="button" onClick="{{openCustom}}" style="flex: 1; height: 48px; padding: 0 12px; border-radius: 14px; border: 1px solid #ECEEF1; background: #FFFFFF; font-family: inherit; font-size: 14px; font-weight: 700; color: #14161A; cursor: pointer">Customise</button>
+          <button type="button" onClick="{{close}}" style="flex: 1; height: 48px; padding: 0 12px; border-radius: 14px; border: 1px solid #ECEEF1; background: #FFFFFF; font-family: inherit; font-size: 14px; font-weight: 700; color: #14161A; cursor: pointer">Reject optional</button>
+        </sc-if>
+        <sc-if value="{{custom}}" hint-placeholder-val="{{ false }}">
+          <button type="button" onClick="{{close}}" style="flex: 1; height: 48px; padding: 0 12px; border-radius: 14px; border: 1px solid #ECEEF1; background: #FFFFFF; font-family: inherit; font-size: 14px; font-weight: 700; color: #14161A; cursor: pointer">Save preferences</button>
+        </sc-if>
+        <button type="button" onClick="{{close}}" style="flex-basis: 100%; flex-grow: 1; height: 50px; border: none; border-radius: 14px; background: #C2323F; font-family: inherit; font-size: 14px; font-weight: 700; color: #FFFFFF; cursor: pointer; box-shadow: inset 0 1px 0 rgba(255,255,255,0.28), 0 8px 18px -8px rgba(194,50,63,0.65)">Accept all</button>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{hidden}}" hint-placeholder-val="{{ false }}">
+    <button type="button" onClick="{{reopen}}" aria-label="Cookie settings" style="align-self: flex-start; width: 52px; height: 52px; border: 1px solid #ECEEF1; border-radius: 16px; background: #FFFFFF; box-shadow: 0 12px 26px -14px rgba(20,22,26,0.4); display: flex; align-items: center; justify-content: center; cursor: pointer">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5Z"></path><path d="M8.5 8.5h.01 M16 15.5h.01 M12 12h.01"></path></svg>
+    </button>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { visible: true, custom: false, analytics: true, marketing: false };
+  }
+  renderVals() {
+    const defs = [
+      { key: null, name: 'Essential', text: 'Needed for the site to work, like remembering your cookie choice.', locked: true },
+      { key: 'analytics', name: 'Analytics', text: 'Help us understand which pages are useful so we can improve them.' },
+      { key: 'marketing', name: 'Marketing', text: 'Let us measure our ads and show you more relevant content.' }
+    ];
+    const cats = defs.map((d) => {
+      const on = d.locked ? true : !!this.state[d.key];
+      return {
+        ...d, locked: !!d.locked,
+        checked: String(on),
+        track: on ? '#C2323F' : '#DADCE1',
+        align: on ? 'flex-end' : 'flex-start',
+        cursor: d.locked ? 'default' : 'pointer',
+        opacity: d.locked ? '0.6' : '1',
+        toggle: () => { if (!d.locked) this.setState({ [d.key]: !on }); }
+      };
+    });
+    return {
+      cats,
+      visible: this.state.visible,
+      hidden: !this.state.visible,
+      custom: this.state.custom,
+      notCustom: !this.state.custom,
+      openCustom: () => this.setState({ custom: true }),
+      close: () => this.setState({ visible: false, custom: false }),
+      reopen: () => this.setState({ visible: true })
+    };
+  }
+}
+</script>
+</body>
+</html>

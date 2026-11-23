@@ -1,0 +1,1131 @@
+{
+ "v": 3,
+ "attachments": {},
+ "boards": {
+  "Blog.dc.html": {
+   "h": 820,
+   "title": "Blog Preview — Desktop (after Testimonials)",
+   "w": 1440,
+   "x": 0,
+   "y": 10542
+  },
+  "BlogList.dc.html": {
+   "h": 3554,
+   "is_interactive": true,
+   "title": "Blog Page — All Articles",
+   "w": 1440,
+   "x": 7480,
+   "y": 0
+  },
+  "BlogPost.dc.html": {
+   "h": 5848,
+   "title": "Blog Post Page — Single Article",
+   "w": 1440,
+   "x": 9040,
+   "y": 0
+  },
+  "CaseStudy.dc.html": {
+   "h": 6350,
+   "title": "Case Study Page — Kestrel Health",
+   "w": 1440,
+   "x": 5500,
+   "y": 0
+  },
+  "Clients.dc.html": {
+   "h": 540,
+   "title": "Our Clients — Desktop",
+   "w": 1440,
+   "x": 0,
+   "y": 4332
+  },
+  "Consultation.dc.html": {
+   "h": 680,
+   "is_interactive": true,
+   "title": "Book a Consultation — Desktop",
+   "w": 1440,
+   "x": 0,
+   "y": 7177
+  },
+  "Contact.dc.html": {
+   "h": 2204,
+   "is_interactive": true,
+   "title": "Contact Page",
+   "w": 1440,
+   "x": 16120,
+   "y": 0
+  },
+  "CookieBanner.dc.html": {
+   "h": 640,
+   "is_interactive": true,
+   "title": "Cookie Banner (try Customise in Play)",
+   "w": 560,
+   "x": 20800,
+   "y": 0
+  },
+  "EmailConfirm.dc.html": {
+   "h": 1600,
+   "title": "Email — Booking confirmation",
+   "w": 680,
+   "x": 22560,
+   "y": 0
+  },
+  "EmailNewsletter.dc.html": {
+   "h": 2040,
+   "title": "Email — Newsletter template",
+   "w": 680,
+   "x": 24160,
+   "y": 0
+  },
+  "EmailReminder.dc.html": {
+   "h": 1260,
+   "title": "Email — Call reminder (1 hour before)",
+   "w": 680,
+   "x": 23360,
+   "y": 0
+  },
+  "Favicon.dc.html": {
+   "h": 640,
+   "title": "Favicon",
+   "w": 960,
+   "x": 21480,
+   "y": 0
+  },
+  "Footer.dc.html": {
+   "h": 565,
+   "title": "Footer — Desktop",
+   "w": 1440,
+   "x": 0,
+   "y": 8277
+  },
+  "Hero.dc.html": {
+   "h": 640,
+   "title": "Hero — Desktop",
+   "w": 1440,
+   "x": 0,
+   "y": 1196
+  },
+  "Home.dc.html": {
+   "h": 7730,
+   "title": "Home — Full Page",
+   "w": 1440,
+   "x": 1960,
+   "y": 0
+  },
+  "Main.dc.html": {
+   "h": 144,
+   "title": "Navbar — Desktop (sticky, with Christmas bar)",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "NavProductsOpen.dc.html": {
+   "h": 560,
+   "is_interactive": true,
+   "title": "Navbar — Products dropdown open",
+   "w": 1440,
+   "x": -1560,
+   "y": -1400
+  },
+  "NavServicesOpen.dc.html": {
+   "h": 700,
+   "is_interactive": true,
+   "title": "Navbar — Services dropdown open",
+   "w": 1440,
+   "x": 0,
+   "y": -1400
+  },
+  "NotFound.dc.html": {
+   "h": 1564,
+   "title": "404 Page",
+   "w": 1440,
+   "x": 19240,
+   "y": 0
+  },
+  "Portfolio.dc.html": {
+   "h": 4206,
+   "is_interactive": true,
+   "title": "Portfolio Page — Case Studies",
+   "w": 1440,
+   "x": 10600,
+   "y": 0
+  },
+  "Privacy.dc.html": {
+   "h": 4148,
+   "title": "Privacy Policy Page",
+   "w": 1440,
+   "x": 12580,
+   "y": 0
+  },
+  "Products.dc.html": {
+   "h": 1470,
+   "title": "Our Products — Desktop",
+   "w": 1440,
+   "x": 0,
+   "y": 5292
+  },
+  "ServiceAI.dc.html": {
+   "h": 4944,
+   "is_interactive": true,
+   "title": "Service Page — AI Integration",
+   "w": 1440,
+   "x": 10180,
+   "y": 7000
+  },
+  "ServiceContent.dc.html": {
+   "h": 4944,
+   "is_interactive": true,
+   "title": "Service Page — Content Creation",
+   "w": 1440,
+   "x": 11740,
+   "y": 7000
+  },
+  "ServiceEcommerce.dc.html": {
+   "h": 4944,
+   "is_interactive": true,
+   "title": "Service Page — Ecommerce Development",
+   "w": 1440,
+   "x": 14860,
+   "y": 7000
+  },
+  "ServiceIT.dc.html": {
+   "h": 4944,
+   "is_interactive": true,
+   "title": "Service Page — IT Consultation",
+   "w": 1440,
+   "x": 13300,
+   "y": 7000
+  },
+  "ServiceMVP.dc.html": {
+   "h": 4944,
+   "is_interactive": true,
+   "title": "Service Page — 21-Day MVP Sprint",
+   "w": 1440,
+   "x": 5500,
+   "y": 7000
+  },
+  "ServiceMobile.dc.html": {
+   "h": 4944,
+   "is_interactive": true,
+   "title": "Service Page — Mobile App Development",
+   "w": 1440,
+   "x": 3520,
+   "y": 0
+  },
+  "ServiceUIUX.dc.html": {
+   "h": 4944,
+   "is_interactive": true,
+   "title": "Service Page — UI/UX Design",
+   "w": 1440,
+   "x": 7060,
+   "y": 7000
+  },
+  "ServiceWeb.dc.html": {
+   "h": 4944,
+   "is_interactive": true,
+   "title": "Service Page — Web App Development",
+   "w": 1440,
+   "x": 8620,
+   "y": 7000
+  },
+  "Services.dc.html": {
+   "h": 1376,
+   "title": "Our Services — Desktop",
+   "w": 1440,
+   "x": 0,
+   "y": 2536
+  },
+  "SocialShare.dc.html": {
+   "h": 1200,
+   "title": "Social share image (1200 × 630)",
+   "w": 1280,
+   "x": 24960,
+   "y": 0
+  },
+  "Tech.dc.html": {
+   "h": 420,
+   "title": "Technologies — Desktop (after Blog)",
+   "w": 1440,
+   "x": 0,
+   "y": 11782
+  },
+  "TechB.dc.html": {
+   "h": 680,
+   "title": "Technologies — Final (orbit, used on Home)",
+   "w": 1440,
+   "x": 1960,
+   "y": 11466
+  },
+  "Terms.dc.html": {
+   "h": 4148,
+   "title": "Terms of Service Page",
+   "w": 1440,
+   "x": 14140,
+   "y": 0
+  },
+  "Testimonials.dc.html": {
+   "h": 860,
+   "title": "Testimonials — Final (video + text mix)",
+   "w": 1440,
+   "x": 0,
+   "y": 9262
+  },
+  "TestimonialsB.dc.html": {
+   "h": 860,
+   "is_interactive": true,
+   "title": "Testimonials — Variant B (spotlight + product tabs)",
+   "w": 1440,
+   "x": 1960,
+   "y": 8946
+  },
+  "TestimonialsC.dc.html": {
+   "h": 860,
+   "title": "Testimonials — Variant C (video story cards)",
+   "w": 1440,
+   "x": 3480,
+   "y": 8946
+  },
+  "ThankYou.dc.html": {
+   "h": 1824,
+   "title": "Thank-you Page",
+   "w": 1440,
+   "x": 17680,
+   "y": 0
+  },
+  "HomeXmas.dc.html": {
+   "h": 8346,
+   "title": "Home — Christmas edition",
+   "w": 1440,
+   "x": 26360,
+   "y": 0
+  },
+  "MobHome.dc.html": {
+   "h": 10525,
+   "title": "Mobile — Home",
+   "w": 390,
+   "x": 0,
+   "y": 0,
+   "page": "mobile",
+   "is_interactive": true
+  },
+  "MobServiceMVP.dc.html": {
+   "h": 6562,
+   "title": "Mobile — 21-Day MVP Sprint",
+   "w": 390,
+   "x": 510,
+   "y": 0,
+   "page": "mobile",
+   "is_interactive": true
+  },
+  "MobServiceMobile.dc.html": {
+   "h": 6630,
+   "title": "Mobile — Mobile Apps",
+   "w": 390,
+   "x": 1020,
+   "y": 0,
+   "page": "mobile",
+   "is_interactive": true
+  },
+  "MobServiceWeb.dc.html": {
+   "h": 6595,
+   "title": "Mobile — Web Apps",
+   "w": 390,
+   "x": 1530,
+   "y": 0,
+   "page": "mobile",
+   "is_interactive": true
+  },
+  "MobServiceEcommerce.dc.html": {
+   "h": 6711,
+   "title": "Mobile — Ecommerce",
+   "w": 390,
+   "x": 2040,
+   "y": 0,
+   "page": "mobile",
+   "is_interactive": true
+  },
+  "MobServiceUIUX.dc.html": {
+   "h": 6644,
+   "title": "Mobile — UI/UX Design",
+   "w": 390,
+   "x": 2550,
+   "y": 0,
+   "page": "mobile",
+   "is_interactive": true
+  },
+  "MobServiceAI.dc.html": {
+   "h": 6565,
+   "title": "Mobile — AI Integration",
+   "w": 390,
+   "x": 3060,
+   "y": 0,
+   "page": "mobile",
+   "is_interactive": true
+  },
+  "MobServiceContent.dc.html": {
+   "h": 6518,
+   "title": "Mobile — Content Creation",
+   "w": 390,
+   "x": 3570,
+   "y": 0,
+   "page": "mobile",
+   "is_interactive": true
+  },
+  "MobServiceIT.dc.html": {
+   "h": 6448,
+   "title": "Mobile — IT Consultation",
+   "w": 390,
+   "x": 4080,
+   "y": 0,
+   "page": "mobile",
+   "is_interactive": true
+  },
+  "MobPortfolio.dc.html": {
+   "h": 5835,
+   "title": "Mobile — Portfolio",
+   "w": 390,
+   "x": 4590,
+   "y": 0,
+   "page": "mobile"
+  },
+  "MobCaseStudy.dc.html": {
+   "h": 8014,
+   "title": "Mobile — Case Study",
+   "w": 390,
+   "x": 5100,
+   "y": 0,
+   "page": "mobile"
+  },
+  "MobBlog.dc.html": {
+   "h": 4625,
+   "title": "Mobile — Blog",
+   "w": 390,
+   "x": 5610,
+   "y": 0,
+   "page": "mobile"
+  },
+  "MobBlogPost.dc.html": {
+   "h": 6176,
+   "title": "Mobile — Blog Post",
+   "w": 390,
+   "x": 6120,
+   "y": 0,
+   "page": "mobile"
+  },
+  "MobContact.dc.html": {
+   "h": 3062,
+   "title": "Mobile — Contact",
+   "w": 390,
+   "x": 6630,
+   "y": 0,
+   "page": "mobile",
+   "is_interactive": true
+  },
+  "MobThankYou.dc.html": {
+   "h": 2643,
+   "title": "Mobile — Thank-you",
+   "w": 390,
+   "x": 7140,
+   "y": 0,
+   "page": "mobile"
+  },
+  "MobNotFound.dc.html": {
+   "h": 2126,
+   "title": "Mobile — 404",
+   "w": 390,
+   "x": 7650,
+   "y": 0,
+   "page": "mobile"
+  },
+  "MobPrivacy.dc.html": {
+   "h": 5841,
+   "title": "Mobile — Privacy Policy",
+   "w": 390,
+   "x": 8160,
+   "y": 0,
+   "page": "mobile"
+  },
+  "MobTerms.dc.html": {
+   "h": 6155,
+   "title": "Mobile — Terms of Service",
+   "w": 390,
+   "x": 8670,
+   "y": 0,
+   "page": "mobile"
+  },
+  "MobNav.dc.html": {
+   "h": 128,
+   "title": "Mobile — Mobile navbar",
+   "w": 390,
+   "x": 0,
+   "y": -2800,
+   "page": "mobile",
+   "is_interactive": true
+  },
+  "MobNavOpen.dc.html": {
+   "h": 960,
+   "title": "Mobile — Mobile menu open",
+   "w": 390,
+   "x": 510,
+   "y": -2800,
+   "page": "mobile",
+   "is_interactive": true
+  },
+  "MobConsult.dc.html": {
+   "h": 980,
+   "title": "Mobile — Booking section",
+   "w": 390,
+   "x": 1020,
+   "y": -2800,
+   "page": "mobile",
+   "is_interactive": true
+  },
+  "MobFooter.dc.html": {
+   "h": 1040,
+   "title": "Mobile — Footer",
+   "w": 390,
+   "x": 1530,
+   "y": -2800,
+   "page": "mobile"
+  },
+  "MobCookie.dc.html": {
+   "h": 844,
+   "title": "Mobile — Cookie banner",
+   "w": 390,
+   "x": 2040,
+   "y": -2800,
+   "page": "mobile",
+   "is_interactive": true
+  }
+ },
+ "createdOnFiles": {
+  "at": "2026-11-21T08:33:00Z",
+  "v": 1
+ },
+ "designSystems": [],
+ "launch": {
+  "view": "canvas"
+ },
+ "noteOrder": [
+  "title-nav",
+  "title-hero",
+  "title-services",
+  "title-clients",
+  "title-products",
+  "title-home",
+  "note-sticky",
+  "note-clients",
+  "note-products",
+  "title-consult",
+  "note-consult",
+  "title-footer",
+  "title-testimonials",
+  "note-testimonials",
+  "title-blog",
+  "note-blog",
+  "title-tech",
+  "note-tech",
+  "title-svc-mobile",
+  "note-svc-mobile",
+  "title-case",
+  "note-case",
+  "title-bloglist",
+  "title-blogpost",
+  "title-portfolio",
+  "note-portfolio",
+  "title-privacy",
+  "title-terms",
+  "note-legal",
+  "title-services-row",
+  "title-contact",
+  "title-thankyou",
+  "title-notfound",
+  "note-contact",
+  "title-dropdowns",
+  "title-extras",
+  "title-emails",
+  "title-social",
+  "note-emails",
+  "title-homexmas",
+  "note-homexmas",
+  "m-title-mobhome",
+  "m-title-mobservicemvp",
+  "m-title-mobservicemobile",
+  "m-title-mobserviceweb",
+  "m-title-mobserviceecommerce",
+  "m-title-mobserviceuiux",
+  "m-title-mobserviceai",
+  "m-title-mobservicecontent",
+  "m-title-mobserviceit",
+  "m-title-mobportfolio",
+  "m-title-mobcasestudy",
+  "m-title-mobblog",
+  "m-title-mobblogpost",
+  "m-title-mobcontact",
+  "m-title-mobthankyou",
+  "m-title-mobnotfound",
+  "m-title-mobprivacy",
+  "m-title-mobterms",
+  "m-title-components",
+  "m-title-pages",
+  "m-note"
+ ],
+ "notes": {
+  "note-blog": {
+   "fill": "orange",
+   "text": "Article titles, excerpts and covers are placeholders. On the live site, pull the 3 latest posts from your blog automatically.",
+   "w": 320,
+   "x": 1540,
+   "y": 10542
+  },
+  "note-case": {
+   "fill": "orange",
+   "text": "Template for every case study: Hero (photo + CTA) + project facts → Background / Objective / Solution → Screens (mixed sizes) → Results → Client quote → Tech used → Next case → Booking → Footer. Results in [brackets] must be filled with real numbers.",
+   "w": 320,
+   "x": 7040,
+   "y": 0
+  },
+  "note-clients": {
+   "fill": "orange",
+   "text": "Client names and logos are placeholders. Swap in real client logos (SVG or PNG, one colour) before launch. The rows pause on hover.",
+   "w": 320,
+   "x": 1540,
+   "y": 4332
+  },
+  "note-consult": {
+   "fill": "orange",
+   "text": "Days and times are clickable in Play. On the live site, connect the booking widget to Calendly or Cal.com. Replace [Your Name] with your name. All 'Let's Talk' buttons should scroll here.",
+   "w": 320,
+   "x": 1540,
+   "y": 7177
+  },
+  "note-contact": {
+   "fill": "orange",
+   "text": "Contact: tabs switch between Book a call and Send a message in Play. Connect the calendar to Calendly or Cal.com and the form to your email. Replace the [bracketed] email, WhatsApp and reply time.",
+   "w": 320,
+   "x": 17680,
+   "y": 1900
+  },
+  "note-emails": {
+   "fill": "orange",
+   "text": "Emails are 600px wide, the standard for inboxes. Words in [brackets] are filled in automatically by your booking and newsletter tools. The Christmas strip can be removed after the offer ends.",
+   "w": 320,
+   "x": 22560,
+   "y": 2160
+  },
+  "note-legal": {
+   "fill": "orange",
+   "text": "Legal text is a plain-English starting draft, not legal advice. Fill the [brackets] and have a lawyer review both pages for your country before launch.",
+   "w": 320,
+   "x": 15680,
+   "y": 0
+  },
+  "note-portfolio": {
+   "fill": "orange",
+   "text": "Filters work in Play. Project names, images and descriptions are placeholders: add each real project with its cover image. Every card links to its case study page.",
+   "w": 320,
+   "x": 12140,
+   "y": 0
+  },
+  "note-products": {
+   "fill": "orange",
+   "text": "Product names, descriptions and preview screens are placeholders. Replace each preview with a real screenshot of the product, and link each 'View case study' button to its case study page.",
+   "w": 320,
+   "x": 1540,
+   "y": 5292
+  },
+  "note-sticky": {
+   "fill": "orange",
+   "text": "Sticky navbar: floats 16px from the top of the window and stays visible while the page scrolls, sitting above the hero and every section.",
+   "w": 320,
+   "x": 1540,
+   "y": 0
+  },
+  "note-svc-mobile": {
+   "fill": "orange",
+   "text": "Template for every service page: Hero → What's included → How it works → Featured project → Stack → FAQ → Booking → Footer. FAQ opens/closes in Play. Navbar shows 'Services' as active.",
+   "w": 320,
+   "x": 5060,
+   "y": 0
+  },
+  "note-tech": {
+   "fill": "orange",
+   "text": "Dashed squares are logo slots: drop in each tool's official logo (SVG from its brand/press page). Rows scroll in opposite directions and pause on hover; chips lift on hover. Edit the tool list to match your real stack.",
+   "w": 320,
+   "x": 1540,
+   "y": 11782
+  },
+  "note-testimonials": {
+   "fill": "orange",
+   "text": "Final: mix of video story cards and text cards. Swap any card type to match what each client gives you. Photos, videos, names and quotes are placeholders: use real ones (with permission).",
+   "w": 320,
+   "x": 1540,
+   "y": 9262
+  },
+  "title-blog": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "05c · Blog Preview (after Testimonials)",
+   "w": 240,
+   "x": 0,
+   "y": 10242
+  },
+  "title-bloglist": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "Blog Page",
+   "w": 240,
+   "x": 7480,
+   "y": -300
+  },
+  "title-blogpost": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "Single Blog Post",
+   "w": 240,
+   "x": 9040,
+   "y": -300
+  },
+  "title-case": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "Case Study Page — Kestrel Health",
+   "w": 240,
+   "x": 5500,
+   "y": -300
+  },
+  "title-clients": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "04 · Our Clients",
+   "w": 240,
+   "x": 0,
+   "y": 4032
+  },
+  "title-consult": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "06 · Book a Consultation",
+   "w": 240,
+   "x": 0,
+   "y": 6877
+  },
+  "title-contact": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "Contact Page",
+   "w": 240,
+   "x": 16120,
+   "y": -300
+  },
+  "title-dropdowns": {
+   "kind": "title1",
+   "maxW": 3000,
+   "text": "Navbar dropdowns",
+   "w": 240,
+   "x": -1560,
+   "y": -1700
+  },
+  "title-emails": {
+   "kind": "title1",
+   "maxW": 2280,
+   "text": "Emails",
+   "w": 240,
+   "x": 22560,
+   "y": -300
+  },
+  "title-extras": {
+   "kind": "title1",
+   "maxW": 1640,
+   "text": "Cookie banner & Favicon",
+   "w": 240,
+   "x": 20800,
+   "y": -300
+  },
+  "title-footer": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "07 · Footer",
+   "w": 240,
+   "x": 0,
+   "y": 7977
+  },
+  "title-hero": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "02 · Hero Section",
+   "w": 240,
+   "x": 0,
+   "y": 896
+  },
+  "title-home": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "Home — Full Page",
+   "w": 240,
+   "x": 1960,
+   "y": -300
+  },
+  "title-nav": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "01 · Navigation Bar",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "title-notfound": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "404 Page",
+   "w": 240,
+   "x": 19240,
+   "y": -300
+  },
+  "title-portfolio": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "Portfolio Page",
+   "w": 240,
+   "x": 10600,
+   "y": -300
+  },
+  "title-privacy": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "Privacy Policy",
+   "w": 240,
+   "x": 12580,
+   "y": -300
+  },
+  "title-products": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "05 · Our Products",
+   "w": 240,
+   "x": 0,
+   "y": 4992
+  },
+  "title-services": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "03 · Our Services",
+   "w": 240,
+   "x": 0,
+   "y": 2236
+  },
+  "title-services-row": {
+   "kind": "title1",
+   "maxW": 8000,
+   "text": "Service Pages",
+   "w": 240,
+   "x": 5500,
+   "y": 6700
+  },
+  "title-social": {
+   "kind": "title1",
+   "maxW": 1280,
+   "text": "Social share image",
+   "w": 240,
+   "x": 24960,
+   "y": -300
+  },
+  "title-svc-mobile": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "Service Page — Mobile Apps",
+   "w": 240,
+   "x": 3520,
+   "y": -300
+  },
+  "title-tech": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "05d · Technologies (after Blog)",
+   "w": 240,
+   "x": 0,
+   "y": 11482
+  },
+  "title-terms": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "Terms of Service",
+   "w": 240,
+   "x": 14140,
+   "y": -300
+  },
+  "title-testimonials": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "05b · Testimonials (after Our Products)",
+   "w": 240,
+   "x": 0,
+   "y": 8962
+  },
+  "title-thankyou": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "Thank-you Page",
+   "w": 240,
+   "x": 17680,
+   "y": -300
+  },
+  "title-homexmas": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "Home — Christmas edition",
+   "x": 26360,
+   "y": -300
+  },
+  "note-homexmas": {
+   "fill": "red",
+   "text": "Christmas copy of Home: snow caps on every card and the navbar, falling snowflakes, twinkling lights under the navbar, a new 20% off Christmas section after the hero, and a snow drift above the footer. Swap back to the normal Home page after the season.",
+   "w": 320,
+   "x": 27900,
+   "y": 0
+  },
+  "m-title-mobhome": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "Home",
+   "x": 0,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobservicemvp": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "21-Day MVP Sprint",
+   "x": 510,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobservicemobile": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "Mobile Apps",
+   "x": 1020,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobserviceweb": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "Web Apps",
+   "x": 1530,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobserviceecommerce": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "Ecommerce",
+   "x": 2040,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobserviceuiux": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "UI/UX Design",
+   "x": 2550,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobserviceai": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "AI Integration",
+   "x": 3060,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobservicecontent": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "Content Creation",
+   "x": 3570,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobserviceit": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "IT Consultation",
+   "x": 4080,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobportfolio": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "Portfolio",
+   "x": 4590,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobcasestudy": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "Case Study",
+   "x": 5100,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobblog": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "Blog",
+   "x": 5610,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobblogpost": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "Blog Post",
+   "x": 6120,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobcontact": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "Contact",
+   "x": 6630,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobthankyou": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "Thank-you",
+   "x": 7140,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobnotfound": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "404",
+   "x": 7650,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobprivacy": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "Privacy Policy",
+   "x": 8160,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-mobterms": {
+   "kind": "title1",
+   "maxW": 390,
+   "text": "Terms of Service",
+   "x": 8670,
+   "y": -260,
+   "page": "mobile"
+  },
+  "m-title-components": {
+   "kind": "title1",
+   "maxW": 2430,
+   "text": "Shared mobile pieces",
+   "x": 0,
+   "y": -3100,
+   "page": "mobile"
+  },
+  "m-title-pages": {
+   "kind": "title1",
+   "maxW": 9000,
+   "text": "Mobile pages (390 px)",
+   "x": 0,
+   "y": -560,
+   "page": "mobile"
+  },
+  "m-note": {
+   "fill": "orange",
+   "text": "All 18 pages at phone width (390 px). The navbar, booking section and footer are shared: edit them once in 'Shared mobile pieces' and every mobile page updates. Try the menu, FAQs, contact tabs and time picker in Play.",
+   "w": 340,
+   "x": 2580,
+   "y": -2800,
+   "page": "mobile"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "Hero.dc.html",
+  "Services.dc.html",
+  "Clients.dc.html",
+  "Products.dc.html",
+  "Consultation.dc.html",
+  "Footer.dc.html",
+  "Testimonials.dc.html",
+  "TestimonialsB.dc.html",
+  "TestimonialsC.dc.html",
+  "Blog.dc.html",
+  "Tech.dc.html",
+  "TechB.dc.html",
+  "Home.dc.html",
+  "ServiceMobile.dc.html",
+  "CaseStudy.dc.html",
+  "BlogList.dc.html",
+  "BlogPost.dc.html",
+  "Portfolio.dc.html",
+  "Privacy.dc.html",
+  "Terms.dc.html",
+  "ServiceMVP.dc.html",
+  "ServiceUIUX.dc.html",
+  "ServiceWeb.dc.html",
+  "ServiceAI.dc.html",
+  "ServiceContent.dc.html",
+  "ServiceIT.dc.html",
+  "ServiceEcommerce.dc.html",
+  "Contact.dc.html",
+  "ThankYou.dc.html",
+  "NotFound.dc.html",
+  "NavServicesOpen.dc.html",
+  "NavProductsOpen.dc.html",
+  "CookieBanner.dc.html",
+  "Favicon.dc.html",
+  "EmailConfirm.dc.html",
+  "EmailReminder.dc.html",
+  "EmailNewsletter.dc.html",
+  "SocialShare.dc.html",
+  "HomeXmas.dc.html",
+  "MobHome.dc.html",
+  "MobServiceMVP.dc.html",
+  "MobServiceMobile.dc.html",
+  "MobServiceWeb.dc.html",
+  "MobServiceEcommerce.dc.html",
+  "MobServiceUIUX.dc.html",
+  "MobServiceAI.dc.html",
+  "MobServiceContent.dc.html",
+  "MobServiceIT.dc.html",
+  "MobPortfolio.dc.html",
+  "MobCaseStudy.dc.html",
+  "MobBlog.dc.html",
+  "MobBlogPost.dc.html",
+  "MobContact.dc.html",
+  "MobThankYou.dc.html",
+  "MobNotFound.dc.html",
+  "MobPrivacy.dc.html",
+  "MobTerms.dc.html",
+  "MobNav.dc.html",
+  "MobNavOpen.dc.html",
+  "MobConsult.dc.html",
+  "MobFooter.dc.html",
+  "MobCookie.dc.html"
+ ],
+ "pages": [
+  {
+   "id": "desktop",
+   "name": "Desktop"
+  },
+  {
+   "id": "mobile",
+   "name": "Mobile"
+  }
+ ],
+ "title": "Rispit Website"
+}

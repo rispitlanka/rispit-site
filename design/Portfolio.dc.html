@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rispit — Portfolio</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#14161A}a:hover{color:#A3242F}
+.rsp-card{transition:transform .25s ease,box-shadow .25s ease}
+.rsp-card:hover{transform:translateY(-4px);box-shadow:inset 0 1px 0 #FFFFFF,0 1px 2px rgba(20,22,26,0.04),0 26px 44px -22px rgba(20,22,26,0.32)}
+</style>
+</helmet>
+<div style="width: 1440px; display: flex; flex-direction: column; background: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14161A">
+
+  <div style="position: sticky; top: 0; z-index: 50">
+    <dc-import name="Main" active="Portfolio" hint-size="1440px,144px"></dc-import>
+  </div>
+
+  <!-- ============ 1. HEADER ============ -->
+  <section style="height: 360px; box-sizing: border-box; padding: 16px 24px 24px">
+    <div style="height: 100%; box-sizing: border-box; padding: 44px 48px; display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2)">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; max-width: 760px">
+        <span style="display: flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px; border-radius: 999px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(20,22,26,0.06); color: #A3242F; font-size: 13px; font-weight: 700">
+          <span style="display: block; width: 8px; height: 8px; border-radius: 8px; background: #C2323F"></span>
+          <span>Portfolio · Case Studies</span>
+        </span>
+        <h1 style="margin: 0; font-size: 56px; line-height: 1.05; font-weight: 800; letter-spacing: -0.04em">Products we've designed, <span style="color: #C2323F">built and launched.</span></h1>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #545A66; font-weight: 500">Real problems, focused first versions and the results that followed. Pick a project to see the full story.</p>
+      </div>
+      <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 12px; padding: 18px; border-radius: 22px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06), 0 12px 26px -16px rgba(20,22,26,0.25)">
+        <div style="display: flex; flex-direction: column; gap: 2px; padding: 0 4px">
+          <span style="font-size: 16px; font-weight: 800">Have a product in mind?</span>
+          <span style="font-size: 13px; font-weight: 600; color: #545A66">Let's talk it through on a 20-minute call.</span>
+        </div>
+        <a href="#contact" style="display: flex; align-items: center; gap: 10px; height: 54px; padding: 0 20px 0 6px; border-radius: 16px; background: #C2323F; color: #FFFFFF; font-size: 15px; font-weight: 700; text-decoration: none; box-shadow: inset 0 1px 0 rgba(255,255,255,0.28), 0 10px 22px -10px rgba(194,50,63,0.7)">
+          <img src="/_blob/66baedd13e96fd14d8f78d471b6115cf" alt="" style="width: 42px; height: 42px; display: block; border-radius: 12px; object-fit: cover; border: 2px solid rgba(255,255,255,0.9); box-sizing: border-box">
+          <span style="flex-grow: 1">Book a call with Siva</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. FILTER + FEATURED + GRID ============ -->
+  <section style="height: 2502px; box-sizing: border-box; padding: 48px 24px 24px; display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 0 24px">
+      <h2 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.03em">Our work</h2>
+      <div role="tablist" aria-label="Filter projects" style="display: flex; gap: 6px; padding: 6px; border-radius: 16px; background: #F1F2F4; box-shadow: inset 0 1px 2px rgba(20,22,26,0.06)">
+        <sc-for list="{{filters}}" as="f" hint-placeholder-count="6">
+          <button type="button" role="tab" aria-selected="{{f.selected}}" onClick="{{f.pick}}" style="height: 40px; display: flex; align-items: center; gap: 7px; padding: 0 14px; border: none; border-radius: 11px; background: {{f.bg}}; box-shadow: {{f.shadow}}; font-family: inherit; font-size: 14px; font-weight: 700; color: {{f.fg}}; cursor: pointer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="{{f.iconInk}}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{f.icon}}"></path></svg>
+            <span>{{f.label}}</span>
+          </button>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- Featured case -->
+    <a href="CaseStudy.dc.html" class="rsp-card" style="height: 520px; flex-shrink: 0; box-sizing: border-box; padding: 12px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 40px; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2); text-decoration: none; color: #14161A">
+      <div style="grid-column: span 7; position: relative; border-radius: 20px; background: #FBECEE; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#D59AA2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="9" cy="9" r="2"></circle><path d="M21 15l-5-5L5 21"></path></svg>
+        <span style="font-size: 13px; font-weight: 700; color: #A3242F">Project image</span>
+        <span style="position: absolute; left: 16px; top: 16px; padding: 7px 14px; border-radius: 999px; background: #C2323F; color: #FFFFFF; font-size: 12px; font-weight: 800">Featured project</span>
+      </div>
+      <div style="grid-column: span 5; box-sizing: border-box; padding: 28px 28px 28px 0; display: flex; flex-direction: column; justify-content: space-between; gap: 20px">
+        <div style="display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; gap: 8px">
+            <span style="display: flex; align-items: center; gap: 6px; padding: 6px 12px 6px 10px; border-radius: 999px; background: #FFFFFF; border: 1px solid #ECEEF1; font-size: 12px; font-weight: 700"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z M11 18h2"></path></svg><span>Mobile app</span></span>
+            <span style="padding: 6px 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #ECEEF1; font-size: 12px; font-weight: 700; color: #545A66">Healthcare</span>
+          </div>
+          <h2 style="margin: 0; font-size: 40px; line-height: 1.1; font-weight: 800; letter-spacing: -0.03em">Kestrel Health</h2>
+          <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #545A66; font-weight: 500">A clinic booking app that lets patients book a visit in a few taps, launched on both app stores in 21 days.</p>
+          <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding-top: 4px">
+            <div style="padding: 12px 14px; border-radius: 14px; background: #FFFFFF; border: 1px solid #ECEEF1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #545A66">Platform</span><span style="font-size: 14px; font-weight: 800">iOS &amp; Android</span></div>
+            <div style="padding: 12px 14px; border-radius: 14px; background: #FFFFFF; border: 1px solid #ECEEF1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #545A66">Timeline</span><span style="font-size: 14px; font-weight: 800">21 days</span></div>
+            <div style="padding: 12px 14px; border-radius: 14px; background: #FFFFFF; border: 1px solid #ECEEF1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #545A66">Services</span><span style="font-size: 14px; font-weight: 800">Design · Build</span></div>
+          </div>
+        </div>
+        <span style="align-self: flex-start; display: flex; align-items: center; gap: 8px; height: 50px; padding: 0 20px; border-radius: 16px; background: #C2323F; color: #FFFFFF; font-size: 15px; font-weight: 700; box-shadow: inset 0 1px 0 rgba(255,255,255,0.28), 0 10px 22px -10px rgba(194,50,63,0.7)">
+          <span>View case study</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- Grid -->
+    <div style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px">
+      <sc-for list="{{cases}}" as="c" hint-placeholder-count="6">
+        <a href="CaseStudy.dc.html" class="rsp-card" style="grid-column: span {{c.span}}; height: 560px; box-sizing: border-box; padding: 12px; display: flex; flex-direction: column; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2); text-decoration: none; color: #14161A">
+          <div style="position: relative; height: 320px; flex-shrink: 0; border-radius: 20px; background: {{c.bg}}; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="{{c.phInk}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="9" cy="9" r="2"></circle><path d="M21 15l-5-5L5 21"></path></svg>
+            <span style="font-size: 13px; font-weight: 700; color: {{c.phLabel}}">Project image</span>
+            <span style="position: absolute; left: 14px; top: 14px; display: flex; align-items: center; gap: 6px; padding: 6px 12px 6px 10px; border-radius: 999px; background: rgba(255,255,255,0.95); font-size: 12px; font-weight: 700">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{c.icon}}"></path></svg>
+              <span>{{c.type}}</span>
+            </span>
+            <span style="position: absolute; right: 14px; top: 14px; padding: 6px 12px; border-radius: 999px; background: {{c.badgeBg}}; color: {{c.badgeFg}}; font-size: 12px; font-weight: 700">{{c.badge}}</span>
+          </div>
+          <div style="flex-grow: 1; padding: 22px 16px 8px; display: flex; flex-direction: column; gap: 10px">
+            <span style="font-size: 13px; font-weight: 700; color: #545A66">{{c.industry}}</span>
+            <h3 style="margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.025em">{{c.name}}</h3>
+            <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #545A66; font-weight: 500">{{c.text}}</p>
+            <span style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid #E3E5E9; font-size: 15px; font-weight: 700">
+              <span>View case study</span>
+              <span style="width: 36px; height: 36px; border-radius: 12px; background: #FFFFFF; border: 1px solid #ECEEF1; display: flex; align-items: center; justify-content: center">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+              </span>
+            </span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+
+    <button type="button" style="align-self: center; display: flex; align-items: center; gap: 10px; height: 54px; padding: 0 26px; border-radius: 16px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06), 0 8px 18px -10px rgba(20,22,26,0.2); font-family: inherit; font-size: 16px; font-weight: 700; color: #14161A; cursor: pointer">
+      <span>Load more projects</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"></path></svg>
+    </button>
+  </section>
+
+  <dc-import name="Consultation" hint-size="1440px,680px"></dc-import>
+  <dc-import name="Footer" hint-size="1440px,520px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4206}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { filter: 'All' };
+  }
+  renderVals() {
+    const CI = {
+      'All': 'M3 3h7v7H3Z M14 3h7v7h-7Z M3 14h7v7H3Z M14 14h7v7h-7Z',
+      'Mobile apps': 'M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z M11 18h2',
+      'Web apps': 'M2 4h20v16H2Z M2 9h20',
+      'AI': 'M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z',
+      'SaaS': 'M17.5 19a4.5 4.5 0 1 0-1.4-8.8A6 6 0 1 0 6 18h11.5Z',
+      'Our products': 'M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8Z'
+    };
+    const all = [
+      { name: 'Lumora Analytics', group: 'Web apps', type: 'Web app', industry: 'Analytics · Sales', text: 'A sales dashboard that brings a team’s numbers into one clear, real-time view.' },
+      { name: 'Orbitly Assist', group: 'AI', type: 'AI assistant', industry: 'E-commerce · Support', text: 'An AI support assistant that answers customer questions around the clock.' },
+      { name: 'Rispit Flow', group: 'Our products', type: 'Our product', industry: 'Productivity · SaaS', text: 'A simple sprint board that helps small product teams plan and ship every week.', own: true },
+      { name: 'Fernway', group: 'Web apps', type: 'Web app', industry: 'Travel · Booking', text: 'A trip-planning platform that turns scattered bookings into one simple itinerary.' },
+      { name: 'Quantix', group: 'SaaS', type: 'SaaS platform', industry: 'Finance · B2B', text: 'An invoicing tool for small agencies, from quote to paid in a few clicks.' },
+      { name: 'Brightpath', group: 'Mobile apps', type: 'Mobile app', industry: 'Education', text: 'A learning app with short daily lessons and progress tracking for students.' }
+    ];
+    const sel = this.state.filter;
+    const list = sel === 'All' ? all : all.filter((c) => c.group === sel);
+    const pattern = [7, 5, 5, 7, 7, 5];
+    const cases = list.map((c, i) => ({
+      ...c,
+      icon: CI[c.group],
+      span: list.length === 1 ? 12 : pattern[i % pattern.length],
+      bg: i % 2 === 0 ? '#EEF1F5' : '#FBECEE',
+      phInk: i % 2 === 0 ? '#A0A5AF' : '#D59AA2',
+      phLabel: i % 2 === 0 ? '#6B717D' : '#A3242F',
+      badge: c.own ? 'Our product' : 'Client project',
+      badgeBg: c.own ? '#C2323F' : '#14161A',
+      badgeFg: '#FFFFFF'
+    }));
+    const filters = ['All', 'Mobile apps', 'Web apps', 'AI', 'SaaS', 'Our products'].map((label) => {
+      const on = label === sel;
+      return {
+        label, icon: CI[label], selected: String(on),
+        bg: on ? '#FFFFFF' : 'transparent',
+        fg: on ? '#14161A' : '#545A66',
+        iconInk: on ? '#C2323F' : '#7A808C',
+        shadow: on ? '0 1px 2px rgba(20,22,26,0.08), 0 6px 14px -8px rgba(20,22,26,0.25)' : 'none',
+        pick: () => this.setState({ filter: label })
+      };
+    });
+    return { filters, cases };
+  }
+}
+</script>
+</body>
+</html>

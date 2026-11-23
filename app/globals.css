@@ -1,0 +1,29 @@
+/* Keep browser defaults (e.g. content-box sizing): the design is drawn on them. */
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #FFFFFF;
+  color: #14161A;
+  font-family: var(--font-jakarta), 'Plus Jakarta Sans', system-ui, sans-serif;
+  overflow-x: clip;
+}
+a { color: #545A66; }
+a:hover { color: #14161A; }
+/* The design sets 'Plus Jakarta Sans' by name; point it at the self-hosted font. */
+[style*="Plus Jakarta Sans"] { font-family: var(--font-jakarta), 'Plus Jakarta Sans', system-ui, sans-serif !important; }
+
+.v-desktop, .v-mobile { width: 100%; overflow-x: clip; }
+@media (max-width: 1023.98px) { .v-desktop { display: none; } }
+@media (min-width: 1024px) { .v-mobile { display: none; } }
+
+/* Cookie banner: the artboards draw it on a grey preview frame; float it instead. */
+.cookie-float { position: fixed; z-index: 100; left: 24px; bottom: 24px; width: 512px; max-width: calc(100vw - 24px); pointer-events: none; }
+.cookie-float .dc-cookiebanner, .cookie-float .dc-mobcookie {
+  width: 100% !important; height: auto !important; padding: 0 !important; background: transparent !important;
+}
+.cookie-float [role="dialog"] { pointer-events: auto; }
+@media (max-width: 1023.98px) { .cookie-float { left: 12px; right: 12px; bottom: 12px; width: auto; } }
+
+/* Between 1024px and 1280px the desktop design is scaled down from a 1280px
+   layout instead of squeezing it (--dz is set by the script in app/layout.jsx). */
+.v-desktop { zoom: var(--dz, 1); }

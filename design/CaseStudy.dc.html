@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rispit — Case study: Kestrel Health</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#545A66}a:hover{color:#14161A}
+@keyframes rsp-fa{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.rsp-fa{animation:rsp-fa 5s ease-in-out infinite}
+.rsp-fb{animation:rsp-fa 6s ease-in-out infinite reverse}
+</style>
+</helmet>
+<div style="width: 1440px; display: flex; flex-direction: column; background: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14161A">
+
+  <div style="position: sticky; top: 0; z-index: 50">
+    <dc-import name="Main" active="Portfolio" hint-size="1440px,144px"></dc-import>
+  </div>
+
+  <!-- ============ 1. CASE HERO ============ -->
+  <section style="height: 1176px; box-sizing: border-box; padding: 16px 24px 24px; display: flex; flex-direction: column; gap: 16px">
+    <div style="height: 600px; flex-shrink: 0; box-sizing: border-box; padding: 44px 48px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 40px; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2)">
+
+      <!-- Copy + actions -->
+      <div style="grid-column: span 7; display: flex; flex-direction: column; justify-content: space-between">
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px">
+          <nav aria-label="Breadcrumb" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: #545A66">
+            <a href="/Home.dc.html" style="text-decoration: none">Home</a>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#A0A5AF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+            <a href="/Portfolio.dc.html" style="text-decoration: none">Portfolio</a>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#A0A5AF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+            <span style="color: #14161A">Kestrel Health</span>
+          </nav>
+          <div style="display: flex; gap: 8px">
+            <span style="padding: 6px 12px; border-radius: 999px; background: #14161A; color: #FFFFFF; font-size: 12px; font-weight: 700">Case study</span>
+            <span style="padding: 6px 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #ECEEF1; color: #545A66; font-size: 12px; font-weight: 700">Healthcare · Mobile app</span>
+          </div>
+          <h1 style="margin: 0; font-size: 52px; line-height: 1.05; font-weight: 800; letter-spacing: -0.04em">A clinic booking app, <span style="color: #C2323F">launched in 21 days.</span></h1>
+          <p style="margin: 0; max-width: 600px; font-size: 17px; line-height: 1.6; color: #545A66; font-weight: 500">How we helped Kestrel Health turn phone-call bookings into a simple app that lets patients book a visit in a few taps.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; gap: 10px">
+            <a href="#view-app" style="display: flex; align-items: center; gap: 10px; height: 50px; padding: 0 20px 0 14px; border-radius: 14px; background: #14161A; color: #FFFFFF; font-size: 15px; font-weight: 700; text-decoration: none; box-shadow: inset 0 1px 0 rgba(255,255,255,0.15), 0 10px 22px -12px rgba(20,22,26,0.6)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z M11 18h2"></path></svg>
+              <span>View the app</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+            </a>
+            <a href="#visit-site" style="display: flex; align-items: center; gap: 10px; height: 50px; padding: 0 20px 0 14px; border-radius: 14px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06), 0 8px 18px -10px rgba(20,22,26,0.2); color: #14161A; font-size: 15px; font-weight: 700; text-decoration: none">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18 M12 3a14 14 0 0 1 0 18 M12 3a14 14 0 0 0 0 18"></path></svg>
+              <span>Visit website</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+            </a>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 10px 10px 22px; border-radius: 20px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06), 0 12px 26px -16px rgba(20,22,26,0.25)">
+            <div style="display: flex; flex-direction: column; gap: 2px">
+              <span style="font-size: 16px; font-weight: 800">Have a problem to solve?</span>
+              <span style="font-size: 13px; font-weight: 600; color: #545A66">Let's talk it through on a 20-minute call.</span>
+            </div>
+            <a href="#contact" style="display: flex; align-items: center; gap: 10px; height: 54px; padding: 0 20px 0 6px; border-radius: 16px; background: #C2323F; color: #FFFFFF; font-size: 15px; font-weight: 700; text-decoration: none; box-shadow: inset 0 1px 0 rgba(255,255,255,0.28), 0 10px 22px -10px rgba(194,50,63,0.7)">
+              <img src="/_blob/66baedd13e96fd14d8f78d471b6115cf" alt="" style="width: 42px; height: 42px; display: block; border-radius: 12px; object-fit: cover; border: 2px solid rgba(255,255,255,0.9); box-sizing: border-box">
+              <span>Book a call with Siva</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project facts (list) -->
+      <div style="grid-column: span 5; display: flex; flex-direction: column; gap: 10px; justify-content: center">
+        <sc-for list="{{meta}}" as="m" hint-placeholder-count="5">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 20px; border-radius: 16px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.05)">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #545A66">{{m.k}}</span>
+            <span style="font-size: 15px; font-weight: 800; text-align: right">{{m.v}}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- Wide project photo -->
+    <div style="flex-grow: 1; position: relative; border-radius: 28px; background: #E9EBEF; border: 1px solid #ECEEF1; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 16px 36px -18px rgba(20,22,26,0.25)">
+      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#A0A5AF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="9" cy="9" r="2"></circle><path d="M21 15l-5-5L5 21"></path></svg>
+      <span style="font-size: 14px; font-weight: 700; color: #6B717D">Project photo · wide</span>
+      <span style="font-size: 12px; font-weight: 600; color: #8A8F9A">e.g. the app in use at the clinic, or a hero mockup</span>
+      <div style="position: absolute; left: 20px; bottom: 20px; display: flex; align-items: center; gap: 10px; padding: 10px 14px 10px 10px; border-radius: 16px; background: rgba(255,255,255,0.95); box-shadow: 0 12px 26px -14px rgba(20,22,26,0.35)">
+        <span style="width: 34px; height: 34px; border-radius: 10px; background: #C2323F; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"></path></svg></span>
+        <div style="display: flex; flex-direction: column; gap: 1px">
+          <span style="font-size: 13px; font-weight: 800">Live on both stores</span>
+          <span style="font-size: 11px; font-weight: 600; color: #545A66">App Store · Google Play</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. BACKGROUND / OBJECTIVE / SOLUTION (stacked sections) ============ -->
+  <section style="height: 1390px; box-sizing: border-box; padding: 96px 24px 48px; display: flex; flex-direction: column; gap: 48px">
+    <sc-for list="{{story}}" as="b" hint-placeholder-count="3">
+      <article style="flex: 1; box-sizing: border-box; padding: 48px 56px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 40px; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2)">
+        <div style="grid-column: span 4; display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; align-items: center; gap: 14px">
+            <span style="width: 56px; height: 56px; border-radius: 18px; background: {{b.iconBg}}; box-shadow: {{b.iconShadow}}; display: flex; align-items: center; justify-content: center">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="{{b.iconInk}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{b.icon}}"></path></svg>
+            </span>
+            <span style="font-size: 44px; font-weight: 800; letter-spacing: -0.04em; color: #DADCE1">{{b.n}}</span>
+          </div>
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #A3242F">{{b.label}}</span>
+          <h2 style="margin: 0; font-size: 32px; line-height: 1.15; font-weight: 800; letter-spacing: -0.03em">{{b.title}}</h2>
+        </div>
+        <div style="grid-column: span 8; display: flex; flex-direction: column; gap: 20px; padding-top: 6px">
+          <p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3B3F47; font-weight: 500">{{b.text}}</p>
+          <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+            <sc-for list="{{b.points}}" as="pt" hint-placeholder-count="4">
+              <li style="display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; border-radius: 14px; background: #FFFFFF; border: 1px solid #ECEEF1; font-size: 15px; line-height: 1.5; font-weight: 600">
+                <span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 7px; background: {{b.bulletBg}}; display: flex; align-items: center; justify-content: center; margin-top: 1px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="{{b.bulletInk}}" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{b.bulletPath}}"></path></svg></span>
+                <span>{{pt}}</span>
+              </li>
+            </sc-for>
+          </ul>
+        </div>
+      </article>
+    </sc-for>
+  </section>
+
+  <!-- ============ 3. SCREENS (mixed sizes) ============ -->
+  <section style="height: 960px; box-sizing: border-box; padding: 96px 24px 24px; display: flex; flex-direction: column; gap: 40px">
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; padding: 0 24px">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px">
+        <span style="display: flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px; border-radius: 999px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06); color: #A3242F; font-size: 13px; font-weight: 700">
+          <span style="display: block; width: 8px; height: 8px; border-radius: 8px; background: #C2323F"></span>
+          <span>Screens</span>
+        </span>
+        <h2 style="margin: 0; font-size: 44px; line-height: 1.08; font-weight: 800; letter-spacing: -0.035em">A closer look at <span style="color: #C2323F">the product.</span></h2>
+      </div>
+    </div>
+    <div style="flex-grow: 1; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: 420px 1fr; gap: 16px">
+      <sc-for list="{{shots}}" as="g" hint-placeholder-count="5">
+        <figure style="grid-column: span {{g.span}}; margin: 0; position: relative; border-radius: 24px; background: {{g.bg}}; border: 1px solid #ECEEF1; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; box-shadow: inset 0 1px 0 #FFFFFF, 0 14px 30px -18px rgba(20,22,26,0.22)">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#A0A5AF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="9" cy="9" r="2"></circle><path d="M21 15l-5-5L5 21"></path></svg>
+          <span style="font-size: 13px; font-weight: 700; color: #6B717D">{{g.kind}}</span>
+          <figcaption style="position: absolute; left: 14px; bottom: 14px; padding: 8px 14px; border-radius: 12px; background: rgba(255,255,255,0.95); box-shadow: 0 8px 20px -12px rgba(20,22,26,0.3); font-size: 13px; font-weight: 700; color: #14161A">{{g.caption}}</figcaption>
+        </figure>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ============ 5. RESULTS ============ -->
+  <section style="height: 360px; box-sizing: border-box; padding: 72px 24px 24px">
+    <div style="height: 100%; box-sizing: border-box; padding: 0 48px; display: flex; align-items: center; gap: 40px; border-radius: 28px; background: #14161A; color: #FFFFFF; box-shadow: 0 24px 48px -24px rgba(20,22,26,0.6)">
+      <div style="flex-shrink: 0; width: 260px; display: flex; flex-direction: column; gap: 8px">
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #E7B9BF">The results</span>
+        <span style="font-size: 28px; line-height: 1.2; font-weight: 800; letter-spacing: -0.02em">What changed after launch.</span>
+      </div>
+      <div style="flex-grow: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px">
+        <sc-for list="{{results}}" as="r" hint-placeholder-count="3">
+          <div style="padding: 26px; border-radius: 20px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); display: flex; flex-direction: column; gap: 8px">
+            <span style="font-size: 44px; font-weight: 800; letter-spacing: -0.03em; color: #FFFFFF">{{r.value}}</span>
+            <span style="font-size: 14px; line-height: 1.5; font-weight: 600; color: #C9CCD3">{{r.label}}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. CLIENT QUOTE ============ -->
+  <section style="height: 600px; box-sizing: border-box; padding: 72px 24px 24px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px">
+    <a href="#video" aria-label="Watch the Kestrel Health story" style="grid-column: span 4; position: relative; display: block; border-radius: 28px; overflow: hidden; background: #2A2D33; text-decoration: none; box-shadow: 0 20px 40px -20px rgba(20,22,26,0.45)">
+      <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px">
+        <svg width="100" height="100" viewBox="0 0 24 24" fill="#454952" aria-hidden="true"><circle cx="12" cy="8" r="4.2"></circle><path d="M3.5 21c.8-4.4 4.2-7 8.5-7s7.7 2.6 8.5 7Z"></path></svg>
+        <span style="font-size: 12px; font-weight: 700; color: #8A8F9A">Client video</span>
+      </div>
+      <span style="position: absolute; left: 50%; top: 50%; margin: -32px 0 0 -32px; width: 64px; height: 64px; border-radius: 64px; background: rgba(255,255,255,0.95); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 24px -8px rgba(0,0,0,0.5)"><svg width="22" height="22" viewBox="0 0 24 24" fill="#C2323F" aria-hidden="true"><path d="M8 5.5v13l11-6.5Z"></path></svg></span>
+      <span style="position: absolute; left: 16px; bottom: 16px; padding: 6px 12px; border-radius: 999px; background: rgba(20,22,26,0.6); font-size: 12px; font-weight: 700; color: #FFFFFF">1:24</span>
+    </a>
+    <figure style="grid-column: span 8; margin: 0; box-sizing: border-box; padding: 48px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2)">
+      <div style="display: flex; flex-direction: column; gap: 22px">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="#C2323F" aria-hidden="true"><path d="M4 18v-5.5C4 8.4 6.2 6 10 5.5V8c-2 .4-3 1.7-3 4h3v6Zm10 0v-5.5c0-4.1 2.2-6.5 6-7V8c-2 .4-3 1.7-3 4h3v6Z"></path></svg>
+        <blockquote style="margin: 0; font-size: 30px; line-height: 1.38; font-weight: 700; letter-spacing: -0.02em">"We went from a rough idea to patients booking real appointments in three weeks. Rispit kept us focused on what mattered for the first version."</blockquote>
+      </div>
+      <figcaption style="display: flex; align-items: center; gap: 14px; padding-top: 24px; border-top: 1px solid #E3E5E9">
+        <span style="width: 52px; height: 52px; border-radius: 52px; background: #E9EBEF; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="#B5B9C1" aria-hidden="true"><circle cx="12" cy="8" r="4.2"></circle><path d="M3.5 21c.8-4.4 4.2-7 8.5-7s7.7 2.6 8.5 7Z"></path></svg></span>
+        <div style="display: flex; flex-direction: column; gap: 2px">
+          <span style="font-size: 17px; font-weight: 800">[Client Name]</span>
+          <span style="font-size: 14px; font-weight: 600; color: #545A66">[Founder, Kestrel Health]</span>
+        </div>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ 7. TECH USED ============ -->
+  <section style="height: 220px; box-sizing: border-box; padding: 48px 24px 24px">
+    <div style="height: 100%; box-sizing: border-box; padding: 0 40px; display: flex; align-items: center; gap: 40px; border-radius: 24px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04)">
+      <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 6px">
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #A3242F">Built with</span>
+        <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.02em">Tech used</span>
+      </div>
+      <div style="flex-grow: 1; display: flex; flex-wrap: wrap; gap: 10px">
+        <sc-for list="{{stack}}" as="tool" hint-placeholder-count="6">
+          <span style="height: 52px; display: flex; align-items: center; gap: 10px; padding: 0 18px 0 8px; border-radius: 16px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.05); font-size: 15px; font-weight: 800">
+            <span style="width: 36px; height: 36px; border-radius: 10px; background: #F7F8FA; border: 1px solid #ECEEF1; box-sizing: border-box; display: flex; align-items: center; justify-content: center"><sc-if value="{{tool.logo}}" hint-placeholder-val="{{ true }}"><img src="{{tool.logo}}" alt="" style="width: 22px; height: 22px; display: block; object-fit: contain"></sc-if><sc-if value="{{tool.mono}}" hint-placeholder-val="{{ false }}"><span style="font-size: 13px; font-weight: 800; color: #545A66">{{tool.mono}}</span></sc-if></span>
+            <span>{{tool.name}}</span>
+          </span>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8. NEXT CASE ============ -->
+  <section style="height: 300px; box-sizing: border-box; padding: 48px 24px 24px">
+    <a href="/CaseStudy.dc.html" style="height: 100%; box-sizing: border-box; padding: 0 16px 0 48px; display: flex; align-items: center; justify-content: space-between; gap: 32px; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2); text-decoration: none; color: #14161A; overflow: hidden">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #545A66">Next case study</span>
+        <span style="font-size: 40px; font-weight: 800; letter-spacing: -0.03em">Lumora Analytics</span>
+        <span style="font-size: 15px; font-weight: 600; color: #545A66">A sales dashboard that brings a team's numbers into one clear view.</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 24px">
+        <div aria-hidden="true" style="width: 300px; height: 196px; box-sizing: border-box; padding: 16px; border-radius: 18px; background: #FFFFFF; box-shadow: 0 16px 36px -18px rgba(20,22,26,0.3); display: flex; align-items: flex-end; gap: 8px">
+          <span style="flex: 1; height: 40%; border-radius: 5px; background: #DADCE1"></span>
+          <span style="flex: 1; height: 58%; border-radius: 5px; background: #DADCE1"></span>
+          <span style="flex: 1; height: 48%; border-radius: 5px; background: #DADCE1"></span>
+          <span style="flex: 1; height: 75%; border-radius: 5px; background: #DADCE1"></span>
+          <span style="flex: 1; height: 100%; border-radius: 5px; background: #C2323F"></span>
+        </div>
+        <span style="width: 64px; height: 64px; border-radius: 20px; background: #C2323F; box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 10px 20px -10px rgba(194,50,63,0.7); display: flex; align-items: center; justify-content: center">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+        </span>
+      </div>
+    </a>
+  </section>
+
+  <!-- ============ 9. BOOKING + FOOTER ============ -->
+  <dc-import name="Consultation" hint-size="1440px,680px"></dc-import>
+  <dc-import name="Footer" hint-size="1440px,520px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":6350}}'>
+class Component extends DCLogic {
+  renderVals() {
+    // Official tool logos, served from /public/logos (see README). No logo -> letter tile.
+    const logos = {"React": "react", "React Native": "react", "Next.js": "nextjs", "TypeScript": "typescript", "Node.js": "nodejs", "Figma": "figma", "Tailwind CSS": "tailwindcss", "Flutter": "flutter", "Python": "python", "PostgreSQL": "postgresql", "Supabase": "supabase", "OpenAI": "openai", "Vercel": "vercel", "AWS": "aws", "Claude": "claude", "LangChain": "langchain", "Canva": "canva", "Premiere Pro": "premierepro", "After Effects": "aftereffects", "Notion": "notion", "Webflow": "webflow", "Shopify": "shopify", "WooCommerce": "woocommerce", "Stripe": "stripe", "PayPal": "paypal", "Google Analytics": "googleanalytics", "Google Cloud": "googlecloud", "GitHub": "github", "Docker": "docker", "Expo": "expo", "Firebase": "firebase", "Framer": "framer", "Maze": "maze", "Loom": "loom"};
+    const withLogos = (names) => names.map((name) => ({ name, logo: logos[name] ? '/logos/' + logos[name] + '.svg' : '', mono: logos[name] ? '' : name.charAt(0) }));
+    return {
+      meta: [
+        { k: 'Client', v: 'Kestrel Health' },
+        { k: 'Industry', v: 'Healthcare' },
+        { k: 'Services', v: 'UI/UX · Mobile app · Backend' },
+        { k: 'Platform', v: 'iOS & Android' },
+        { k: 'Timeline', v: '21 days' }
+      ],
+      story: [
+        { n: '01', label: 'Background', title: 'Patients could only book by phone.',
+          text: 'Kestrel Health runs a group of busy clinics. Every appointment was booked over the phone, so front-desk staff spent much of their day on calls instead of with patients. Patients often waited on hold, had no easy way to change a booking, and many simply forgot their visit.',
+          points: ['All bookings handled by phone', 'Long waits on hold at peak hours', 'No reminders, so frequent no-shows', 'Staff time lost to admin work'],
+          icon: 'M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0 M12 7v5l3 2', bulletPath: 'M5 12h14' },
+        { n: '02', label: 'Objective', title: 'Let patients book in under a minute.',
+          text: 'The goal was a simple app that patients could pick up without any help. It had to let them book, move or cancel a visit on their own, remind them before each appointment, and give clinic staff one clear view of the day. And it had to launch quickly, before the busy season.',
+          points: ['Book a visit in a few taps', 'Change or cancel without calling', 'Automatic reminders before visits', 'Live on both app stores in 21 days'],
+          icon: 'M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18Z M12 8a4 4 0 1 0 0 8a4 4 0 1 0 0-8Z', bulletPath: 'M12 5l7 7-7 7 M5 12h14' },
+        { n: '03', label: 'Solution', title: 'A booking app built around three taps.',
+          text: 'We designed and built one iOS and Android app around a single, focused flow: pick a day, pick a time, confirm. Push notifications remind patients before every visit, and a simple web dashboard lets staff see and manage the day at a glance. We tested with real patients in week one and shipped to both stores in week three.',
+          points: ['Three-tap booking flow', 'Push reminders and calendar sync', 'Staff dashboard for the clinic', 'Published on App Store and Google Play'],
+          icon: 'M9 18h6 M10 22h4 M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2Z', bulletPath: 'M5 13l4 4L19 7' }
+      ].map((x, i) => ({
+        ...x,
+        iconBg: i === 2 ? '#C2323F' : '#FFFFFF',
+        iconInk: i === 2 ? '#FFFFFF' : '#C2323F',
+        iconShadow: i === 2 ? 'inset 0 1px 0 rgba(255,255,255,0.3), 0 10px 20px -10px rgba(194,50,63,0.7)' : '0 1px 2px rgba(20,22,26,0.08), 0 6px 14px -8px rgba(20,22,26,0.2)',
+        bulletBg: i === 2 ? '#C2323F' : '#FBECEE',
+        bulletInk: i === 2 ? '#FFFFFF' : '#C2323F'
+      })),
+      shots: [
+        { span: 8, kind: 'Wide screenshot · 16:9', caption: 'Clinic dashboard', bg: '#EEF1F5' },
+        { span: 4, kind: 'Phone screenshot · tall', caption: 'Booking flow', bg: '#FBECEE' },
+        { span: 3, kind: 'Phone · tall', caption: 'Reminders', bg: '#FBECEE' },
+        { span: 5, kind: 'Landscape screenshot', caption: 'Patient profile', bg: '#EEF1F5' },
+        { span: 4, kind: 'Square screenshot', caption: 'App icon & splash', bg: '#F7F8FA' }
+      ],
+      results: [
+        { value: '[00%]', label: '[Result, e.g. bookings now made in the app]' },
+        { value: '[00%]', label: '[Result, e.g. fewer missed appointments]' },
+        { value: '[0.0★]', label: '[Result, e.g. average app store rating]' }
+      ],
+      stack: withLogos(['React Native', 'Expo', 'TypeScript', 'Supabase', 'Firebase', 'Figma'])
+    };
+  }
+}
+</script>
+</body>
+</html>

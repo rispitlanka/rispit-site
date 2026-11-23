@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rispit mobile — Book a call</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<section id="contact" style="width: 390px; height: 980px; box-sizing: border-box; padding: 48px 16px 16px; background: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14161A">
+  <div style="height: 100%; box-sizing: border-box; padding: 26px 20px 20px; display: flex; flex-direction: column; gap: 18px; border-radius: 28px; background: #C2323F; color: #FFFFFF; box-shadow: inset 0 1px 0 rgba(255,255,255,0.25), 0 24px 48px -24px rgba(194,50,63,0.6)">
+    <span style="align-self: flex-start; display: flex; align-items: center; gap: 8px; padding: 7px 14px 7px 10px; border-radius: 999px; background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.25); font-size: 12px; font-weight: 700">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18Z M12 7v5l3 2"></path></svg>
+      <span>20-minute consultation</span>
+    </span>
+    <h2 style="margin: 0; font-size: 32px; line-height: 1.1; font-weight: 800; letter-spacing: -0.03em">Let's turn your idea into a clear plan.</h2>
+    <p style="margin: 0; font-size: 15px; line-height: 1.6; font-weight: 500">Book a 20-minute call with me. We'll talk through your idea and work out the best first version to build.</p>
+    <div style="display: flex; align-items: center; gap: 12px">
+      <img src="/_blob/66baedd13e96fd14d8f78d471b6115cf" alt="Siva, founder of Rispit" style="width: 52px; height: 52px; display: block; border-radius: 16px; object-fit: cover; border: 3px solid rgba(255,255,255,0.9); box-sizing: border-box">
+      <span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 800">Siva</span><span style="font-size: 13px; font-weight: 600; color: #FBECEE">Founder, Rispit</span></span>
+    </div>
+
+    <div style="flex-grow: 1; box-sizing: border-box; padding: 20px 16px 16px; display: flex; flex-direction: column; gap: 16px; border-radius: 22px; background: #FFFFFF; color: #14161A; box-shadow: 0 24px 48px -20px rgba(60,10,16,0.45)">
+      <div style="display: flex; align-items: center; justify-content: space-between">
+        <span style="font-size: 18px; font-weight: 800">Pick a time</span>
+        <span style="padding: 5px 10px; border-radius: 999px; background: #FBECEE; color: #A3242F; font-size: 11px; font-weight: 700">20 min · Video</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px">
+        <sc-for list="{{days}}" as="d" hint-placeholder-count="5">
+          <button type="button" onClick="{{d.pick}}" aria-pressed="{{d.pressed}}" style="height: 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; border-radius: 13px; border: 1.5px solid {{d.border}}; background: {{d.bg}}; color: {{d.fg}}; font-family: inherit; cursor: pointer">
+            <span style="font-size: 11px; font-weight: 700">{{d.dow}}</span>
+            <span style="font-size: 18px; font-weight: 800">{{d.date}}</span>
+          </button>
+        </sc-for>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px">
+        <sc-for list="{{times}}" as="t" hint-placeholder-count="6">
+          <button type="button" onClick="{{t.pick}}" aria-pressed="{{t.pressed}}" style="height: 44px; border-radius: 12px; border: 1.5px solid {{t.border}}; background: {{t.bg}}; color: {{t.fg}}; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer">{{t.label}}</button>
+        </sc-for>
+      </div>
+      <span style="font-size: 12px; font-weight: 600; color: #545A66">Times are shown in your local time zone.</span>
+      <a href="/MobThankYou.dc.html" style="margin-top: auto; display: flex; align-items: center; gap: 10px; height: 56px; padding: 0 14px 0 6px; border-radius: 16px; background: #C2323F; color: #FFFFFF; font-size: 15px; font-weight: 700; text-decoration: none; box-shadow: inset 0 1px 0 rgba(255,255,255,0.28), 0 10px 22px -10px rgba(194,50,63,0.7)">
+        <img src="/_blob/66baedd13e96fd14d8f78d471b6115cf" alt="" style="width: 44px; height: 44px; display: block; border-radius: 13px; object-fit: cover; border: 2px solid rgba(255,255,255,0.9); box-sizing: border-box">
+        <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 1px"><span>Book a call with Siva</span><span style="font-size: 12px; font-weight: 600; opacity: 0.85">{{summary}}</span></span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+      </a>
+    </div>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":980}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { day: 1, time: 3 };
+  }
+  renderVals() {
+    const dayList = [{ dow: 'Mon', date: '23' }, { dow: 'Tue', date: '24' }, { dow: 'Wed', date: '25' }, { dow: 'Thu', date: '26' }, { dow: 'Fri', date: '27' }];
+    const timeList = ['09:00', '10:30', '12:00', '14:00', '15:30', '17:00'];
+    const on = { bg: '#C2323F', fg: '#FFFFFF', border: '#C2323F' };
+    const off = { bg: '#FFFFFF', fg: '#14161A', border: '#ECEEF1' };
+    const days = dayList.map((d, i) => ({ ...d, ...(i === this.state.day ? on : off), pressed: String(i === this.state.day), pick: () => this.setState({ day: i }) }));
+    const times = timeList.map((label, i) => ({ label, ...(i === this.state.time ? on : off), pressed: String(i === this.state.time), pick: () => this.setState({ time: i }) }));
+    const d = dayList[this.state.day];
+    return { days, times, summary: d.dow + ' ' + d.date + ' Nov, ' + timeList[this.state.time] };
+  }
+}
+</script>
+</body>
+</html>

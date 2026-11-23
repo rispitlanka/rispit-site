@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rispit — Contact</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#14161A}a:hover{color:#A3242F}
+input::placeholder,textarea::placeholder{color:#7A808C}
+.rsp-dot{animation:rsp-pulse 1.8s ease-in-out infinite}
+@keyframes rsp-pulse{0%,100%{box-shadow:0 0 0 0 rgba(46,158,91,.45)}70%{box-shadow:0 0 0 8px rgba(46,158,91,0)}}
+</style>
+</helmet>
+<div style="width: 1440px; display: flex; flex-direction: column; background: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14161A">
+
+  <div style="position: sticky; top: 0; z-index: 50">
+    <dc-import name="Main" active="" hint-size="1440px,144px"></dc-import>
+  </div>
+
+  <!-- ============ 1. HEADER ============ -->
+  <section style="height: 340px; box-sizing: border-box; padding: 16px 24px 16px">
+    <div style="height: 100%; box-sizing: border-box; padding: 44px 48px; display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2)">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; max-width: 780px">
+        <span style="display: flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px; border-radius: 999px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(20,22,26,0.06); color: #A3242F; font-size: 13px; font-weight: 700">
+          <span style="display: block; width: 8px; height: 8px; border-radius: 8px; background: #C2323F"></span>
+          <span>Contact</span>
+        </span>
+        <h1 style="margin: 0; font-size: 58px; line-height: 1.04; font-weight: 800; letter-spacing: -0.04em">Let's build something <span style="color: #C2323F">great together.</span></h1>
+        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #545A66; font-weight: 500">Book a 20-minute call or send us a message. Tell us about your idea and we'll help you plan the right first version.</p>
+      </div>
+      <span style="flex-shrink: 0; display: flex; align-items: center; gap: 10px; padding: 12px 18px; border-radius: 16px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06); font-size: 14px; font-weight: 700">
+        <span class="rsp-dot" style="width: 10px; height: 10px; border-radius: 10px; background: #2E9E5B"></span>
+        <span>Taking on new projects</span>
+      </span>
+    </div>
+  </section>
+
+  <!-- ============ 2. FORM + INFO ============ -->
+  <section style="height: 820px; box-sizing: border-box; padding: 0 24px 24px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px">
+
+    <!-- Left: tabs -->
+    <div style="grid-column: span 7; box-sizing: border-box; padding: 32px; display: flex; flex-direction: column; gap: 24px; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2)">
+      <div role="tablist" aria-label="How would you like to reach us?" style="align-self: flex-start; display: flex; gap: 6px; padding: 6px; border-radius: 16px; background: #EEF0F3; box-shadow: inset 0 1px 2px rgba(20,22,26,0.08)">
+        <sc-for list="{{tabs}}" as="t" hint-placeholder-count="2">
+          <button type="button" role="tab" aria-selected="{{t.selected}}" onClick="{{t.pick}}" style="height: 46px; display: flex; align-items: center; gap: 8px; padding: 0 18px; border: none; border-radius: 12px; background: {{t.bg}}; box-shadow: {{t.shadow}}; font-family: inherit; font-size: 15px; font-weight: 700; color: {{t.fg}}; cursor: pointer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="{{t.iconInk}}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{t.icon}}"></path></svg>
+            <span>{{t.label}}</span>
+          </button>
+        </sc-for>
+      </div>
+
+      <!-- Book a call -->
+      <sc-if value="{{isBook}}" hint-placeholder-val="{{ true }}">
+        <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 22px">
+          <div style="display: flex; align-items: center; justify-content: space-between">
+            <div style="display: flex; flex-direction: column; gap: 4px">
+              <span style="font-size: 24px; font-weight: 800; letter-spacing: -0.02em">Pick a time for your call</span>
+              <span style="font-size: 14px; font-weight: 600; color: #545A66">20 minutes · Video call · Times shown in your time zone</span>
+            </div>
+            <span style="display: flex; align-items: center; gap: 8px">
+              <button type="button" aria-label="Previous week" style="width: 40px; height: 40px; border-radius: 12px; border: 1px solid #ECEEF1; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#14161A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></button>
+              <span style="font-size: 14px; font-weight: 800">November 2026</span>
+              <button type="button" aria-label="Next week" style="width: 40px; height: 40px; border-radius: 12px; border: 1px solid #ECEEF1; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#14161A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></button>
+            </span>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px">
+            <sc-for list="{{days}}" as="d" hint-placeholder-count="5">
+              <button type="button" onClick="{{d.pick}}" aria-pressed="{{d.pressed}}" style="height: 78px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; border-radius: 16px; border: 1.5px solid {{d.border}}; background: {{d.bg}}; color: {{d.fg}}; font-family: inherit; cursor: pointer; box-shadow: 0 1px 2px rgba(20,22,26,0.05)">
+                <span style="font-size: 12px; font-weight: 700">{{d.dow}}</span>
+                <span style="font-size: 24px; font-weight: 800">{{d.date}}</span>
+              </button>
+            </sc-for>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px">
+            <sc-for list="{{times}}" as="t" hint-placeholder-count="8">
+              <button type="button" onClick="{{t.pick}}" aria-pressed="{{t.pressed}}" style="height: 50px; border-radius: 14px; border: 1.5px solid {{t.border}}; background: {{t.bg}}; color: {{t.fg}}; font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer">{{t.label}}</button>
+            </sc-for>
+          </div>
+          <a href="ThankYou.dc.html" style="margin-top: auto; display: flex; align-items: center; justify-content: center; gap: 10px; height: 60px; border-radius: 18px; background: #C2323F; color: #FFFFFF; font-size: 17px; font-weight: 700; text-decoration: none; box-shadow: inset 0 1px 0 rgba(255,255,255,0.28), 0 12px 24px -10px rgba(194,50,63,0.7)">
+            <img src="/_blob/66baedd13e96fd14d8f78d471b6115cf" alt="" style="width: 44px; height: 44px; display: block; border-radius: 13px; object-fit: cover; border: 2px solid rgba(255,255,255,0.9); box-sizing: border-box">
+            <span>Book a call with Siva · {{summary}}</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+      </sc-if>
+
+      <!-- Send a message -->
+      <sc-if value="{{isMessage}}" hint-placeholder-val="{{ false }}">
+        <form style="flex-grow: 1; display: flex; flex-direction: column; gap: 16px">
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+            <label style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 700">Your name
+              <input type="text" placeholder="Jane Perera" style="height: 52px; padding: 0 16px; border-radius: 14px; border: 1px solid #ECEEF1; background: #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; color: #14161A; outline: none">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 700">Email
+              <input type="email" placeholder="you@company.com" style="height: 52px; padding: 0 16px; border-radius: 14px; border: 1px solid #ECEEF1; background: #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; color: #14161A; outline: none">
+            </label>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <span style="font-size: 13px; font-weight: 700">What do you need?</span>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px">
+              <sc-for list="{{services}}" as="s" hint-placeholder-count="8">
+                <button type="button" onClick="{{s.toggle}}" aria-pressed="{{s.pressed}}" style="height: 40px; padding: 0 14px; border-radius: 12px; border: 1.5px solid {{s.border}}; background: {{s.bg}}; color: {{s.fg}}; font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer">{{s.label}}</button>
+              </sc-for>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <span style="font-size: 13px; font-weight: 700">Budget</span>
+            <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px">
+              <sc-for list="{{budgets}}" as="b" hint-placeholder-count="4">
+                <button type="button" onClick="{{b.pick}}" aria-pressed="{{b.pressed}}" style="height: 44px; border-radius: 12px; border: 1.5px solid {{b.border}}; background: {{b.bg}}; color: {{b.fg}}; font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer">{{b.label}}</button>
+              </sc-for>
+            </div>
+          </div>
+          <label style="flex-grow: 1; display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 700">Tell us about your idea
+            <textarea placeholder="What are you building, who is it for, and when would you like to launch?" style="flex-grow: 1; min-height: 120px; padding: 14px 16px; border-radius: 14px; border: 1px solid #ECEEF1; background: #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; line-height: 1.5; color: #14161A; resize: none; outline: none"></textarea>
+          </label>
+          <a href="ThankYou.dc.html" style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 58px; border-radius: 18px; background: #C2323F; color: #FFFFFF; font-size: 17px; font-weight: 700; text-decoration: none; box-shadow: inset 0 1px 0 rgba(255,255,255,0.28), 0 12px 24px -10px rgba(194,50,63,0.7)">
+            <span>Send message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13 M22 2l-7 20-4-9-9-4Z"></path></svg>
+          </a>
+        </form>
+      </sc-if>
+    </div>
+
+    <!-- Right: info -->
+    <div style="grid-column: span 5; display: flex; flex-direction: column; gap: 16px">
+      <div style="box-sizing: border-box; padding: 28px; display: flex; align-items: center; gap: 18px; border-radius: 28px; background: #C2323F; color: #FFFFFF; box-shadow: inset 0 1px 0 rgba(255,255,255,0.25), 0 24px 48px -24px rgba(194,50,63,0.6)">
+        <img src="/_blob/66baedd13e96fd14d8f78d471b6115cf" alt="Rispit founder" style="width: 84px; height: 84px; flex-shrink: 0; display: block; border-radius: 24px; object-fit: cover; border: 3px solid rgba(255,255,255,0.9); box-sizing: border-box">
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <span style="font-size: 21px; line-height: 1.25; font-weight: 800; letter-spacing: -0.02em">Talk directly with the founder.</span>
+          <span style="font-size: 14px; line-height: 1.5; font-weight: 500; color: #FFFFFF">No sales team, no hand-offs. You'll speak with the person who will plan your product.</span>
+        </div>
+      </div>
+      <sc-for list="{{info}}" as="i" hint-placeholder-count="4">
+        <a href="{{i.href}}" style="box-sizing: border-box; padding: 22px 24px; display: flex; align-items: center; gap: 16px; border-radius: 22px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04); text-decoration: none; color: #14161A">
+          <span style="width: 52px; height: 52px; flex-shrink: 0; border-radius: 16px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(20,22,26,0.08), 0 6px 14px -8px rgba(20,22,26,0.2); display: flex; align-items: center; justify-content: center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{i.icon}}"></path></svg>
+          </span>
+          <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 3px">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #545A66">{{i.label}}</span>
+            <span style="font-size: 17px; font-weight: 800">{{i.value}}</span>
+          </span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+        </a>
+      </sc-for>
+      <div style="flex-grow: 1; box-sizing: border-box; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; border-radius: 22px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04)">
+        <span style="font-size: 15px; font-weight: 800">Follow us</span>
+        <span style="display: flex; gap: 8px">
+          <a href="#linkedin" aria-label="LinkedIn" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: #FFFFFF; border: 1px solid #ECEEF1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14161A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          <a href="#instagram" aria-label="Instagram" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: #FFFFFF; border: 1px solid #ECEEF1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14161A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01"></path></svg></a>
+          <a href="#x" aria-label="X" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: #FFFFFF; border: 1px solid #ECEEF1"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#14161A" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"></path></svg></a>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. WHAT HAPPENS NEXT ============ -->
+  <section style="height: 380px; box-sizing: border-box; padding: 72px 24px 24px">
+    <div style="height: 100%; box-sizing: border-box; padding: 0 48px; display: flex; align-items: center; gap: 40px; border-radius: 28px; background: #14161A; color: #FFFFFF; box-shadow: 0 24px 48px -24px rgba(20,22,26,0.6)">
+      <div style="flex-shrink: 0; width: 260px; display: flex; flex-direction: column; gap: 8px">
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #E7B9BF">What happens next</span>
+        <span style="font-size: 28px; line-height: 1.2; font-weight: 800; letter-spacing: -0.02em">From hello to building, in three steps.</span>
+      </div>
+      <div style="flex-grow: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px">
+        <sc-for list="{{next}}" as="n" hint-placeholder-count="3">
+          <div style="padding: 24px; border-radius: 20px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); display: flex; flex-direction: column; gap: 10px">
+            <span style="width: 40px; height: 40px; border-radius: 12px; background: #C2323F; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">{{n.n}}</span>
+            <span style="font-size: 18px; font-weight: 800">{{n.title}}</span>
+            <span style="font-size: 14px; line-height: 1.55; font-weight: 500; color: #C9CCD3">{{n.text}}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <dc-import name="Footer" hint-size="1440px,520px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2204}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { tab: 'book', day: 1, time: 2, picked: { 'Web app': true }, budget: 1 };
+  }
+  renderVals() {
+    const on = { bg: '#C2323F', fg: '#FFFFFF', border: '#C2323F' };
+    const off = { bg: '#FFFFFF', fg: '#14161A', border: '#ECEEF1' };
+    const tabDefs = [
+      { id: 'book', label: 'Book a call', icon: 'M3 5h18v16H3Z M3 9h18 M8 3v4 M16 3v4' },
+      { id: 'message', label: 'Send a message', icon: 'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z' }
+    ];
+    const tabs = tabDefs.map((t) => {
+      const a = t.id === this.state.tab;
+      return { ...t, selected: String(a), bg: a ? '#FFFFFF' : 'transparent', fg: a ? '#14161A' : '#545A66', iconInk: a ? '#C2323F' : '#7A808C', shadow: a ? '0 1px 2px rgba(20,22,26,0.08), 0 6px 14px -8px rgba(20,22,26,0.25)' : 'none', pick: () => this.setState({ tab: t.id }) };
+    });
+    const dayList = [{ dow: 'Mon', date: '23' }, { dow: 'Tue', date: '24' }, { dow: 'Wed', date: '25' }, { dow: 'Thu', date: '26' }, { dow: 'Fri', date: '27' }];
+    const timeList = ['09:00', '10:30', '12:00', '14:00', '15:30', '17:00', '18:30', '20:00'];
+    const days = dayList.map((d, i) => ({ ...d, ...(i === this.state.day ? on : off), pressed: String(i === this.state.day), pick: () => this.setState({ day: i }) }));
+    const times = timeList.map((label, i) => ({ label, ...(i === this.state.time ? on : off), pressed: String(i === this.state.time), pick: () => this.setState({ time: i }) }));
+    const services = ['MVP Sprint', 'Mobile app', 'Web app', 'Ecommerce', 'UI/UX design', 'AI integration', 'Content', 'IT consultation'].map((label) => {
+      const a = !!this.state.picked[label];
+      return { label, ...(a ? on : off), pressed: String(a), toggle: () => this.setState({ picked: { ...this.state.picked, [label]: !a } }) };
+    });
+    const budgets = ['Under $5k', '$5k–$15k', '$15k–$30k', '$30k+'].map((label, i) => ({ label, ...(i === this.state.budget ? on : off), pressed: String(i === this.state.budget), pick: () => this.setState({ budget: i }) }));
+    const d = dayList[this.state.day];
+    return {
+      tabs, days, times, services, budgets,
+      isBook: this.state.tab === 'book',
+      isMessage: this.state.tab === 'message',
+      summary: d.dow + ' ' + d.date + ', ' + timeList[this.state.time],
+      info: [
+        { label: 'Email', value: '[hello@rispit.com]', href: 'mailto:hello@rispit.com', icon: 'M3 5h18v14H3Z M3 7l9 6 9-6' },
+        { label: 'WhatsApp', value: '[+94 00 000 0000]', href: '#whatsapp', icon: 'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z' },
+        { label: 'Location', value: 'Jaffna, Sri Lanka', href: '#map', icon: 'M12 22s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z M12 7a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z' },
+        { label: 'Reply time', value: '[Within 1 working day]', href: '#contact', icon: 'M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18Z M12 7v5l3 2' }
+      ],
+      next: [
+        { n: '1', title: 'We talk', text: 'A 20-minute call about your idea, your users and your goals.' },
+        { n: '2', title: 'You get a plan', text: 'A clear scope, timeline and price for your first version, usually within a few days.' },
+        { n: '3', title: 'We start building', text: 'Once you are happy with the plan, we kick off and you see progress every week.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "rispit-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "compile": "node scripts/compile-dc.mjs && node emails/build.mjs",
+    "dev": "npm run compile && next dev",
+    "build": "npm run compile && next build",
+    "start": "next start",
+    "emails": "node emails/build.mjs"
+  },
+  "dependencies": {
+    "next": "^15.5.29",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "htmlparser2": "^9.1.0"
+  }
+}

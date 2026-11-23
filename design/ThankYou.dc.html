@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rispit — You're booked</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#14161A}a:hover{color:#A3242F}
+.rsp-pop{animation:rsp-pop 2.4s ease-in-out infinite}
+@keyframes rsp-pop{0%,100%{box-shadow:0 0 0 0 rgba(194,50,63,.35),0 20px 40px -16px rgba(194,50,63,.6)}50%{box-shadow:0 0 0 22px rgba(194,50,63,0),0 20px 40px -16px rgba(194,50,63,.6)}}
+.rsp-conf{animation:rsp-float 5s ease-in-out infinite}
+@keyframes rsp-float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-10px) rotate(12deg)}}
+.rsp-card{transition:transform .25s ease}
+.rsp-card:hover{transform:translateY(-4px)}
+</style>
+</helmet>
+<div style="width: 1440px; display: flex; flex-direction: column; background: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14161A">
+
+  <div style="position: sticky; top: 0; z-index: 50">
+    <dc-import name="Main" active="" hint-size="1440px,144px"></dc-import>
+  </div>
+
+  <!-- ============ 1. CONFIRMATION ============ -->
+  <section style="height: 760px; box-sizing: border-box; padding: 16px 24px 24px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px">
+
+    <div style="grid-column: span 7; position: relative; box-sizing: border-box; padding: 56px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2); overflow: hidden">
+      <span aria-hidden="true" class="rsp-conf" style="position: absolute; right: 80px; top: 60px; width: 18px; height: 18px; border-radius: 5px; background: #C2323F"></span>
+      <span aria-hidden="true" class="rsp-conf" style="position: absolute; right: 170px; top: 120px; width: 12px; height: 12px; border-radius: 12px; background: #E7B9BF; animation-delay: .8s"></span>
+      <span aria-hidden="true" class="rsp-conf" style="position: absolute; right: 60px; top: 190px; width: 14px; height: 14px; border-radius: 4px; background: #14161A; animation-delay: 1.4s"></span>
+      <span aria-hidden="true" class="rsp-conf" style="position: absolute; right: 240px; top: 50px; width: 10px; height: 10px; border-radius: 10px; background: #C2323F; animation-delay: 2s"></span>
+
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 26px">
+        <span class="rsp-pop" style="width: 88px; height: 88px; border-radius: 28px; background: #C2323F; display: flex; align-items: center; justify-content: center">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"></path></svg>
+        </span>
+        <h1 style="margin: 0; font-size: 60px; line-height: 1.04; font-weight: 800; letter-spacing: -0.04em">You're booked! <span style="color: #C2323F">Talk soon.</span></h1>
+        <p style="margin: 0; max-width: 560px; font-size: 18px; line-height: 1.6; color: #545A66; font-weight: 500">Thanks for reaching out. We've sent a confirmation to your email with the video call link. If you sent a message instead, we'll reply within [1 working day].</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #545A66">To get the most out of the call</span>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+          <sc-for list="{{prep}}" as="p" hint-placeholder-count="3">
+            <div style="padding: 18px; border-radius: 18px; background: #FFFFFF; border: 1px solid #ECEEF1; display: flex; flex-direction: column; gap: 10px">
+              <span style="width: 40px; height: 40px; border-radius: 12px; background: #FBECEE; display: flex; align-items: center; justify-content: center">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{p.icon}}"></path></svg>
+              </span>
+              <span style="font-size: 14px; line-height: 1.45; font-weight: 700">{{p.text}}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <!-- Booking summary -->
+    <div style="grid-column: span 5; display: flex; flex-direction: column; gap: 16px">
+      <div style="flex-grow: 1; box-sizing: border-box; padding: 32px; display: flex; flex-direction: column; gap: 18px; border-radius: 28px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.04), 0 24px 48px -24px rgba(20,22,26,0.3)">
+        <div style="display: flex; align-items: center; justify-content: space-between">
+          <span style="font-size: 20px; font-weight: 800">Your call</span>
+          <span style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: #E8F5ED; font-size: 12px; font-weight: 800; color: #1E7A45"><span style="width: 7px; height: 7px; border-radius: 7px; background: #2E9E5B"></span>Confirmed</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 14px; padding: 16px; border-radius: 18px; background: #F7F8FA">
+          <img src="/_blob/66baedd13e96fd14d8f78d471b6115cf" alt="" style="width: 56px; height: 56px; display: block; border-radius: 16px; object-fit: cover">
+          <div style="display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 16px; font-weight: 800">20-minute consultation</span>
+            <span style="font-size: 13px; font-weight: 600; color: #545A66">with Siva, founder of Rispit</span>
+          </div>
+        </div>
+        <sc-for list="{{details}}" as="d" hint-placeholder-count="3">
+          <div style="display: flex; align-items: center; gap: 14px">
+            <span style="width: 44px; height: 44px; flex-shrink: 0; border-radius: 14px; background: #FBECEE; display: flex; align-items: center; justify-content: center">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{d.icon}}"></path></svg>
+            </span>
+            <span style="display: flex; flex-direction: column; gap: 2px">
+              <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #545A66">{{d.label}}</span>
+              <span style="font-size: 16px; font-weight: 800">{{d.value}}</span>
+            </span>
+          </div>
+        </sc-for>
+        <div style="margin-top: auto; display: flex; flex-direction: column; gap: 10px">
+          <span style="font-size: 13px; font-weight: 700; color: #545A66">Add to your calendar</span>
+          <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+            <a href="#google" style="height: 46px; display: flex; align-items: center; justify-content: center; border-radius: 14px; background: #F7F8FA; border: 1px solid #ECEEF1; font-size: 14px; font-weight: 700; text-decoration: none">Google</a>
+            <a href="#outlook" style="height: 46px; display: flex; align-items: center; justify-content: center; border-radius: 14px; background: #F7F8FA; border: 1px solid #ECEEF1; font-size: 14px; font-weight: 700; text-decoration: none">Outlook</a>
+            <a href="#ics" style="height: 46px; display: flex; align-items: center; justify-content: center; border-radius: 14px; background: #F7F8FA; border: 1px solid #ECEEF1; font-size: 14px; font-weight: 700; text-decoration: none">Apple / .ics</a>
+          </div>
+          <a href="Contact.dc.html" style="align-self: center; padding-top: 4px; font-size: 13px; font-weight: 700; color: #545A66">Need to change the time? Reschedule</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. WHILE YOU WAIT ============ -->
+  <section style="height: 400px; box-sizing: border-box; padding: 72px 24px 24px; display: flex; flex-direction: column; gap: 28px">
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; padding: 0 24px">
+      <h2 style="margin: 0; font-size: 34px; font-weight: 800; letter-spacing: -0.03em">While you wait</h2>
+      <a href="/Home.dc.html" style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; text-decoration: none">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 19l-7-7 7-7"></path></svg>
+        <span>Back to home</span>
+      </a>
+    </div>
+    <div style="flex-grow: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
+      <sc-for list="{{links}}" as="l" hint-placeholder-count="3">
+        <a href="{{l.href}}" class="rsp-card" style="box-sizing: border-box; padding: 28px; display: flex; align-items: center; gap: 18px; border-radius: 24px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2); text-decoration: none; color: #14161A">
+          <span style="width: 60px; height: 60px; flex-shrink: 0; border-radius: 18px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(20,22,26,0.08), 0 6px 14px -8px rgba(20,22,26,0.2); display: flex; align-items: center; justify-content: center">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{l.icon}}"></path></svg>
+          </span>
+          <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px">
+            <span style="font-size: 18px; font-weight: 800">{{l.title}}</span>
+            <span style="font-size: 14px; line-height: 1.45; font-weight: 500; color: #545A66">{{l.text}}</span>
+          </span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <dc-import name="Footer" hint-size="1440px,520px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1824}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      prep: [
+        { icon: 'M9 18h6 M10 22h4 M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2Z', text: 'Think about the one problem your product solves' },
+        { icon: 'M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2 M9 11a4 4 0 1 0 0-8a4 4 0 0 0 0 8Z', text: 'Know who your first users will be' },
+        { icon: 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z M14 2v6h6', text: 'Bring any sketches, notes or links you have' }
+      ],
+      details: [
+        { label: 'Date', value: '[Tuesday, 24 November]', icon: 'M3 5h18v16H3Z M3 9h18 M8 3v4 M16 3v4' },
+        { label: 'Time', value: '[14:00, your time zone]', icon: 'M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18Z M12 7v5l3 2' },
+        { label: 'Where', value: 'Video call (link in your email)', icon: 'M15 10l5-3v10l-5-3Z M3 6h12v12H3Z' }
+      ],
+      links: [
+        { title: 'See our work', text: 'Products we’ve designed, built and launched.', href: 'Portfolio.dc.html', icon: 'M3 3h7v7H3Z M14 3h7v7h-7Z M3 14h7v7H3Z M14 14h7v7h-7Z' },
+        { title: 'Read the 21-day playbook', text: 'How we take an idea to launch in three weeks.', href: 'BlogPost.dc.html', icon: 'M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5Z M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5' },
+        { title: 'Explore our services', text: 'From MVPs and apps to AI and content.', href: 'ServiceMVP.dc.html', icon: 'M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1Z M12 15l-3-3a22 22 0 0 1 2-3.9A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2Z' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

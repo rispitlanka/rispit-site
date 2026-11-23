@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rispit — Ecommerce Development</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#545A66}a:hover{color:#14161A}
+@keyframes rsp-fa{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes rsp-fb{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+.rsp-fa{animation:rsp-fa 5s ease-in-out infinite}
+.rsp-fb{animation:rsp-fb 6s ease-in-out infinite}
+.rsp-step{transition:transform .25s ease,box-shadow .25s ease}
+.rsp-step:hover{transform:translateY(-4px)}
+</style>
+</helmet>
+<div style="width: 1440px; display: flex; flex-direction: column; background: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14161A">
+
+  <div style="position: sticky; top: 0; z-index: 50">
+    <dc-import name="Main" active="Services" hint-size="1440px,144px"></dc-import>
+  </div>
+
+  <!-- ============ 1. SERVICE HERO ============ -->
+  <section style="height: 640px; box-sizing: border-box; padding: 16px 24px 24px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px">
+    <div style="grid-column: span 6; height: 600px; box-sizing: border-box; padding: 44px 48px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2)">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 22px">
+        <nav aria-label="Breadcrumb" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: #545A66">
+          <a href="/Home.dc.html" style="text-decoration: none">Home</a>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#A0A5AF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+          <a href="/Home.dc.html" style="text-decoration: none">Services</a>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#A0A5AF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+          <span style="color: #14161A">Ecommerce Development</span>
+        </nav>
+        <span style="display: flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px; border-radius: 999px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(20,22,26,0.06); color: #A3242F; font-size: 13px; font-weight: 700">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6 M9 21a1 1 0 1 0 0-.01 M18 21a1 1 0 1 0 0-.01"></path></svg>
+          <span>Ecommerce Development</span>
+        </span>
+        <h1 style="margin: 0; font-size: 54px; line-height: 1.05; font-weight: 800; letter-spacing: -0.04em">Online stores that are <span style="color: #C2323F">easy to buy from.</span></h1>
+        <p style="margin: 0; max-width: 540px; font-size: 18px; line-height: 1.6; color: #545A66; font-weight: 500">We design and build fast, secure online stores, from a simple shop to a custom marketplace, with smooth checkout, payments and everything you need to start selling.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 22px">
+        <div style="display: flex; align-items: center; gap: 12px">
+          <a href="#contact" style="display: flex; align-items: center; gap: 10px; height: 56px; padding: 0 22px 0 7px; border-radius: 16px; background: #C2323F; color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none; box-shadow: inset 0 1px 0 rgba(255,255,255,0.28), 0 10px 22px -10px rgba(194,50,63,0.7)">
+            <img src="/_blob/66baedd13e96fd14d8f78d471b6115cf" alt="" style="width: 42px; height: 42px; display: block; border-radius: 12px; object-fit: cover; border: 2px solid rgba(255,255,255,0.9); box-sizing: border-box">
+            <span>Book a call with Siva</span>
+          </a>
+          <a href="#work" style="display: flex; align-items: center; height: 56px; padding: 0 22px; border-radius: 16px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06), 0 8px 18px -10px rgba(20,22,26,0.18); color: #14161A; font-size: 16px; font-weight: 700; text-decoration: none">See our work</a>
+        </div>
+        <div style="display: flex; gap: 20px; font-size: 14px; font-weight: 700"><span style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"></path></svg>Fast, mobile-first stores</span><span style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"></path></svg>Secure payments</span><span style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"></path></svg>Easy to manage</span></div>
+      </div>
+    </div>
+
+    <div aria-hidden="true" style="grid-column: span 6; height: 600px; position: relative; border-radius: 28px; background: #FBECEE; border: 1px solid #F4DADD; box-shadow: inset 0 1px 0 #FFFFFF, 0 16px 36px -18px rgba(194,50,63,0.3); overflow: hidden; font-family: 'Plus Jakarta Sans', system-ui, sans-serif">
+      <div class="rsp-fa" style="position: absolute; left: 36px; top: 50px; width: 470px; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; border-radius: 18px; border: 1px solid #F1F2F4; box-shadow: 0 30px 60px -28px rgba(20,22,26,0.45); overflow: hidden">
+        <div style="height: 50px; padding: 0 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #F1F2F4"><span style="font-size: 15px; font-weight: 800; letter-spacing: -0.02em">your<span style="color: #C2323F">store</span></span><span style="display: flex; gap: 14px; align-items: center"><span style="display: block; width: 40px; height: 7px; border-radius: 7px; background: #ECEEF1"></span><span style="display: block; width: 40px; height: 7px; border-radius: 7px; background: #ECEEF1"></span><span style="position: relative"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14161A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"></path></svg><span style="position: absolute; right: -6px; top: -6px; width: 16px; height: 16px; border-radius: 16px; background: #C2323F; font-size: 9px; font-weight: 800; color: #FFFFFF; display: flex; align-items: center; justify-content: center">2</span></span></span></div>
+        <div style="padding: 18px; display: flex; gap: 18px">
+          <div style="width: 190px; height: 230px; border-radius: 14px; background: #FBECEE; display: flex; align-items: center; justify-content: center"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2l-2 5v13a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7l-2-5Z M4 7h16 M16 11a4 4 0 0 1-8 0"></path></svg></div>
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 10px">
+            <span style="font-size: 11px; font-weight: 700; color: #545A66; text-transform: uppercase; letter-spacing: 0.08em">New arrival</span>
+            <span style="font-size: 18px; line-height: 1.25; font-weight: 800">Everyday Tote Bag</span>
+            <span style="display: flex; gap: 2px"><svg width="13" height="13" viewBox="0 0 24 24" fill="#C2323F"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8Z"></path></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="#C2323F"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8Z"></path></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="#C2323F"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8Z"></path></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="#C2323F"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8Z"></path></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="#C2323F"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8Z"></path></svg></span>
+            <span style="font-size: 22px; font-weight: 800">$49.00</span>
+            <span style="display: flex; gap: 6px"><span style="width: 22px; height: 22px; border-radius: 22px; background: #C2323F; outline: 2px solid #FBECEE"></span><span style="width: 22px; height: 22px; border-radius: 22px; background: #14161A"></span><span style="width: 22px; height: 22px; border-radius: 22px; background: #DADCE1"></span></span>
+            <span style="margin-top: auto; height: 40px; border-radius: 11px; background: #C2323F; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; color: #FFFFFF">Add to cart</span>
+          </div>
+        </div>
+      </div>
+      <div class="rsp-fb" style="position: absolute; right: 32px; bottom: 44px; width: 250px; box-sizing: border-box; padding: 16px; display: flex; flex-direction: column; gap: 12px; background: #FFFFFF; border-radius: 16px; border: 1px solid #F1F2F4; box-shadow: 0 20px 40px -20px rgba(20,22,26,0.4)">
+        <span style="font-size: 14px; font-weight: 800">Your cart</span>
+        <div style="display: flex; align-items: center; gap: 10px"><span style="width: 40px; height: 40px; border-radius: 10px; background: #FBECEE"></span><span style="flex: 1; display: flex; flex-direction: column; gap: 5px"><span style="display: block; width: 80%; height: 7px; border-radius: 7px; background: #DADCE1"></span><span style="display: block; width: 40%; height: 7px; border-radius: 7px; background: #ECEEF1"></span></span><span style="font-size: 12px; font-weight: 800">$49</span></div>
+        <div style="display: flex; align-items: center; gap: 10px"><span style="width: 40px; height: 40px; border-radius: 10px; background: #F1F2F4"></span><span style="flex: 1; display: flex; flex-direction: column; gap: 5px"><span style="display: block; width: 70%; height: 7px; border-radius: 7px; background: #DADCE1"></span><span style="display: block; width: 35%; height: 7px; border-radius: 7px; background: #ECEEF1"></span></span><span style="font-size: 12px; font-weight: 800">$24</span></div>
+        <div style="display: flex; justify-content: space-between; padding-top: 10px; border-top: 1px solid #F1F2F4; font-size: 13px; font-weight: 800"><span>Total</span><span>$73.00</span></div>
+        <span style="height: 38px; border-radius: 10px; background: #14161A; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; color: #FFFFFF">Checkout</span>
+      </div>
+      <div class="rsp-fb" style="position: absolute; right: 36px; top: 46px; display: flex; align-items: center; gap: 10px; padding: 11px 15px 11px 11px; border-radius: 16px; background: #FFFFFF; box-shadow: 0 16px 32px -14px rgba(20,22,26,0.3)"><span style="width: 34px; height: 34px; border-radius: 10px; background: #C2323F; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h20v12H2Z M2 10h20 M6 15h4"></path></svg></span><div style="display: flex; flex-direction: column; gap: 1px"><span style="font-size: 13px; font-weight: 800">Payment received</span><span style="font-size: 11px; font-weight: 600; color: #545A66">Order #1042</span></div></div>
+    </div>
+  </section>
+
+  <!-- ============ 2. WHAT'S INCLUDED ============ -->
+  <section style="height: 760px; box-sizing: border-box; padding: 96px 24px 24px; display: flex; flex-direction: column; gap: 48px">
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; padding: 0 24px">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; max-width: 760px">
+        <span style="display: flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px; border-radius: 999px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06); color: #A3242F; font-size: 13px; font-weight: 700">
+          <span style="display: block; width: 8px; height: 8px; border-radius: 8px; background: #C2323F"></span>
+          <span>What's Included</span>
+        </span>
+        <h2 style="margin: 0; font-size: 48px; line-height: 1.08; font-weight: 800; letter-spacing: -0.035em">Everything you need to <span style="color: #C2323F">start selling online.</span></h2>
+      </div>
+      <p style="margin: 0; max-width: 400px; font-size: 17px; line-height: 1.6; color: #545A66; font-weight: 500">A complete store, from product pages to checkout and delivery, built so customers can buy easily and you can run it without help.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
+      <sc-for list="{{features}}" as="f" hint-placeholder-count="6">
+        <div style="height: 222px; box-sizing: border-box; padding: 28px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 24px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)">
+          <span style="width: 52px; height: 52px; border-radius: 16px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(20,22,26,0.08), 0 6px 14px -8px rgba(20,22,26,0.2); display: flex; align-items: center; justify-content: center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{f.icon}}"></path></svg>
+          </span>
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <h3 style="margin: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.02em">{{f.title}}</h3>
+            <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #545A66; font-weight: 500">{{f.text}}</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ============ 3. PROCESS ============ -->
+  <section style="height: 640px; box-sizing: border-box; padding: 72px 24px 24px">
+    <div style="height: 100%; box-sizing: border-box; padding: 48px; display: flex; flex-direction: column; gap: 40px; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2)">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px">
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px">
+          <span style="display: flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px; border-radius: 999px; background: #FFFFFF; box-shadow: 0 1px 2px rgba(20,22,26,0.06); color: #A3242F; font-size: 13px; font-weight: 700">
+            <span style="display: block; width: 8px; height: 8px; border-radius: 8px; background: #C2323F"></span>
+            <span>How It Works</span>
+          </span>
+          <h2 style="margin: 0; font-size: 44px; line-height: 1.08; font-weight: 800; letter-spacing: -0.035em">From products to <span style="color: #C2323F">your first sale.</span></h2>
+        </div>
+        <p style="margin: 0; max-width: 360px; font-size: 16px; line-height: 1.6; color: #545A66; font-weight: 500">A clear plan with a working store to review every week, so you are ready to sell on launch day.</p>
+      </div>
+      <div style="position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
+        <span aria-hidden="true" style="position: absolute; left: 40px; right: 40px; top: 27px; height: 2px; background: repeating-linear-gradient(90deg, #E7B9BF 0 8px, transparent 8px 14px)"></span>
+        <sc-for list="{{steps}}" as="s" hint-placeholder-count="4">
+          <div class="rsp-step" style="position: relative; display: flex; flex-direction: column; gap: 18px">
+            <span style="width: 56px; height: 56px; border-radius: 18px; background: {{s.badgeBg}}; color: {{s.badgeFg}}; box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 10px 20px -10px rgba(194,50,63,0.55); display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 800">{{s.n}}</span>
+            <div style="flex-grow: 1; box-sizing: border-box; padding: 22px; display: flex; flex-direction: column; gap: 8px; border-radius: 20px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.05), 0 10px 22px -14px rgba(20,22,26,0.2)">
+              <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #A3242F">{{s.days}}</span>
+              <span style="font-size: 19px; font-weight: 800; letter-spacing: -0.02em">{{s.title}}</span>
+              <span style="font-size: 14px; line-height: 1.55; color: #545A66; font-weight: 500">{{s.text}}</span>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. FEATURED PROJECT ============ -->
+  <section id="work" style="height: 640px; box-sizing: border-box; padding: 72px 24px 24px">
+    <article style="height: 100%; box-sizing: border-box; padding: 14px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 40px; border-radius: 28px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2)">
+      <div style="grid-column: span 6; position: relative; border-radius: 22px; background: #EEF1F5; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#A0A5AF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="9" cy="9" r="2"></circle><path d="M21 15l-5-5L5 21"></path></svg>
+        <span style="font-size: 13px; font-weight: 700; color: #6B717D">Project image</span>
+      </div>
+      <div style="grid-column: span 6; box-sizing: border-box; padding: 30px 34px 30px 0; display: flex; flex-direction: column; justify-content: space-between; gap: 24px">
+        <div style="display: flex; flex-direction: column; gap: 18px">
+          <div style="display: flex; gap: 8px">
+            <span style="padding: 6px 12px; border-radius: 999px; background: #14161A; color: #FFFFFF; font-size: 12px; font-weight: 700">Featured project</span>
+            <span style="padding: 6px 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #ECEEF1; color: #545A66; font-size: 12px; font-weight: 700">Retail · Online store</span>
+          </div>
+          <h2 style="margin: 0; font-size: 40px; line-height: 1.1; font-weight: 800; letter-spacing: -0.03em">[Store name]</h2>
+          <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #545A66; font-weight: 500">A placeholder for your best ecommerce project: an online store built and launched for a growing brand.</p>
+          <div style="display: flex; flex-direction: column; gap: 10px; padding-top: 6px">
+            <span style="display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"></path></svg>Custom design and product catalogue</span>
+            <span style="display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"></path></svg>Checkout with card and local payments</span>
+            <span style="display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"></path></svg>Order tracking and automatic emails</span>
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px">
+          <a href="CaseStudy.dc.html" style="display: flex; align-items: center; gap: 8px; height: 52px; padding: 0 22px; border-radius: 16px; background: #C2323F; color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none; box-shadow: inset 0 1px 0 rgba(255,255,255,0.28), 0 10px 22px -10px rgba(194,50,63,0.7)">
+            <span>View case study</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>
+          </a>
+          <a href="Portfolio.dc.html" style="display: flex; align-items: center; height: 52px; padding: 0 20px; border-radius: 16px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06); color: #14161A; font-size: 16px; font-weight: 700; text-decoration: none">More of our work</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ 5. STACK ============ -->
+  <section style="height: 220px; box-sizing: border-box; padding: 48px 24px 24px">
+    <div style="height: 100%; box-sizing: border-box; padding: 0 40px; display: flex; align-items: center; gap: 40px; border-radius: 24px; background: #F7F8FA; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04)">
+      <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 6px">
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #A3242F">Built with</span>
+        <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.02em">Ecommerce tools</span>
+      </div>
+      <div style="flex-grow: 1; display: flex; flex-wrap: wrap; gap: 10px">
+        <sc-for list="{{stack}}" as="tool" hint-placeholder-count="7">
+          <span style="height: 52px; display: flex; align-items: center; gap: 10px; padding: 0 18px 0 8px; border-radius: 16px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.05); font-size: 15px; font-weight: 800">
+            <span style="width: 36px; height: 36px; border-radius: 10px; background: #F7F8FA; border: 1px solid #ECEEF1; box-sizing: border-box; display: flex; align-items: center; justify-content: center"><sc-if value="{{tool.logo}}" hint-placeholder-val="{{ true }}"><img src="{{tool.logo}}" alt="" style="width: 22px; height: 22px; display: block; object-fit: contain"></sc-if><sc-if value="{{tool.mono}}" hint-placeholder-val="{{ false }}"><span style="font-size: 13px; font-weight: 800; color: #545A66">{{tool.mono}}</span></sc-if></span>
+            <span>{{tool.name}}</span>
+          </span>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. FAQ ============ -->
+  <section style="height: 700px; box-sizing: border-box; padding: 96px 24px 24px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 32px">
+    <div style="grid-column: span 4; padding-left: 24px; display: flex; flex-direction: column; align-items: flex-start; gap: 18px">
+      <span style="display: flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px; border-radius: 999px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06); color: #A3242F; font-size: 13px; font-weight: 700">
+        <span style="display: block; width: 8px; height: 8px; border-radius: 8px; background: #C2323F"></span>
+        <span>FAQ</span>
+      </span>
+      <h2 style="margin: 0; font-size: 44px; line-height: 1.08; font-weight: 800; letter-spacing: -0.035em">Questions about <span style="color: #C2323F">ecommerce.</span></h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #545A66; font-weight: 500">Still unsure? Ask me anything on a free 20-minute call.</p>
+      <a href="#contact" style="display: flex; align-items: center; gap: 8px; height: 50px; padding: 0 20px; border-radius: 16px; background: #FFFFFF; border: 1px solid #ECEEF1; box-shadow: 0 1px 2px rgba(20,22,26,0.06), 0 8px 18px -10px rgba(20,22,26,0.2); font-size: 15px; font-weight: 700; color: #14161A; text-decoration: none">
+        <span>Book a call</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+      </a>
+    </div>
+    <div style="grid-column: span 8; display: flex; flex-direction: column; gap: 10px">
+      <sc-for list="{{faqs}}" as="q" hint-placeholder-count="5">
+        <div style="border-radius: 20px; background: {{q.bg}}; border: 1px solid #ECEEF1; box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), {{q.shadow}}">
+          <button type="button" onClick="{{q.toggle}}" aria-expanded="{{q.expanded}}" style="width: 100%; min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 24px; border: none; background: transparent; font-family: inherit; font-size: 17px; font-weight: 800; color: #14161A; text-align: left; cursor: pointer">
+            <span>{{q.q}}</span>
+            <span style="width: 34px; height: 34px; flex-shrink: 0; border-radius: 10px; background: {{q.iconBg}}; display: flex; align-items: center; justify-content: center">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="{{q.iconInk}}" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="{{q.iconPath}}"></path></svg>
+            </span>
+          </button>
+          <sc-if value="{{q.open}}" hint-placeholder-val="{{ false }}">
+            <p style="margin: 0; padding: 0 24px 22px; max-width: 680px; font-size: 15px; line-height: 1.6; color: #545A66; font-weight: 500">{{q.a}}</p>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ============ 7. BOOKING + FOOTER ============ -->
+  <dc-import name="Consultation" hint-size="1440px,680px"></dc-import>
+  <dc-import name="Footer" hint-size="1440px,520px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4944}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { open: 0 };
+  }
+  renderVals() {
+    // Official tool logos, served from /public/logos (see README). No logo -> letter tile.
+    const logos = {"React": "react", "React Native": "react", "Next.js": "nextjs", "TypeScript": "typescript", "Node.js": "nodejs", "Figma": "figma", "Tailwind CSS": "tailwindcss", "Flutter": "flutter", "Python": "python", "PostgreSQL": "postgresql", "Supabase": "supabase", "OpenAI": "openai", "Vercel": "vercel", "AWS": "aws", "Claude": "claude", "LangChain": "langchain", "Canva": "canva", "Premiere Pro": "premierepro", "After Effects": "aftereffects", "Notion": "notion", "Webflow": "webflow", "Shopify": "shopify", "WooCommerce": "woocommerce", "Stripe": "stripe", "PayPal": "paypal", "Google Analytics": "googleanalytics", "Google Cloud": "googlecloud", "GitHub": "github", "Docker": "docker", "Expo": "expo", "Firebase": "firebase", "Framer": "framer", "Maze": "maze", "Loom": "loom"};
+    const withLogos = (names) => names.map((name) => ({ name, logo: logos[name] ? '/logos/' + logos[name] + '.svg' : '', mono: logos[name] ? '' : name.charAt(0) }));
+    const features = [{"title": "Custom store design", "text": "A store that looks like your brand and makes products easy to find and buy.", "icon": "M12 20h9 M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"}, {"title": "Product catalogue", "text": "Products, variants, stock and pricing managed from one simple dashboard.", "icon": "M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z M7 7h.01"}, {"title": "Smooth checkout", "text": "A fast, simple checkout that works on every device and reduces drop-offs.", "icon": "M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6 M9 21a1 1 0 1 0 0-.01 M18 21a1 1 0 1 0 0-.01"}, {"title": "Payments", "text": "Card payments, digital wallets and local payment methods set up securely.", "icon": "M2 6h20v12H2Z M2 10h20 M6 15h4"}, {"title": "Shipping & orders", "text": "Delivery options, order tracking and automatic emails to your customers.", "icon": "M1 4h14v12H1Z M15 9h4l3 3v4h-7 M5.5 19a2 2 0 1 0 0-.01 M18.5 19a2 2 0 1 0 0-.01"}, {"title": "Marketing & analytics", "text": "Discount codes, SEO basics and analytics so you can see what's selling.", "icon": "M4 20V10 M10 20V4 M16 20v-7 M22 20H2"}];
+    const steps = [{"n": "1", "days": "Day 1–3", "title": "Plan", "text": "We agree on your products, payments, delivery and the right platform for your store."}, {"n": "2", "days": "Day 4–8", "title": "Design", "text": "Home, product, cart and checkout pages designed in your brand style."}, {"n": "3", "days": "Day 9–17", "title": "Build", "text": "We build the store, add your products and connect payments and shipping."}, {"n": "4", "days": "Day 18–21", "title": "Test & launch", "text": "Test orders end to end, then your store goes live and starts selling."}].map((s, i) => ({ ...s, badgeBg: i === 3 ? '#C2323F' : '#FFFFFF', badgeFg: i === 3 ? '#FFFFFF' : '#C2323F' }));
+    const faqs = [{"q": "Which platform will you build my store on?", "a": "It depends on your needs. Shopify suits most stores, WooCommerce works well if you already use WordPress, and a custom build fits marketplaces or unusual product types. We'll recommend the best fit."}, {"q": "Can you move my existing store to a new platform?", "a": "Yes. We can migrate your products, customers and orders, and set up redirects so you don't lose search traffic."}, {"q": "Which payment methods can my customers use?", "a": "Cards, digital wallets and many local payment methods, depending on your country and payment provider."}, {"q": "Will I be able to manage the store myself?", "a": "Yes. You'll be able to add products, change prices and handle orders from a simple dashboard, and we'll show you how."}, {"q": "Do you help after launch?", "a": "Yes. We can keep improving your store, add features and help you grow sales on a monthly plan."}].map((f, i) => {
+      const open = i === this.state.open;
+      return {
+        ...f, open,
+        expanded: String(open),
+        bg: open ? '#FFFFFF' : '#F7F8FA',
+        shadow: open ? '0 14px 30px -18px rgba(20,22,26,0.25)' : '0 0 0 transparent',
+        iconBg: open ? '#C2323F' : '#FFFFFF',
+        iconInk: open ? '#FFFFFF' : '#C2323F',
+        iconPath: open ? 'M5 12h14' : 'M12 5v14 M5 12h14',
+        toggle: () => this.setState({ open: open ? -1 : i })
+      };
+    });
+    return { features, steps, faqs, stack: withLogos(["Shopify", "WooCommerce", "Next.js", "Stripe", "PayPal", "Google Analytics"]) };
+  }
+}
+</script>
+</body>
+</html>
