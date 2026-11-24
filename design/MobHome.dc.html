@@ -17,6 +17,10 @@ input::placeholder,textarea::placeholder{color:#7A808C}
 @keyframes rsp-fa{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 .rsp-fa{animation:rsp-fa 5s ease-in-out infinite}
 .rsp-fb{animation:rsp-fa 6s ease-in-out infinite reverse}
+/* client logos: black & white until tapped (touch screens have no hover) */
+.rsp-tl > * > img,.rsp-tr > * > img,.rsp-tl > * > :has(> img),.rsp-tr > * > :has(> img){filter:grayscale(1);opacity:.8;transition:filter .25s ease,opacity .25s ease}
+.rsp-tl > *,.rsp-tr > *{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.rsp-tl > *:hover > img,.rsp-tr > *:hover > img,.rsp-tl > *:hover > :has(> img),.rsp-tr > *:hover > :has(> img),.rsp-tl > *:active > img,.rsp-tr > *:active > img,.rsp-tl > *:active > :has(> img),.rsp-tr > *:active > :has(> img){filter:none;opacity:1}
 .rsp-tl{animation:rsp-left 30s linear infinite}
 .rsp-tr{animation:rsp-right 34s linear infinite}
 @keyframes rsp-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}

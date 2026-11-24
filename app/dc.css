@@ -23,6 +23,9 @@ input::placeholder{color:#7A808C}
 .clients--rsp-track-l{animation:clients--rsp-left 36s linear infinite}
 .clients--rsp-track-r{animation:clients--rsp-right 40s linear infinite}
 .clients--rsp-fade:hover .clients--rsp-track-l,.clients--rsp-fade:hover .clients--rsp-track-r{animation-play-state:paused}
+/* client logos: black & white until you hover that logo */
+.clients--rsp-track-l > * > img,.clients--rsp-track-r > * > img,.clients--rsp-track-l > * > :has(> img),.clients--rsp-track-r > * > :has(> img){filter:grayscale(1);opacity:.8;transition:filter .25s ease,opacity .25s ease}
+.clients--rsp-track-l > *:hover > img,.clients--rsp-track-r > *:hover > img,.clients--rsp-track-l > *:hover > :has(> img),.clients--rsp-track-r > *:hover > :has(> img){filter:none;opacity:1}
 @keyframes clients--rsp-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes clients--rsp-right{from{transform:translateX(-50%)}to{transform:translateX(0)}}
 @scope (.dc-consultation) { a{color:#FFFFFF} }
@@ -200,6 +203,10 @@ input::placeholder,textarea::placeholder{color:#7A808C}
 @keyframes mobhome--rsp-fa{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 .mobhome--rsp-fa{animation:mobhome--rsp-fa 5s ease-in-out infinite}
 .mobhome--rsp-fb{animation:mobhome--rsp-fa 6s ease-in-out infinite reverse}
+/* client logos: black & white until tapped (touch screens have no hover) */
+.mobhome--rsp-tl > * > img,.mobhome--rsp-tr > * > img,.mobhome--rsp-tl > * > :has(> img),.mobhome--rsp-tr > * > :has(> img){filter:grayscale(1);opacity:.8;transition:filter .25s ease,opacity .25s ease}
+.mobhome--rsp-tl > *,.mobhome--rsp-tr > *{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.mobhome--rsp-tl > *:hover > img,.mobhome--rsp-tr > *:hover > img,.mobhome--rsp-tl > *:hover > :has(> img),.mobhome--rsp-tr > *:hover > :has(> img),.mobhome--rsp-tl > *:active > img,.mobhome--rsp-tr > *:active > img,.mobhome--rsp-tl > *:active > :has(> img),.mobhome--rsp-tr > *:active > :has(> img){filter:none;opacity:1}
 .mobhome--rsp-tl{animation:mobhome--rsp-left 30s linear infinite}
 .mobhome--rsp-tr{animation:mobhome--rsp-right 34s linear infinite}
 @keyframes mobhome--rsp-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}

@@ -17,6 +17,9 @@ a{color:#A3242F}a:hover{color:#14161A}
 .rsp-track-l{animation:rsp-left 36s linear infinite}
 .rsp-track-r{animation:rsp-right 40s linear infinite}
 .rsp-fade:hover .rsp-track-l,.rsp-fade:hover .rsp-track-r{animation-play-state:paused}
+/* client logos: black & white until you hover that logo */
+.rsp-track-l > * > img,.rsp-track-r > * > img,.rsp-track-l > * > :has(> img),.rsp-track-r > * > :has(> img){filter:grayscale(1);opacity:.8;transition:filter .25s ease,opacity .25s ease}
+.rsp-track-l > *:hover > img,.rsp-track-r > *:hover > img,.rsp-track-l > *:hover > :has(> img),.rsp-track-r > *:hover > :has(> img){filter:none;opacity:1}
 @keyframes rsp-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes rsp-right{from{transform:translateX(-50%)}to{transform:translateX(0)}}
 </style>
