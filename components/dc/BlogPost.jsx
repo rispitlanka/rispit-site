@@ -367,7 +367,7 @@ Component.prototype.template = function (S) {
             {" "}
             <DcLink href={"#contact"} style={{"display": "flex", "alignItems": "center", "justifyContent": "center", "gap": "10px", "height": "54px", "padding": "0 16px 0 6px", "borderRadius": "16px", "background": "#FFFFFF", "color": "#14161A", "fontSize": "15px", "fontWeight": "700", "textDecoration": "none", "boxShadow": "0 10px 20px -10px rgba(60,10,16,0.5)"}}>
               {" "}
-              <img src={"/assets/66baedd13e96fd14d8f78d471b6115cf.png"} alt={""} style={{"width": "42px", "height": "42px", "display": "block", "borderRadius": "12px", "objectFit": "cover"}} />
+              <img src={"/assets/66baedd13e96fd14d8f78d471b6115cf.png"} alt={""} style={{"width": "42px", "height": "42px", "display": "block", "borderRadius": "12px", "objectFit": "cover", "border": "2px solid rgba(255,255,255,0.9)", "boxSizing": "border-box"}} />
               {" "}
               <span style={{"flexGrow": "1"}}>
                 {"Book a call with Siva"}

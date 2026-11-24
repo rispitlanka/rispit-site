@@ -16,22 +16,25 @@ class Component extends DCLogic {
       ring: 'M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20Zm0 5a5 5 0 1 1 0 10a5 5 0 1 1 0-10Z',
       hex: 'M12 1l9.5 5.5v11L12 23l-9.5-5.5v-11Z'
     };
+    // Client names (both rows show the same list, scrolling in opposite directions).
+    // The shape marks are placeholders until real client logos are added.
     const a = [
-      { name: 'Lumora', d: shapes.circle },
-      { name: 'Kestrel', d: shapes.triangle },
-      { name: 'Orbitly', d: shapes.ring },
-      { name: 'Fernway', d: shapes.bars },
-      { name: 'Quantix', d: shapes.hex },
-      { name: 'Brightpath', d: shapes.diamond }
+      { name: "Seatsnaps", d: '', img: '/logos/products/seatsnaps.png', fit: 'cover', pad: '0', bg: '#3B74FF', border: 'none' },
+      { name: "Snapserve", d: '', img: '/logos/products/snapserve.png', fit: 'contain', pad: '3px', bg: '#FFFFFF', border: '1px solid #ECEEF1' },
+      { name: "Hunt", d: '', img: '/logos/products/hunt.png', fit: 'cover', pad: '0', bg: '#FF6600', border: 'none' },
+      { name: "Ceylontamil", d: '', wordmark: '/logos/clients/ceylontamil.png' },
+      { name: "twomore", d: shapes.hex },
+      { name: "Rusichchatti", d: '', img: '/logos/clients/rusichchatti.png', fit: 'cover', pad: '0', bg: '#000000', border: 'none' },
+      { name: "datconsultancy", d: '', wordmark: '/logos/clients/datconsultancy.png' },
+      { name: "Fluncer", d: '', img: '/logos/clients/fluncer.png', fit: 'cover', pad: '0', bg: '#1D1A11', border: 'none' },
+      { name: "CCH", d: shapes.circle },
+      { name: "Children.lk", d: '', wordmark: '/logos/clients/children-lk.png' },
+      { name: "Loyaleete", d: shapes.ring },
+      { name: "Save the Children", d: shapes.bars },
+      { name: "Bunshop", d: shapes.hex }
     ];
-    const b = [
-      { name: 'Velora', d: shapes.half },
-      { name: 'Harbor & Co', d: shapes.square },
-      { name: 'Nimbly', d: shapes.ring },
-      { name: 'Solace', d: shapes.circle },
-      { name: 'Craftly', d: shapes.hex },
-      { name: 'Pinecrest', d: shapes.triangle }
-    ];
+    a.forEach((c) => { c.showName = !c.wordmark; c.wmH = c.name === 'Children.lk' ? '44px' : '36px'; }); // wordmark logos already show the name
+    const b = a;
     return { rowA: a.concat(a), rowB: b.concat(b) };
   }
 }
@@ -82,13 +85,25 @@ Component.prototype.template = function (S) {
                   {" "}
                   <div style={{"height": "76px", "boxSizing": "border-box", "padding": "0 32px", "display": "flex", "alignItems": "center", "gap": "12px", "borderRadius": "18px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05), 0 8px 18px -12px rgba(20,22,26,0.18)", "flexShrink": "0"}}>
                     {" "}
-                    <svg width={"28"} height={"28"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
-                      <path d={dcGet(S7, "logo.d")} />
-                    </svg>
+                    {dcTruthy(dcGet(S7, "logo.img")) ? (<>
+                      <span style={{"width": "32px", "height": "32px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "9px", "overflow": "hidden", "background": `${dcStr(dcGet(S7, "logo.bg"))}`, "border": `${dcStr(dcGet(S7, "logo.border"))}`, "padding": `${dcStr(dcGet(S7, "logo.pad"))}`, "display": "flex"}}>
+                        <img src={dcGet(S7, "logo.img")} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": `${dcStr(dcGet(S7, "logo.fit"))}`}} />
+                      </span>
+                    </>) : null}
+                    {dcTruthy(dcGet(S7, "logo.d")) ? (<>
+                      <svg width={"28"} height={"28"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
+                        <path d={dcGet(S7, "logo.d")} />
+                      </svg>
+                    </>) : null}
                     {" "}
-                    <span style={{"fontSize": "22px", "fontWeight": "800", "letterSpacing": "-0.02em", "color": "#6B717D", "whiteSpace": "nowrap"}}>
-                      {dcStr(dcGet(S7, "logo.name"))}
-                    </span>
+                    {dcTruthy(dcGet(S7, "logo.wordmark")) ? (<>
+                      <img src={dcGet(S7, "logo.wordmark")} alt={dcGet(S7, "logo.name")} style={{"height": `${dcStr(dcGet(S7, "logo.wmH"))}`, "width": "auto", "display": "block"}} />
+                    </>) : null}
+                    {dcTruthy(dcGet(S7, "logo.showName")) ? (<>
+                      <span style={{"fontSize": "22px", "fontWeight": "800", "letterSpacing": "-0.02em", "color": "#6B717D", "whiteSpace": "nowrap"}}>
+                        {dcStr(dcGet(S7, "logo.name"))}
+                      </span>
+                    </>) : null}
                     {" "}
                   </div>
                   {" "}
@@ -106,13 +121,25 @@ Component.prototype.template = function (S) {
                   {" "}
                   <div style={{"height": "76px", "boxSizing": "border-box", "padding": "0 32px", "display": "flex", "alignItems": "center", "gap": "12px", "borderRadius": "18px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05), 0 8px 18px -12px rgba(20,22,26,0.18)", "flexShrink": "0"}}>
                     {" "}
-                    <svg width={"28"} height={"28"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
-                      <path d={dcGet(S7, "logo.d")} />
-                    </svg>
+                    {dcTruthy(dcGet(S7, "logo.img")) ? (<>
+                      <span style={{"width": "32px", "height": "32px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "9px", "overflow": "hidden", "background": `${dcStr(dcGet(S7, "logo.bg"))}`, "border": `${dcStr(dcGet(S7, "logo.border"))}`, "padding": `${dcStr(dcGet(S7, "logo.pad"))}`, "display": "flex"}}>
+                        <img src={dcGet(S7, "logo.img")} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": `${dcStr(dcGet(S7, "logo.fit"))}`}} />
+                      </span>
+                    </>) : null}
+                    {dcTruthy(dcGet(S7, "logo.d")) ? (<>
+                      <svg width={"28"} height={"28"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
+                        <path d={dcGet(S7, "logo.d")} />
+                      </svg>
+                    </>) : null}
                     {" "}
-                    <span style={{"fontSize": "22px", "fontWeight": "800", "letterSpacing": "-0.02em", "color": "#6B717D", "whiteSpace": "nowrap"}}>
-                      {dcStr(dcGet(S7, "logo.name"))}
-                    </span>
+                    {dcTruthy(dcGet(S7, "logo.wordmark")) ? (<>
+                      <img src={dcGet(S7, "logo.wordmark")} alt={dcGet(S7, "logo.name")} style={{"height": `${dcStr(dcGet(S7, "logo.wmH"))}`, "width": "auto", "display": "block"}} />
+                    </>) : null}
+                    {dcTruthy(dcGet(S7, "logo.showName")) ? (<>
+                      <span style={{"fontSize": "22px", "fontWeight": "800", "letterSpacing": "-0.02em", "color": "#6B717D", "whiteSpace": "nowrap"}}>
+                        {dcStr(dcGet(S7, "logo.name"))}
+                      </span>
+                    </>) : null}
                     {" "}
                   </div>
                   {" "}

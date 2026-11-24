@@ -13,7 +13,7 @@ class Component extends DCLogic {
 Component.prototype.template = function (S) {
   return (
     <>
-      <section style={{"width": "100%", "height": "1376px", "boxSizing": "border-box", "padding": "96px 24px 24px", "display": "flex", "flexDirection": "column", "gap": "48px", "background": "#FFFFFF", "fontFamily": "'Plus Jakarta Sans', system-ui, sans-serif", "color": "#14161A"}} className="dc-services">
+      <section style={{"width": "100%", "boxSizing": "border-box", "padding": "96px 24px 24px", "display": "flex", "flexDirection": "column", "gap": "48px", "background": "#FFFFFF", "fontFamily": "'Plus Jakarta Sans', system-ui, sans-serif", "color": "#14161A"}} className="dc-services">
       {" "}
       {" "}
       <div style={{"display": "flex", "alignItems": "flex-end", "justifyContent": "space-between", "gap": "48px", "padding": "0 24px"}}>
@@ -49,7 +49,7 @@ Component.prototype.template = function (S) {
       <div style={{"display": "grid", "gridTemplateColumns": "repeat(12, minmax(0, 1fr))", "gap": "16px"}}>
         {" "}
         {" "}
-        <div style={{"gridColumn": "span 6", "gridRow": "span 2", "boxSizing": "border-box", "padding": "40px", "display": "flex", "flexDirection": "column", "justifyContent": "space-between", "gap": "32px", "borderRadius": "28px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2)"}}>
+        <div style={{"gridColumn": "span 6", "gridRow": "span 2", "boxSizing": "border-box", "padding": "40px", "display": "flex", "flexDirection": "column", "justifyContent": "flex-start", "gap": "28px", "borderRadius": "28px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 16px 36px -18px rgba(20,22,26,0.2)"}}>
           {" "}
           <div style={{"display": "flex", "flexDirection": "column", "gap": "20px"}}>
             {" "}
@@ -146,7 +146,7 @@ Component.prototype.template = function (S) {
           {" "}
         </div>
         {" "}
-        <DcLink href={"/services/ui-ux-design"} style={{"gridColumn": "span 3", "minHeight": "300px", "boxSizing": "border-box", "padding": "28px", "display": "flex", "flexDirection": "column", "justifyContent": "space-between", "gap": "24px", "borderRadius": "24px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)", "textDecoration": "none", "color": "#14161A"}}>
+        <DcLink href={"/services/ui-ux-design"} style={{"gridColumn": "span 3", "boxSizing": "border-box", "padding": "28px", "display": "flex", "flexDirection": "column", "justifyContent": "flex-start", "gap": "20px", "borderRadius": "24px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)", "textDecoration": "none", "color": "#14161A"}}>
           {" "}
           <span style={{"display": "flex", "alignItems": "center", "justifyContent": "space-between"}}>
             {" "}
@@ -178,7 +178,7 @@ Component.prototype.template = function (S) {
           {" "}
         </DcLink>
         {" "}
-        <DcLink href={"/services/web-app-development"} style={{"gridColumn": "span 3", "minHeight": "300px", "boxSizing": "border-box", "padding": "28px", "display": "flex", "flexDirection": "column", "justifyContent": "space-between", "gap": "24px", "borderRadius": "24px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)", "textDecoration": "none", "color": "#14161A"}}>
+        <DcLink href={"/services/web-app-development"} style={{"gridColumn": "span 3", "boxSizing": "border-box", "padding": "28px", "display": "flex", "flexDirection": "column", "justifyContent": "flex-start", "gap": "20px", "borderRadius": "24px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)", "textDecoration": "none", "color": "#14161A"}}>
           {" "}
           <span style={{"display": "flex", "alignItems": "center", "justifyContent": "space-between"}}>
             {" "}
@@ -210,7 +210,7 @@ Component.prototype.template = function (S) {
           {" "}
         </DcLink>
         {" "}
-        <DcLink href={"/services/mobile-app-development"} style={{"gridColumn": "span 3", "minHeight": "300px", "boxSizing": "border-box", "padding": "28px", "display": "flex", "flexDirection": "column", "justifyContent": "space-between", "gap": "24px", "borderRadius": "24px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)", "textDecoration": "none", "color": "#14161A"}}>
+        <DcLink href={"/services/mobile-app-development"} style={{"gridColumn": "span 3", "boxSizing": "border-box", "padding": "28px", "display": "flex", "flexDirection": "column", "justifyContent": "flex-start", "gap": "20px", "borderRadius": "24px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)", "textDecoration": "none", "color": "#14161A"}}>
           {" "}
           <span style={{"display": "flex", "alignItems": "center", "justifyContent": "space-between"}}>
             {" "}
@@ -242,7 +242,7 @@ Component.prototype.template = function (S) {
           {" "}
         </DcLink>
         {" "}
-        <DcLink href={"/services/ai-integration"} style={{"gridColumn": "span 3", "minHeight": "300px", "boxSizing": "border-box", "padding": "28px", "display": "flex", "flexDirection": "column", "justifyContent": "space-between", "gap": "24px", "borderRadius": "24px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)", "textDecoration": "none", "color": "#14161A"}}>
+        <DcLink href={"/services/ai-integration"} style={{"gridColumn": "span 3", "boxSizing": "border-box", "padding": "28px", "display": "flex", "flexDirection": "column", "justifyContent": "flex-start", "gap": "20px", "borderRadius": "24px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)", "textDecoration": "none", "color": "#14161A"}}>
           {" "}
           <span style={{"display": "flex", "alignItems": "center", "justifyContent": "space-between"}}>
             {" "}
@@ -274,7 +274,7 @@ Component.prototype.template = function (S) {
           {" "}
         </DcLink>
         {" "}
-        <DcLink href={"/services/ecommerce-development"} style={{"gridColumn": "span 4", "minHeight": "300px", "boxSizing": "border-box", "padding": "28px", "display": "flex", "flexDirection": "column", "justifyContent": "space-between", "gap": "24px", "borderRadius": "24px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)", "textDecoration": "none", "color": "#14161A"}}>
+        <DcLink href={"/services/ecommerce-development"} style={{"gridColumn": "span 4", "boxSizing": "border-box", "padding": "28px", "display": "flex", "flexDirection": "column", "justifyContent": "flex-start", "gap": "20px", "borderRadius": "24px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)", "textDecoration": "none", "color": "#14161A"}}>
           {" "}
           <span style={{"display": "flex", "alignItems": "center", "justifyContent": "space-between"}}>
             {" "}
@@ -306,7 +306,7 @@ Component.prototype.template = function (S) {
           {" "}
         </DcLink>
         {" "}
-        <DcLink href={"/services/content-creation"} style={{"gridColumn": "span 4", "minHeight": "300px", "boxSizing": "border-box", "padding": "28px", "display": "flex", "flexDirection": "column", "justifyContent": "space-between", "gap": "24px", "borderRadius": "24px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)", "textDecoration": "none", "color": "#14161A"}}>
+        <DcLink href={"/services/content-creation"} style={{"gridColumn": "span 4", "boxSizing": "border-box", "padding": "28px", "display": "flex", "flexDirection": "column", "justifyContent": "flex-start", "gap": "20px", "borderRadius": "24px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)", "textDecoration": "none", "color": "#14161A"}}>
           {" "}
           <span style={{"display": "flex", "alignItems": "center", "justifyContent": "space-between"}}>
             {" "}
@@ -338,7 +338,7 @@ Component.prototype.template = function (S) {
           {" "}
         </DcLink>
         {" "}
-        <DcLink href={"/services/it-consultation"} style={{"gridColumn": "span 4", "minHeight": "300px", "boxSizing": "border-box", "padding": "28px", "display": "flex", "flexDirection": "column", "justifyContent": "space-between", "gap": "24px", "borderRadius": "24px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)", "textDecoration": "none", "color": "#14161A"}}>
+        <DcLink href={"/services/it-consultation"} style={{"gridColumn": "span 4", "boxSizing": "border-box", "padding": "28px", "display": "flex", "flexDirection": "column", "justifyContent": "flex-start", "gap": "20px", "borderRadius": "24px", "background": "#F7F8FA", "border": "1px solid #ECEEF1", "boxShadow": "inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(20,22,26,0.04), 0 14px 30px -18px rgba(20,22,26,0.2)", "textDecoration": "none", "color": "#14161A"}}>
           {" "}
           <span style={{"display": "flex", "alignItems": "center", "justifyContent": "space-between"}}>
             {" "}
@@ -375,7 +375,7 @@ Component.prototype.template = function (S) {
           {" "}
           <div style={{"display": "flex", "alignItems": "center", "gap": "18px"}}>
             {" "}
-            <img src={"/assets/66baedd13e96fd14d8f78d471b6115cf.png"} alt={"Rispit founder"} style={{"width": "56px", "height": "56px", "display": "block", "borderRadius": "18px", "objectFit": "cover", "border": "2px solid #FFFFFF", "boxShadow": "0 6px 14px -8px rgba(20,22,26,0.3)"}} />
+            <img src={"/assets/66baedd13e96fd14d8f78d471b6115cf.png"} alt={"Rispit founder"} style={{"width": "56px", "height": "56px", "display": "block", "borderRadius": "18px", "objectFit": "cover", "border": "2px solid #FFFFFF", "boxShadow": "0 6px 14px -8px rgba(20,22,26,0.3)", "boxSizing": "border-box"}} />
             {" "}
             <div style={{"display": "flex", "flexDirection": "column", "gap": "4px"}}>
               {" "}

@@ -80,7 +80,7 @@ const xmas = (base) => `
 <tr><td class="px" style="padding:0 36px 28px">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="${DEEP}" style="background:${DEEP};border-radius:14px"><tr>
     <td width="48" valign="middle" style="padding:14px 0 14px 16px">${img(base, 'tile-gift.png', 32, 32)}</td>
-    <td valign="middle" style="padding:14px 16px 14px 12px;font-family:${F};font-size:13px;line-height:19px;font-weight:600;color:#FFFFFF"><strong style="font-weight:800">Christmas offer:</strong> book your project before [31 December] and get 20% off your build.</td>
+    <td valign="middle" style="padding:14px 16px 14px 12px;font-family:${F};font-size:13px;line-height:19px;font-weight:600;color:#FFFFFF"><strong style="font-weight:800">Christmas offer:</strong> book your project before 31st December and get 20% off your build.</td>
   </tr></table>
 </td></tr>`;
 

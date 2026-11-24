@@ -51,10 +51,11 @@ class Component extends DCLogic {
       { name: 'Content Creation', line: 'Copy, videos and visuals', href: '/ServiceContent.dc.html', icon: 'M15 10l5-3v10l-5-3Z M3 6h12v12H3Z' },
       { name: 'IT Consultation', line: 'Clear technical advice', href: '/ServiceIT.dc.html', icon: 'M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18Z M15.5 8.5l-2 5-5 2 2-5Z' }
     ];
+    // Rispit products. tag: 'Live' | 'Beta' | 'Soon' (leave '' to hide the pill).
     const products = [
-      { name: 'Rispit Flow', mono: 'RF', tag: 'Live', line: 'Sprint planning for small product teams', href: 'https://[rispitflow.com]', tileBg: '#C2323F', tileBorder: 'none' },
-      { name: '[Product 2]', mono: 'P2', tag: 'Beta', line: '[One-line description of the product]', href: 'https://[product-2.com]', tileBg: '#14161A', tileBorder: 'none' },
-      { name: '[Product 3]', mono: 'P3', tag: 'Soon', line: '[One-line description of the product]', href: 'https://[product-3.com]', tileBg: '#A0A5AF', tileBorder: 'none' }
+      { name: 'Seatsnaps', logo: '/logos/products/seatsnaps.png', tag: '', line: 'seatsnaps.com', href: 'https://seatsnaps.com', tileBg: '#3B74FF', tileBorder: 'none', fit: 'cover', pad: '0' },
+      { name: 'Snapserve', logo: '/logos/products/snapserve.png', tag: '', line: 'snapserve.shop', href: 'https://snapserve.shop', tileBg: '#FFFFFF', tileBorder: '1px solid #ECEEF1', fit: 'contain', pad: '5px' },
+      { name: 'Hunt', logo: '/logos/products/hunt.png', tag: '', line: 'gethunt.app', href: 'https://gethunt.app', tileBg: '#FF6600', tileBorder: 'none', fit: 'cover', pad: '0' }
     ];
     return {
       accent: this.props.accent ?? '#C2323F',
@@ -116,7 +117,7 @@ Component.prototype.template = function (S) {
             <strong style={{"fontWeight": "800"}}>
               {"20% off"}
             </strong>
-            {" building your startup when you book before [31 December]."}
+            {" building your startup when you book before 31st December."}
           </span>
           {" "}
           <DcLink href={"/contact"} style={{"display": "flex", "alignItems": "center", "gap": "6px", "height": "32px", "padding": "0 14px", "borderRadius": "10px", "background": "#FFFFFF", "color": "#A3242F", "fontSize": "13px", "fontWeight": "800", "textDecoration": "none", "boxShadow": "0 4px 10px -4px rgba(0,0,0,0.3)"}}>
@@ -204,7 +205,7 @@ Component.prototype.template = function (S) {
           {" "}
           <DcLink href={"/contact"} style={{"display": "flex", "alignItems": "center", "gap": "10px", "height": "50px", "padding": "0 20px 0 6px", "borderRadius": "16px", "background": `${dcStr(dcGet(S, "accent"))}`, "color": "#FFFFFF", "fontSize": "15px", "fontWeight": "700", "textDecoration": "none", "boxShadow": "inset 0 1px 0 rgba(255,255,255,0.28), 0 8px 18px -8px rgba(194,50,63,0.65)"}}>
             {" "}
-            <img src={"/assets/66baedd13e96fd14d8f78d471b6115cf.png"} alt={""} style={{"width": "38px", "height": "38px", "display": "block", "borderRadius": "12px", "objectFit": "cover", "border": "2px solid rgba(255,255,255,0.9)", "boxSizing": "border-box"}} />
+            <img src={"/assets/66baedd13e96fd14d8f78d471b6115cf.png"} alt={""} style={{"width": "38px", "height": "38px", "display": "block", "borderRadius": "11px", "objectFit": "cover", "border": "2px solid rgba(255,255,255,0.9)", "boxSizing": "border-box"}} />
             {" "}
             <span>
               {"Book a call with Siva"}
@@ -277,7 +278,7 @@ Component.prototype.template = function (S) {
             {" "}
             <DcLink href={"/contact"} style={{"display": "flex", "alignItems": "center", "gap": "8px", "height": "46px", "padding": "0 14px 0 5px", "borderRadius": "14px", "background": "#FFFFFF", "color": "#14161A", "fontSize": "14px", "fontWeight": "700", "textDecoration": "none"}}>
               {" "}
-              <img src={"/assets/66baedd13e96fd14d8f78d471b6115cf.png"} alt={""} style={{"width": "36px", "height": "36px", "display": "block", "borderRadius": "11px", "objectFit": "cover"}} />
+              <img src={"/assets/66baedd13e96fd14d8f78d471b6115cf.png"} alt={""} style={{"width": "36px", "height": "36px", "display": "block", "borderRadius": "11px", "objectFit": "cover", "border": "2px solid rgba(255,255,255,0.9)", "boxSizing": "border-box"}} />
               {" "}
               <span style={{"flexGrow": "1"}}>
                 {"Book a call with Siva"}
@@ -308,17 +309,19 @@ Component.prototype.template = function (S) {
               {" "}
               <DcLink href={dcGet(S5, "p.href")} target={"_blank"} rel={"noopener"} role={"menuitem"} style={{"display": "flex", "alignItems": "center", "gap": "14px", "padding": "12px", "borderRadius": "16px", "textDecoration": "none", "color": "#14161A"}}>
                 {" "}
-                <span style={{"width": "48px", "height": "48px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "14px", "background": `${dcStr(dcGet(S5, "p.tileBg"))}`, "border": `${dcStr(dcGet(S5, "p.tileBorder"))}`, "display": "flex", "alignItems": "center", "justifyContent": "center", "fontSize": "15px", "fontWeight": "800", "color": "#FFFFFF"}}>
-                  {dcStr(dcGet(S5, "p.mono"))}
+                <span style={{"width": "48px", "height": "48px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "14px", "background": `${dcStr(dcGet(S5, "p.tileBg"))}`, "border": `${dcStr(dcGet(S5, "p.tileBorder"))}`, "display": "flex", "alignItems": "center", "justifyContent": "center", "overflow": "hidden", "padding": `${dcStr(dcGet(S5, "p.pad"))}`}}>
+                  <img src={dcGet(S5, "p.logo")} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": `${dcStr(dcGet(S5, "p.fit"))}`}} />
                 </span>
                 {" "}
                 <span style={{"flexGrow": "1", "display": "flex", "flexDirection": "column", "gap": "2px"}}>
                   {" "}
                   <span style={{"display": "flex", "alignItems": "center", "gap": "8px", "fontSize": "15px", "fontWeight": "800"}}>
                     {dcStr(dcGet(S5, "p.name"))}
-                    <span style={{"padding": "2px 8px", "borderRadius": "999px", "background": "#F1F2F4", "fontSize": "11px", "fontWeight": "700", "color": "#545A66"}}>
-                      {dcStr(dcGet(S5, "p.tag"))}
-                    </span>
+                    {dcTruthy(dcGet(S5, "p.tag")) ? (<>
+                      <span style={{"padding": "2px 8px", "borderRadius": "999px", "background": "#F1F2F4", "fontSize": "11px", "fontWeight": "700", "color": "#545A66"}}>
+                        {dcStr(dcGet(S5, "p.tag"))}
+                      </span>
+                    </>) : null}
                   </span>
                   {" "}
                   <span style={{"fontSize": "13px", "fontWeight": "500", "color": "#545A66"}}>

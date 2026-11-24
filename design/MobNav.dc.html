@@ -75,7 +75,7 @@ body{margin:0}
         <div style="display: flex; flex-direction: column; gap: 2px; padding: 2px 4px 6px">
           <sc-for list="{{products}}" as="p" hint-placeholder-count="3">
             <a href="{{p.href}}" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; padding: 8px 10px; border-radius: 12px; text-decoration: none; color: #14161A">
-              <span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 11px; background: {{p.bg}}; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; color: #FFFFFF">{{p.mono}}</span>
+              <span style="width: 36px; height: 36px; flex-shrink: 0; box-sizing: border-box; border-radius: 11px; background: {{p.bg}}; border: {{p.border}}; overflow: hidden; padding: {{p.pad}}; display: flex; align-items: center; justify-content: center"><img src="{{p.logo}}" alt="" style="width: 100%; height: 100%; display: block; object-fit: {{p.fit}}"></span>
               <span style="flex-grow: 1; font-size: 14px; font-weight: 700">{{p.name}}</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-label="Opens in a new tab"><path d="M15 3h6v6 M10 14L21 3 M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
             </a>
@@ -115,9 +115,9 @@ class Component extends DCLogic {
       ['IT Consultation', '/MobServiceIT.dc.html', 'M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18Z M15.5 8.5l-2 5-5 2 2-5Z']
     ].map(([name, href, icon]) => ({ name, href, icon }));
     const products = [
-      { name: 'Rispit Flow', mono: 'RF', bg: '#C2323F', href: 'https://[rispitflow.com]' },
-      { name: '[Product 2]', mono: 'P2', bg: '#14161A', href: 'https://[product-2.com]' },
-      { name: '[Product 3]', mono: 'P3', bg: '#A0A5AF', href: 'https://[product-3.com]' }
+      { name: 'Seatsnaps', logo: '/logos/products/seatsnaps.png', bg: '#3B74FF', border: 'none', fit: 'cover', pad: '0', href: 'https://seatsnaps.com' },
+      { name: 'Snapserve', logo: '/logos/products/snapserve.png', bg: '#FFFFFF', border: '1px solid #ECEEF1', fit: 'contain', pad: '4px', href: 'https://snapserve.shop' },
+      { name: 'Hunt', logo: '/logos/products/hunt.png', bg: '#FF6600', border: 'none', fit: 'cover', pad: '0', href: 'https://gethunt.app' }
     ];
     return {
       showPromo, open, services, products,

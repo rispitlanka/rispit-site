@@ -130,6 +130,10 @@ Component.prototype.template = function (S) {
                   {"Book a call with Siva"}
                 </span>
                 {" "}
+                <svg width={"18"} height={"18"} viewBox={"0 0 24 24"} fill={"none"} stroke={"#FFFFFF"} strokeWidth={"2.5"} strokeLinecap={"round"} strokeLinejoin={"round"} aria-hidden={"true"} style={{"marginLeft": "6px"}}>
+                  <path d={"M5 12h14M13 5l7 7-7 7"} />
+                </svg>
+                {" "}
               </DcLink>
               {" "}
               <DcLink href={"#mobile-work"} style={{"display": "flex", "alignItems": "center", "height": "56px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.06), 0 8px 18px -10px rgba(20,22,26,0.18)", "color": "#14161A", "fontSize": "16px", "fontWeight": "700", "textDecoration": "none"}}>

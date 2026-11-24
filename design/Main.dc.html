@@ -40,7 +40,7 @@ a{color:#545A66}a:hover{color:#14161A}
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h18v4H3Z M5 12h14v9H5Z M12 8v13 M12 8c-1.5-3-5-4-5-1.5S10 8 12 8Z M12 8c1.5-3 5-4 5-1.5S14 8 12 8Z"></path></svg>
         <span>CHRISTMAS OFFER</span>
       </span>
-      <span style="font-size: 14px; font-weight: 600">Get <strong style="font-weight: 800">20% off</strong> building your startup when you book before [31 December].</span>
+      <span style="font-size: 14px; font-weight: 600">Get <strong style="font-weight: 800">20% off</strong> building your startup when you book before 31st December.</span>
       <a href="/Contact.dc.html" style="display: flex; align-items: center; gap: 6px; height: 32px; padding: 0 14px; border-radius: 10px; background: #FFFFFF; color: #A3242F; font-size: 13px; font-weight: 800; text-decoration: none; box-shadow: 0 4px 10px -4px rgba(0,0,0,0.3)">
         <span>Book a free call</span>
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#A3242F" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
@@ -76,7 +76,7 @@ a{color:#545A66}a:hover{color:#14161A}
         </sc-for>
       </nav>
       <a href="/Contact.dc.html" style="display: flex; align-items: center; gap: 10px; height: 50px; padding: 0 20px 0 6px; border-radius: 16px; background: {{accent}}; color: #FFFFFF; font-size: 15px; font-weight: 700; text-decoration: none; box-shadow: inset 0 1px 0 rgba(255,255,255,0.28), 0 8px 18px -8px rgba(194,50,63,0.65)">
-        <img src="/_blob/66baedd13e96fd14d8f78d471b6115cf" alt="" style="width: 38px; height: 38px; display: block; border-radius: 12px; object-fit: cover; border: 2px solid rgba(255,255,255,0.9); box-sizing: border-box">
+        <img src="/_blob/66baedd13e96fd14d8f78d471b6115cf" alt="" style="width: 38px; height: 38px; display: block; border-radius: 11px; object-fit: cover; border: 2px solid rgba(255,255,255,0.9); box-sizing: border-box">
         <span>Book a call with Siva</span>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
       </a>
@@ -106,7 +106,7 @@ a{color:#545A66}a:hover{color:#14161A}
           <span style="font-size: 13px; line-height: 1.5; font-weight: 500">Your idea, designed, built and launched in three weeks.</span>
         </div>
         <a href="/Contact.dc.html" style="display: flex; align-items: center; gap: 8px; height: 46px; padding: 0 14px 0 5px; border-radius: 14px; background: #FFFFFF; color: #14161A; font-size: 14px; font-weight: 700; text-decoration: none">
-          <img src="/_blob/66baedd13e96fd14d8f78d471b6115cf" alt="" style="width: 36px; height: 36px; display: block; border-radius: 11px; object-fit: cover">
+          <img src="/_blob/66baedd13e96fd14d8f78d471b6115cf" alt="" style="width: 36px; height: 36px; display: block; border-radius: 11px; object-fit: cover; border: 2px solid rgba(255,255,255,0.9); box-sizing: border-box">
           <span style="flex-grow: 1">Book a call with Siva</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C2323F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
         </a>
@@ -120,9 +120,9 @@ a{color:#545A66}a:hover{color:#14161A}
       <span style="padding: 8px 12px 6px; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #545A66">Our products</span>
       <sc-for list="{{products}}" as="p" hint-placeholder-count="3">
         <a href="{{p.href}}" target="_blank" rel="noopener" role="menuitem" style="display: flex; align-items: center; gap: 14px; padding: 12px; border-radius: 16px; text-decoration: none; color: #14161A">
-          <span style="width: 48px; height: 48px; flex-shrink: 0; box-sizing: border-box; border-radius: 14px; background: {{p.tileBg}}; border: {{p.tileBorder}}; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 800; color: #FFFFFF">{{p.mono}}</span>
+          <span style="width: 48px; height: 48px; flex-shrink: 0; box-sizing: border-box; border-radius: 14px; background: {{p.tileBg}}; border: {{p.tileBorder}}; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: {{p.pad}}"><img src="{{p.logo}}" alt="" style="width: 100%; height: 100%; display: block; object-fit: {{p.fit}}"></span>
           <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 2px">
-            <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 800">{{p.name}}<span style="padding: 2px 8px; border-radius: 999px; background: #F1F2F4; font-size: 11px; font-weight: 700; color: #545A66">{{p.tag}}</span></span>
+            <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 800">{{p.name}}<sc-if value="{{p.tag}}" hint-placeholder-val="{{ true }}"><span style="padding: 2px 8px; border-radius: 999px; background: #F1F2F4; font-size: 11px; font-weight: 700; color: #545A66">{{p.tag}}</span></sc-if></span>
             <span style="font-size: 13px; font-weight: 500; color: #545A66">{{p.line}}</span>
           </span>
           <span style="width: 34px; height: 34px; flex-shrink: 0; border-radius: 10px; background: #F7F8FA; display: flex; align-items: center; justify-content: center">
@@ -186,10 +186,11 @@ class Component extends DCLogic {
       { name: 'Content Creation', line: 'Copy, videos and visuals', href: '/ServiceContent.dc.html', icon: 'M15 10l5-3v10l-5-3Z M3 6h12v12H3Z' },
       { name: 'IT Consultation', line: 'Clear technical advice', href: '/ServiceIT.dc.html', icon: 'M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18Z M15.5 8.5l-2 5-5 2 2-5Z' }
     ];
+    // Rispit products. tag: 'Live' | 'Beta' | 'Soon' (leave '' to hide the pill).
     const products = [
-      { name: 'Rispit Flow', mono: 'RF', tag: 'Live', line: 'Sprint planning for small product teams', href: 'https://[rispitflow.com]', tileBg: '#C2323F', tileBorder: 'none' },
-      { name: '[Product 2]', mono: 'P2', tag: 'Beta', line: '[One-line description of the product]', href: 'https://[product-2.com]', tileBg: '#14161A', tileBorder: 'none' },
-      { name: '[Product 3]', mono: 'P3', tag: 'Soon', line: '[One-line description of the product]', href: 'https://[product-3.com]', tileBg: '#A0A5AF', tileBorder: 'none' }
+      { name: 'Seatsnaps', logo: '/logos/products/seatsnaps.png', tag: '', line: 'seatsnaps.com', href: 'https://seatsnaps.com', tileBg: '#3B74FF', tileBorder: 'none', fit: 'cover', pad: '0' },
+      { name: 'Snapserve', logo: '/logos/products/snapserve.png', tag: '', line: 'snapserve.shop', href: 'https://snapserve.shop', tileBg: '#FFFFFF', tileBorder: '1px solid #ECEEF1', fit: 'contain', pad: '5px' },
+      { name: 'Hunt', logo: '/logos/products/hunt.png', tag: '', line: 'gethunt.app', href: 'https://gethunt.app', tileBg: '#FF6600', tileBorder: 'none', fit: 'cover', pad: '0' }
     ];
     return {
       accent: this.props.accent ?? '#C2323F',

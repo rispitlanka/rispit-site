@@ -52,7 +52,7 @@ Component.prototype.template = function (S) {
             </span>
           </div>
           <div style={{"display": "flex", "alignItems": "center", "gap": "12px", "padding": "14px", "borderRadius": "16px", "background": "#F7F8FA"}}>
-            <img src={"/assets/66baedd13e96fd14d8f78d471b6115cf.png"} alt={""} style={{"width": "50px", "height": "50px", "display": "block", "borderRadius": "15px", "objectFit": "cover"}} />
+            <img src={"/assets/66baedd13e96fd14d8f78d471b6115cf.png"} alt={""} style={{"width": "50px", "height": "50px", "display": "block", "borderRadius": "15px", "objectFit": "cover", "border": "2px solid rgba(255,255,255,0.9)", "boxSizing": "border-box"}} />
             <span style={{"display": "flex", "flexDirection": "column", "gap": "2px"}}>
               <span style={{"fontSize": "15px", "fontWeight": "800"}}>
                 {"20-minute consultation"}

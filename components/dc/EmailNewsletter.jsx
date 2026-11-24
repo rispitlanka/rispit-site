@@ -201,7 +201,7 @@ Component.prototype.template = function (S) {
             <strong style={{"fontWeight": "800"}}>
               {"Christmas offer:"}
             </strong>
-            {" book your project before [31 December] and get 20% off your build."}
+            {" book your project before 31st December and get 20% off your build."}
           </span>
           {" "}
         </div>

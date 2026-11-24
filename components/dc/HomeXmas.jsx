@@ -139,14 +139,14 @@ Component.prototype.template = function (S) {
             </h2>
             {" "}
             <p style={{"margin": "0", "maxWidth": "560px", "fontSize": "18px", "lineHeight": "1.6", "fontWeight": "500"}}>
-              {"Book your build before [31 December] and get 20% off. Start the new year with a real product your users can try."}
+              {"Book your build before 31st December and get 20% off. Start the new year with a real product your users can try."}
             </p>
             {" "}
             <div style={{"display": "flex", "alignItems": "center", "gap": "14px"}}>
               {" "}
               <DcLink href={"/contact"} style={{"display": "flex", "alignItems": "center", "gap": "10px", "height": "58px", "padding": "0 22px 0 7px", "borderRadius": "18px", "background": "#FFFFFF", "color": "#14161A", "fontSize": "16px", "fontWeight": "800", "textDecoration": "none", "boxShadow": "0 14px 28px -12px rgba(60,10,16,0.55)"}}>
                 {" "}
-                <img src={"/assets/66baedd13e96fd14d8f78d471b6115cf.png"} alt={""} style={{"width": "44px", "height": "44px", "display": "block", "borderRadius": "13px", "objectFit": "cover"}} />
+                <img src={"/assets/66baedd13e96fd14d8f78d471b6115cf.png"} alt={""} style={{"width": "44px", "height": "44px", "display": "block", "borderRadius": "13px", "objectFit": "cover", "border": "2px solid rgba(255,255,255,0.9)", "boxSizing": "border-box"}} />
                 {" "}
                 <span>
                   {"Book a call with Siva"}
@@ -159,7 +159,7 @@ Component.prototype.template = function (S) {
               </DcLink>
               {" "}
               <span style={{"fontSize": "14px", "fontWeight": "700", "color": "#F4D6DA"}}>
-                {"Offer ends [31 December]"}
+                {"Offer ends 31st December"}
               </span>
               {" "}
             </div>

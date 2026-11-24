@@ -377,19 +377,57 @@ Component.prototype.template = function (S) {
             <div style={{"overflow": "hidden"}}>
               <div className={"mobhome--rsp-tl"} style={{"display": "flex", "gap": "10px", "width": "max-content"}}>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
-                  <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
-                    <path d={"M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20Z"} />
-                  </svg>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#3B74FF", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/products/seatsnaps.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Lumora"}
+                    {"Seatsnaps"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "padding": "2px", "display": "flex"}}>
+                    <img src={"/logos/products/snapserve.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "contain"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Snapserve"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#FF6600", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/products/hunt.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Hunt"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <img src={"/logos/clients/ceylontamil.png"} alt={"Ceylontamil"} style={{"height": "28px", "width": "auto", "display": "block"}} />
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
                   <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
-                    <path d={"M12 2L22 20H2Z"} />
+                    <path d={"M12 1l9.5 5.5v11L12 23l-9.5-5.5v-11Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Kestrel"}
+                    {"twomore"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#000000", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/clients/rusichchatti.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Rusichchatti"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <img src={"/logos/clients/datconsultancy.png"} alt={"datconsultancy"} style={{"height": "28px", "width": "auto", "display": "block"}} />
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#1D1A11", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/clients/fluncer.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Fluncer"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
@@ -397,23 +435,18 @@ Component.prototype.template = function (S) {
                     <path d={"M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20Zm0 5a5 5 0 1 1 0 10a5 5 0 1 1 0-10Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Orbitly"}
+                    {"CCH"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
-                  <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
-                    <path d={"M3 4h18v4H3Z M3 10h12v4H3Z M3 16h6v4H3Z"} />
-                  </svg>
-                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Fernway"}
-                  </span>
+                  <img src={"/logos/clients/children-lk.png"} alt={"Children.lk"} style={{"height": "36px", "width": "auto", "display": "block"}} />
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
                   <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
                     <path d={"M12 1l9.5 5.5v11L12 23l-9.5-5.5v-11Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Quantix"}
+                    {"Loyaleete"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
@@ -421,7 +454,7 @@ Component.prototype.template = function (S) {
                     <path d={"M12 1l11 11-11 11L1 12Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Brightpath"}
+                    {"Save the Children"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
@@ -429,15 +462,61 @@ Component.prototype.template = function (S) {
                     <path d={"M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Lumora"}
+                    {"Bunshop"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#3B74FF", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/products/seatsnaps.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Seatsnaps"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "padding": "2px", "display": "flex"}}>
+                    <img src={"/logos/products/snapserve.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "contain"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Snapserve"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#FF6600", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/products/hunt.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Hunt"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <img src={"/logos/clients/ceylontamil.png"} alt={"Ceylontamil"} style={{"height": "28px", "width": "auto", "display": "block"}} />
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
                   <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
-                    <path d={"M12 2L22 20H2Z"} />
+                    <path d={"M12 1l9.5 5.5v11L12 23l-9.5-5.5v-11Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Kestrel"}
+                    {"twomore"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#000000", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/clients/rusichchatti.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Rusichchatti"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <img src={"/logos/clients/datconsultancy.png"} alt={"datconsultancy"} style={{"height": "28px", "width": "auto", "display": "block"}} />
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#1D1A11", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/clients/fluncer.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Fluncer"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
@@ -445,23 +524,18 @@ Component.prototype.template = function (S) {
                     <path d={"M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20Zm0 5a5 5 0 1 1 0 10a5 5 0 1 1 0-10Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Orbitly"}
+                    {"CCH"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
-                  <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
-                    <path d={"M3 4h18v4H3Z M3 10h12v4H3Z M3 16h6v4H3Z"} />
-                  </svg>
-                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Fernway"}
-                  </span>
+                  <img src={"/logos/clients/children-lk.png"} alt={"Children.lk"} style={{"height": "36px", "width": "auto", "display": "block"}} />
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
                   <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
                     <path d={"M12 1l9.5 5.5v11L12 23l-9.5-5.5v-11Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Quantix"}
+                    {"Loyaleete"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
@@ -469,7 +543,15 @@ Component.prototype.template = function (S) {
                     <path d={"M12 1l11 11-11 11L1 12Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Brightpath"}
+                    {"Save the Children"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
+                    <path d={"M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20Z"} />
+                  </svg>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Bunshop"}
                   </span>
                 </span>
               </div>
@@ -477,19 +559,57 @@ Component.prototype.template = function (S) {
             <div style={{"overflow": "hidden"}}>
               <div className={"mobhome--rsp-tr"} style={{"display": "flex", "gap": "10px", "width": "max-content"}}>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
-                  <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
-                    <path d={"M12 1l11 11-11 11L1 12Z"} />
-                  </svg>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#3B74FF", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/products/seatsnaps.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Brightpath"}
+                    {"Seatsnaps"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "padding": "2px", "display": "flex"}}>
+                    <img src={"/logos/products/snapserve.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "contain"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Snapserve"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#FF6600", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/products/hunt.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Hunt"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <img src={"/logos/clients/ceylontamil.png"} alt={"Ceylontamil"} style={{"height": "28px", "width": "auto", "display": "block"}} />
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
                   <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
-                    <path d={"M12 1l9.5 5.5v11L12 23l-9.5-5.5v-11Z"} />
+                    <path d={"M12 2L22 20H2Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Quantix"}
+                    {"twomore"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#000000", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/clients/rusichchatti.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Rusichchatti"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <img src={"/logos/clients/datconsultancy.png"} alt={"datconsultancy"} style={{"height": "28px", "width": "auto", "display": "block"}} />
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#1D1A11", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/clients/fluncer.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Fluncer"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
@@ -497,23 +617,18 @@ Component.prototype.template = function (S) {
                     <path d={"M3 4h18v4H3Z M3 10h12v4H3Z M3 16h6v4H3Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Fernway"}
+                    {"CCH"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
-                  <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
-                    <path d={"M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20Zm0 5a5 5 0 1 1 0 10a5 5 0 1 1 0-10Z"} />
-                  </svg>
-                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Orbitly"}
-                  </span>
+                  <img src={"/logos/clients/children-lk.png"} alt={"Children.lk"} style={{"height": "36px", "width": "auto", "display": "block"}} />
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
                   <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
                     <path d={"M12 2L22 20H2Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Kestrel"}
+                    {"Loyaleete"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
@@ -521,7 +636,7 @@ Component.prototype.template = function (S) {
                     <path d={"M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Lumora"}
+                    {"Save the Children"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
@@ -529,15 +644,61 @@ Component.prototype.template = function (S) {
                     <path d={"M12 1l11 11-11 11L1 12Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Brightpath"}
+                    {"Bunshop"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#3B74FF", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/products/seatsnaps.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Seatsnaps"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "padding": "2px", "display": "flex"}}>
+                    <img src={"/logos/products/snapserve.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "contain"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Snapserve"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#FF6600", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/products/hunt.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Hunt"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <img src={"/logos/clients/ceylontamil.png"} alt={"Ceylontamil"} style={{"height": "28px", "width": "auto", "display": "block"}} />
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
                   <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
-                    <path d={"M12 1l9.5 5.5v11L12 23l-9.5-5.5v-11Z"} />
+                    <path d={"M12 2L22 20H2Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Quantix"}
+                    {"twomore"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#000000", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/clients/rusichchatti.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Rusichchatti"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <img src={"/logos/clients/datconsultancy.png"} alt={"datconsultancy"} style={{"height": "28px", "width": "auto", "display": "block"}} />
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <span style={{"width": "26px", "height": "26px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "8px", "overflow": "hidden", "background": "#1D1A11", "border": "none", "padding": "0", "display": "flex"}}>
+                    <img src={"/logos/clients/fluncer.png"} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": "cover"}} />
+                  </span>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Fluncer"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
@@ -545,23 +706,18 @@ Component.prototype.template = function (S) {
                     <path d={"M3 4h18v4H3Z M3 10h12v4H3Z M3 16h6v4H3Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Fernway"}
+                    {"CCH"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
-                  <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
-                    <path d={"M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20Zm0 5a5 5 0 1 1 0 10a5 5 0 1 1 0-10Z"} />
-                  </svg>
-                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Orbitly"}
-                  </span>
+                  <img src={"/logos/clients/children-lk.png"} alt={"Children.lk"} style={{"height": "36px", "width": "auto", "display": "block"}} />
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
                   <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
                     <path d={"M12 2L22 20H2Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Kestrel"}
+                    {"Loyaleete"}
                   </span>
                 </span>
                 <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
@@ -569,7 +725,15 @@ Component.prototype.template = function (S) {
                     <path d={"M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20Z"} />
                   </svg>
                   <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
-                    {"Lumora"}
+                    {"Save the Children"}
+                  </span>
+                </span>
+                <span style={{"height": "60px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "0 22px", "borderRadius": "16px", "background": "#FFFFFF", "border": "1px solid #ECEEF1", "boxShadow": "0 1px 2px rgba(20,22,26,0.05)", "flexShrink": "0"}}>
+                  <svg width={"22"} height={"22"} viewBox={"0 0 24 24"} fill={"#7A808C"} aria-hidden={"true"}>
+                    <path d={"M12 1l11 11-11 11L1 12Z"} />
+                  </svg>
+                  <span style={{"fontSize": "18px", "fontWeight": "800", "color": "#6B717D"}}>
+                    {"Bunshop"}
                   </span>
                 </span>
               </div>

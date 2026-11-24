@@ -24,9 +24,9 @@ class Component extends DCLogic {
       ['IT Consultation', '/MobServiceIT.dc.html', 'M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18Z M15.5 8.5l-2 5-5 2 2-5Z']
     ].map(([name, href, icon]) => ({ name, href, icon }));
     const products = [
-      { name: 'Rispit Flow', mono: 'RF', bg: '#C2323F', href: 'https://[rispitflow.com]' },
-      { name: '[Product 2]', mono: 'P2', bg: '#14161A', href: 'https://[product-2.com]' },
-      { name: '[Product 3]', mono: 'P3', bg: '#A0A5AF', href: 'https://[product-3.com]' }
+      { name: 'Seatsnaps', logo: '/logos/products/seatsnaps.png', bg: '#3B74FF', border: 'none', fit: 'cover', pad: '0', href: 'https://seatsnaps.com' },
+      { name: 'Snapserve', logo: '/logos/products/snapserve.png', bg: '#FFFFFF', border: '1px solid #ECEEF1', fit: 'contain', pad: '4px', href: 'https://snapserve.shop' },
+      { name: 'Hunt', logo: '/logos/products/hunt.png', bg: '#FF6600', border: 'none', fit: 'cover', pad: '0', href: 'https://gethunt.app' }
     ];
     return {
       showPromo, open, services, products,
@@ -202,8 +202,8 @@ Component.prototype.template = function (S) {
                   {" "}
                   <DcLink href={dcGet(S7, "p.href")} target={"_blank"} rel={"noopener"} style={{"display": "flex", "alignItems": "center", "gap": "12px", "padding": "8px 10px", "borderRadius": "12px", "textDecoration": "none", "color": "#14161A"}}>
                     {" "}
-                    <span style={{"width": "36px", "height": "36px", "flexShrink": "0", "borderRadius": "11px", "background": `${dcStr(dcGet(S7, "p.bg"))}`, "display": "flex", "alignItems": "center", "justifyContent": "center", "fontSize": "12px", "fontWeight": "800", "color": "#FFFFFF"}}>
-                      {dcStr(dcGet(S7, "p.mono"))}
+                    <span style={{"width": "36px", "height": "36px", "flexShrink": "0", "boxSizing": "border-box", "borderRadius": "11px", "background": `${dcStr(dcGet(S7, "p.bg"))}`, "border": `${dcStr(dcGet(S7, "p.border"))}`, "overflow": "hidden", "padding": `${dcStr(dcGet(S7, "p.pad"))}`, "display": "flex", "alignItems": "center", "justifyContent": "center"}}>
+                      <img src={dcGet(S7, "p.logo")} alt={""} style={{"width": "100%", "height": "100%", "display": "block", "objectFit": `${dcStr(dcGet(S7, "p.fit"))}`}} />
                     </span>
                     {" "}
                     <span style={{"flexGrow": "1", "fontSize": "14px", "fontWeight": "700"}}>

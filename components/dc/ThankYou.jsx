@@ -128,7 +128,7 @@ Component.prototype.template = function (S) {
             {" "}
             <div style={{"display": "flex", "alignItems": "center", "gap": "14px", "padding": "16px", "borderRadius": "18px", "background": "#F7F8FA"}}>
               {" "}
-              <img src={"/assets/66baedd13e96fd14d8f78d471b6115cf.png"} alt={""} style={{"width": "56px", "height": "56px", "display": "block", "borderRadius": "16px", "objectFit": "cover"}} />
+              <img src={"/assets/66baedd13e96fd14d8f78d471b6115cf.png"} alt={""} style={{"width": "56px", "height": "56px", "display": "block", "borderRadius": "16px", "objectFit": "cover", "border": "2px solid rgba(255,255,255,0.9)", "boxSizing": "border-box"}} />
               {" "}
               <div style={{"display": "flex", "flexDirection": "column", "gap": "2px"}}>
                 {" "}
