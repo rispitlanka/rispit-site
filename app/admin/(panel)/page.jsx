@@ -10,7 +10,7 @@ const NOTES = {
 
 export default async function AdminHome({ searchParams }) {
   const query = await searchParams;
-  const posts = listPosts();
+  const posts = await listPosts();
   const note = NOTES[query.saved] || '';
 
   return (

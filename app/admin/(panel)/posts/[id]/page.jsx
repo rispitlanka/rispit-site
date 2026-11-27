@@ -5,7 +5,7 @@ import { getPost } from '@/lib/blog-store.mjs';
 export default async function EditPostPage({ params, searchParams }) {
   const { id } = await params;
   const query = await searchParams;
-  const post = getPost(id);
+  const post = await getPost(id);
   if (!post) notFound();
   return (
     <>

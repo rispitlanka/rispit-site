@@ -5,6 +5,6 @@ import './blog.css';
 export const dynamic = 'force-dynamic';
 export const metadata = { title: 'Blog' };
 
-export default function Page() {
-  return <BlogIndex posts={listPublished()} />;
+export default async function Page() {
+  return <BlogIndex posts={await listPublished()} />;
 }

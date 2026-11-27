@@ -62,7 +62,12 @@ export async function savePostAction(formData) {
   if (!(await isAdmin())) redirect('/admin/login');
   const id = String(formData.get('id') || '');
   const input = fields(formData);
-  const result = id ? updatePost(id, input) : createPost(input);
+  let result;
+  try {
+    result = id ? await updatePost(id, input) : await createPost(input);
+  } catch {
+    result = { error: 'The article could not be saved. Try again.' };
+  }
   if (result.error) {
     const back = id ? `/admin/posts/${id}` : '/admin/posts/new';
     redirect(`${back}?error=${encodeURIComponent(result.error)}`);
@@ -74,7 +79,12 @@ export async function savePostAction(formData) {
 export async function deletePostAction(formData) {
   if (!(await isAdmin())) redirect('/admin/login');
   const id = String(formData.get('id') || '');
-  const result = deletePost(id);
+  let result;
+  try {
+    result = await deletePost(id);
+  } catch {
+    result = { error: 'The article could not be deleted. Try again.' };
+  }
   if (result.error) redirect(`/admin/posts/${id}?error=${encodeURIComponent(result.error)}`);
   revalidatePath('/blog');
   if (result.post?.slug) revalidatePath(`/blog/${result.post.slug}`);
