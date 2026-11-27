@@ -1,9 +1,10 @@
-import Responsive from '@/components/Responsive';
-import BlogList from '@/components/dc/BlogList';
-import MobBlog from '@/components/dc/MobBlog';
+import { BlogIndex } from '@/components/blog/BlogViews';
+import { listPublished } from '@/lib/blog-store.mjs';
+import './blog.css';
 
-export const metadata = { title: "Blog" };
+export const dynamic = 'force-dynamic';
+export const metadata = { title: 'Blog' };
 
 export default function Page() {
-  return <Responsive desktop={<BlogList />} mobile={<MobBlog />} />;
+  return <BlogIndex posts={listPublished()} />;
 }

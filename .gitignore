@@ -4,3 +4,7 @@ node_modules
 out
 .DS_Store
 Icon?
+.env
+.env.*
+!.env.example
+public/uploads

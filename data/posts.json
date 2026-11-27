@@ -1,0 +1,20 @@
+[
+  {
+    "id": "p_scope_mvp",
+    "slug": "how-to-scope-your-mvp",
+    "title": "How to scope your MVP so it ships in 21 days",
+    "excerpt": "A simple way to decide what goes into your first version, and what can safely wait.",
+    "category": "Product strategy",
+    "tags": [
+      "MVP",
+      "Product strategy",
+      "Startups"
+    ],
+    "status": "published",
+    "publishedAt": "2026-03-12T09:00:00.000Z",
+    "createdAt": "2026-03-12T09:00:00.000Z",
+    "updatedAt": "2026-11-27T04:23:44.873Z",
+    "body": "Most first products don't fail because they're badly built. They fail because they try to do too much, take too long, and reach real users too late. Scoping is the skill that fixes this. Here's the simple process we use with every founder before a 21-day build.\n\n## Start with one problem\n\nWrite down the single problem your product solves, for one specific type of person. Not three problems, not \"everyone\". If you can't describe it in a sentence, your first version will be hard to build and harder to explain.\n\nA clinic booking app, for example, isn't about \"improving healthcare\". It's about letting a patient book a visit without calling the front desk.\n\n## List everything, then cut\n\nGet every feature idea out of your head and onto one list. Then sort each item into one of three groups:\n\n- Must have: without it, the core problem isn't solved.\n- Nice to have: useful, but users can live without it for now.\n- Later: ideas for when you have real users and real feedback.\n\nYour first version is the \"must have\" group, and nothing else. Be strict. Most lists shrink by more than half.\n\n> If a feature doesn't help someone solve the core problem on day one, it can wait.\n\n## Use the one-sentence test\n\nBefore you commit, describe your first version in one sentence: \"A [person] can [do one thing] so that [result].\" If the sentence needs an \"and\", something can probably move to the later list.\n\n## Plan in weeks, not months\n\nOnce the scope is clear, plan the build in short, visible steps. We use three weeks: design in the first, build in the second, test and launch in the third, with a demo at the end of each one. Short cycles keep everyone honest and make problems easy to spot early.",
+    "coverImage": "/uploads/blog/f380d582-b035-413a-bd34-3312dabfd7b3.jpg"
+  }
+]

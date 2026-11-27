@@ -27,3 +27,16 @@ a:hover { color: #14161A; }
 /* Between 1024px and 1280px the desktop design is scaled down from a 1280px
    layout instead of squeezing it (--dz is set by the script in app/layout.jsx). */
 .v-desktop { zoom: var(--dz, 1); }
+
+/* Giant footer wordmark: keep the top three quarters and crop the rest. */
+.dc-footer div[aria-hidden="true"],
+.dc-mobfooter div[aria-hidden="true"] {
+  align-items: flex-start;
+  padding-bottom: 0 !important;
+  overflow: hidden;
+}
+.dc-footer div[aria-hidden="true"] > span,
+.dc-mobfooter div[aria-hidden="true"] > span {
+  height: 0.75em;
+  overflow: hidden;
+}
